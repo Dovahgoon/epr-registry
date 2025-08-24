@@ -7,113 +7,277 @@
       "country": "NL",
       "updatedAt": "2025-08-24T00:00:00.000Z",
       "regulators": [
-        {
-          "name": "Verpact (Netherlands Packaging Waste Fund)",
-          "url": "https://www.verpact.nl/"
-        }
+        { "name": "Verpact (Netherlands Packaging Waste Fund)", "url": "https://www.verpact.nl/" }
       ],
       "pros": [
-        {
-          "name": "Nedvang",
-          "url": "https://www.nedvang.nl/"
-        }
+        { "name": "Nedvang", "url": "https://www.nedvang.nl/" }
       ]
     },
     {
       "country": "BE",
       "updatedAt": "2025-08-24T00:00:00.000Z",
       "regulators": [
-        {
-          "name": "Fost Plus",
-          "url": "https://www.fostplus.be/"
-        }
+        { "name": "Fost Plus", "url": "https://www.fostplus.be/" }
       ],
       "pros": [
-        {
-          "name": "Valipac",
-          "url": "https://www.valipac.be/"
-        }
+        { "name": "Valipac", "url": "https://www.valipac.be/" }
       ]
     },
     {
       "country": "IT",
       "updatedAt": "2025-08-24T00:00:00.000Z",
       "regulators": [
-        {
-          "name": "CONAI",
-          "url": "https://www.conai.org/"
-        }
+        { "name": "CONAI", "url": "https://www.conai.org/" }
       ],
       "pros": [
-        {
-          "name": "Consorzi CONAI",
-          "url": "https://www.conai.org/consorzi/"
-        }
+        { "name": "Consorzi CONAI", "url": "https://www.conai.org/consorzi/" }
       ]
     },
     {
       "country": "ES",
       "updatedAt": "2025-08-24T00:00:00.000Z",
       "regulators": [
-        {
-          "name": "Ecoembes",
-          "url": "https://www.ecoembes.com/"
-        }
+        { "name": "Ecoembes", "url": "https://www.ecoembes.com/" }
       ],
       "pros": [
-        {
-          "name": "Ecoembes Empresas",
-          "url": "https://www.ecoembes.com/es/empresas"
-        }
+        { "name": "Ecoembes Empresas", "url": "https://www.ecoembes.com/es/empresas" }
       ]
     },
     {
       "country": "FR",
       "updatedAt": "2025-08-24T00:00:00.000Z",
       "regulators": [
-        {
-          "name": "Citeo",
-          "url": "https://www.citeo.com/"
-        }
+        { "name": "Citeo", "url": "https://www.citeo.com/" }
       ],
       "pros": [
-        {
-          "name": "Citeo Entreprises",
-          "url": "https://www.citeo.com/entreprises"
-        }
+        { "name": "Citeo Entreprises", "url": "https://www.citeo.com/entreprises" }
       ]
     },
     {
       "country": "DE",
       "updatedAt": "2025-08-24T00:00:00.000Z",
       "regulators": [
-        {
-          "name": "LUCID Register",
-          "url": "https://www.verpackungsregister.org/"
-        }
+        { "name": "LUCID Register", "url": "https://www.verpackungsregister.org/" }
       ],
       "pros": [
-        {
-          "name": "Dual systems (overview)",
-          "url": "https://www.verpackungsregister.org/en/faq/dual-systems"
-        }
+        { "name": "Dual systems (overview)", "url": "https://www.verpackungsregister.org/en/faq/dual-systems" }
       ]
     },
     {
       "country": "FI",
       "updatedAt": "2025-08-24T00:00:00.000Z",
       "regulators": [
-        {
-          "name": "Rinki Oy",
-          "url": "https://rinkiin.fi/"
-        }
+        { "name": "Rinki Oy", "url": "https://rinkiin.fi/" }
       ],
       "pros": [
-        {
-          "name": "Rinki Producer Responsibility",
-          "url": "https://rinkiin.fi/en/producers/"
-        }
+        { "name": "Rinki Producer Responsibility", "url": "https://rinkiin.fi/en/producers/" }
       ]
+    },
+
+    {
+      "country": "AT",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "VKS – Verpackungskoordinierungsstelle Austria", "url": "https://www.vks-gmbh.at/" }
+      ],
+      "pros": [
+        { "name": "ARA – Altstoff Recycling Austria", "url": "https://www.ara.at/" },
+        { "name": "Interzero Austria", "url": "https://www.interzero.at/" },
+        { "name": "Reclay Austria", "url": "https://www.reclay.at/" }
+      ]
+    },
+    {
+      "country": "BG",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "Ministry of Environment and Water", "url": "https://www.moew.government.bg/en/" }
+      ],
+      "pros": [
+        { "name": "ECOPACK Bulgaria AD", "url": "https://www.ecopack.bg/en/" }
+      ]
+    },
+    {
+      "country": "HR",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "FZOEU – Environmental Protection & Energy Efficiency Fund", "url": "https://www.fzoeu.hr/" }
+      ],
+      "pros": []
+    },
+    {
+      "country": "CY",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "Department of Environment (Ministry of Agriculture, Rural Dev. & Environment)", "url": "https://www.moa.gov.cy/environment" }
+      ],
+      "pros": [
+        { "name": "Green Dot Cyprus", "url": "https://www.greendot.com.cy/" }
+      ]
+    },
+    {
+      "country": "CZ",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "Ministry of the Environment (MŽP)", "url": "https://www.mzp.cz/" }
+      ],
+      "pros": [
+        { "name": "EKO-KOM", "url": "https://www.ekokom.cz/en" }
+      ]
+    },
+    {
+      "country": "DK",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "Danish EPA (Miljøstyrelsen)", "url": "https://mst.dk/" }
+      ],
+      "pros": []
+    },
+    {
+      "country": "EE",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "Keskkonnaamet (Estonian Environment Board)", "url": "https://www.keskkonnaamet.ee/en" }
+      ],
+      "pros": [
+        { "name": "Eesti Pakendiringlus", "url": "https://www.pakendiringlus.ee/" },
+        { "name": "Eesti Taaskasutusorganisatsioon (ETO)", "url": "https://www.eto.ee/" }
+      ]
+    },
+    {
+      "country": "GR",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "EOAN – Hellenic Recycling Agency", "url": "https://www.eoan.gr/" }
+      ],
+      "pros": [
+        { "name": "HERRCo – Hellenic Recovery Recycling Corporation", "url": "https://www.herrco.gr/" }
+      ]
+    },
+    {
+      "country": "HU",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "Concession system (MOHU – operator)", "url": "https://mohu.hu/" }
+      ],
+      "pros": [
+        { "name": "MOHU (packaging producer responsibility operator)", "url": "https://mohu.hu/" }
+      ]
+    },
+    {
+      "country": "IE",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "Environmental Protection Agency (EPA)", "url": "https://www.epa.ie/" }
+      ],
+      "pros": [
+        { "name": "Repak", "url": "https://repak.ie/" }
+      ]
+    },
+    {
+      "country": "LV",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "State Environmental Service (VVD)", "url": "https://www.vvd.gov.lv/en" }
+      ],
+      "pros": [
+        { "name": "Latvijas Zaļais punkts", "url": "https://www.zalais.lv/" },
+        { "name": "Zaļā josta", "url": "https://www.zalajosta.lv/" }
+      ]
+    },
+    {
+      "country": "LT",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "Environmental Protection Department (AAD)", "url": "https://aad.lrv.lt/en/" }
+      ],
+      "pros": [
+        { "name": "Žaliasis taškas (Green Dot LT)", "url": "https://zaliasistaskas.lt/" },
+        { "name": "Paku tvarkymo organizacija (PTO)", "url": "https://www.pto.lt/" }
+      ]
+    },
+    {
+      "country": "LU",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "Administration de l’environnement", "url": "https://environnement.public.lu/" }
+      ],
+      "pros": [
+        { "name": "Valorlux", "url": "https://www.valorlux.lu/" }
+      ]
+    },
+    {
+      "country": "MT",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "Environment & Resources Authority (ERA)", "url": "https://era.org.mt/" }
+      ],
+      "pros": [
+        { "name": "GreenPak", "url": "https://www.greenpak.com.mt/" },
+        { "name": "Green MT", "url": "https://www.greenmt.org/" }
+      ]
+    },
+    {
+      "country": "PL",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "GIOŚ – BDO register", "url": "https://bdo.mos.gov.pl/" }
+      ],
+      "pros": [
+        { "name": "Rekopol", "url": "https://rekopol.pl/" },
+        { "name": "Interzero Poland", "url": "https://www.interzero.pl/" }
+      ]
+    },
+    {
+      "country": "PT",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "APA – Portuguese Environment Agency", "url": "https://apambiente.pt/" }
+      ],
+      "pros": [
+        { "name": "Sociedade Ponto Verde (SPV)", "url": "https://www.pontoverde.pt/" },
+        { "name": "Novo Verde", "url": "https://www.novoverde.pt/" }
+      ]
+    },
+    {
+      "country": "RO",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "ANPM – National Environmental Protection Agency", "url": "https://www.anpm.ro/" }
+      ],
+      "pros": [
+        { "name": "GreenPoint Management", "url": "https://www.greenpoint.ro/" },
+        { "name": "FEPRA", "url": "https://www.fepra.ro/" }
+      ]
+    },
+    {
+      "country": "SK",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "Ministry of Environment of the Slovak Republic", "url": "https://www.minzp.sk/en/" }
+      ],
+      "pros": [
+        { "name": "NATUR-PACK", "url": "https://www.natur-pack.sk/" },
+        { "name": "ENVI-PAK", "url": "https://www.envipak.sk/" }
+      ]
+    },
+    {
+      "country": "SI",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "ARSO – Slovenian Environment Agency", "url": "https://www.arso.gov.si/en/" }
+      ],
+      "pros": [
+        { "name": "SLOPAK", "url": "https://www.slopak.si/" },
+        { "name": "Interzero Slovenia", "url": "https://www.interzero.si/" }
+      ]
+    },
+    {
+      "country": "SE",
+      "updatedAt": "2025-08-24T00:00:00.000Z",
+      "regulators": [
+        { "name": "Naturvårdsverket (Swedish EPA)", "url": "https://www.naturvardsverket.se/" }
+      ],
+      "pros": []
     }
   ]
 }
