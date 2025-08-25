@@ -1,0 +1,40 @@
+name: Daily Registry Updater
+
+on:
+  schedule:
+    - cron: "0 2 * * *"   # every day at 02:00 UTC
+  workflow_dispatch:       # allow manual run from the Actions tab
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Install deps only for the updater (faster, avoids root installs)
+      - name: Install updater deps
+        working-directory: updater
+        run: npm ci
+
+      # (Optional) Pull latest data into DB (DE/DK/HR/SE etc.)
+      - name: Run updater (DB upserts)
+        working-directory: updater
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
+        run: node src/main.mjs --all
+
+      # Export JSON and upload to Supabase Storage (public_/registry/registry.json)
+      - name: Export & upload registry.json
+        working-directory: updater
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
+        run: node src/export.mjs
