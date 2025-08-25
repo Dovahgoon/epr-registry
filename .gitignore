@@ -1,0 +1,38 @@
+# deps
+node_modules/
+
+# Next.js build outputs
+.next/
+out/
+
+# Updater outputs
+updater/out/
+
+# Env / secrets (DO NOT COMMIT)
+.env
+.env.local
+.env.*.local
+updater/.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors & OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Coverage / dist
+coverage/
+dist/
+
+# Vercel / tooling
+.vercel/
+
+# Supabase local artifacts (if you run local stack)
+supabase/.temp/
+supabase/.branches/

@@ -1,0 +1,17 @@
+/* src/app/globals.example.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional shadcn-like tokens (very light) */
+:root {
+  --background: 255 255 255;
+  --foreground: 17 24 39;
+}
+
+.dark {
+  --background: 10 10 10;
+  --foreground: 229 231 235;
+}
+
+body { background-color: rgb(var(--background)); color: rgb(var(--foreground)); }

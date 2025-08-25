@@ -1,0 +1,29 @@
+name: Update PROs (Top 5)
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 5 * * 1"
+permissions:
+  contents: write
+jobs:
+  update-pros:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm i cheerio node-fetch@3
+      - run: node scripts/update-pros.mjs
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/update-pros
+          title: "chore: update PROs (top 5 countries)"
+          commit-message: "chore: update PROs dataset via hardened scraper"
+          body: |
+            Automated update of PROs for DE, FR, IT, ES, NL (with retries/timeout).
+            Please review before merging.
+          add-paths: |
+            src/data/manual/pros.json
+            src/data/manual/countryDetails.override.json

@@ -1,0 +1,40 @@
+name,iso2,slug,region,currency,euMember
+Austria,AT,at,EU,EUR,true
+Belgium,BE,be,EU,EUR,true
+Bulgaria,BG,bg,EU,BGN,true
+Croatia,HR,hr,EU,EUR,true
+Cyprus,CY,cy,EU,EUR,true
+Czechia,CZ,cz,EU,CZK,true
+Denmark,DK,dk,EU,DKK,false
+Estonia,EE,ee,EU,EUR,true
+Finland,FI,fi,EU,EUR,true
+France,FR,fr,EU,EUR,true
+Germany,DE,de,EU,EUR,true
+Greece,GR,gr,EU,EUR,true
+Hungary,HU,hu,EU,HUF,true
+Ireland,IE,ie,EU,EUR,true
+Italy,IT,it,EU,EUR,true
+Latvia,LV,lv,EU,EUR,true
+Lithuania,LT,lt,EU,EUR,true
+Luxembourg,LU,lu,EU,EUR,true
+Malta,MT,mt,EU,EUR,true
+Netherlands,NL,nl,EU,EUR,true
+Poland,PL,pl,EU,PLN,true
+Portugal,PT,pt,EU,EUR,true
+Romania,RO,ro,EU,RON,true
+Slovakia,SK,sk,EU,EUR,true
+Slovenia,SI,si,EU,EUR,true
+Spain,ES,es,EU,EUR,true
+Sweden,SE,se,EU,SEK,true
+Iceland,IS,is,EEA,ISK,false
+Liechtenstein,LI,li,EEA,CHF,false
+Norway,NO,no,EEA,NOK,false
+Switzerland,CH,ch,Non-EU,CHF,false
+United Kingdom,GB,gb,Non-EU,GBP,false
+Albania,AL,al,WB,ALL,false
+Andorra,AD,ad,Other,EUR,false
+Bosnia and Herzegovina,BA,ba,WB,BAM,false
+Kosovo,XK,xk,WB,EUR,false
+Montenegro,ME,me,WB,EUR,false
+North Macedonia,MK,mk,WB,MKD,false
+Serbia,RS,rs,WB,RSD,false

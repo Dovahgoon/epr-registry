@@ -1,0 +1,4 @@
+/* Optional: if you still use native <select>, ensure readable options in dark mode */
+@media (prefers-color-scheme: dark) {
+  select, option { background-color: #0a0a0a !important; color: #e5e7eb !important; }
+}

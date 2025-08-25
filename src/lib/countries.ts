@@ -1,0 +1,32 @@
+export type Country = { iso: string; name: string };
+
+// EU27
+export const EU_COUNTRIES: Country[] = [
+  { iso: "AT", name: "Austria" },
+  { iso: "BE", name: "Belgium" },
+  { iso: "BG", name: "Bulgaria" },
+  { iso: "HR", name: "Croatia" },
+  { iso: "CY", name: "Cyprus" },
+  { iso: "CZ", name: "Czechia" },
+  { iso: "DK", name: "Denmark" },
+  { iso: "EE", name: "Estonia" },
+  { iso: "FI", name: "Finland" },
+  { iso: "FR", name: "France" },
+  { iso: "DE", name: "Germany" },
+  { iso: "GR", name: "Greece" },
+  { iso: "HU", name: "Hungary" },
+  { iso: "IE", name: "Ireland" },
+  { iso: "IT", name: "Italy" },
+  { iso: "LV", name: "Latvia" },
+  { iso: "LT", name: "Lithuania" },
+  { iso: "LU", name: "Luxembourg" },
+  { iso: "MT", name: "Malta" },
+  { iso: "NL", name: "Netherlands" },
+  { iso: "PL", name: "Poland" },
+  { iso: "PT", name: "Portugal" },
+  { iso: "RO", name: "Romania" },
+  { iso: "SK", name: "Slovakia" },
+  { iso: "SI", name: "Slovenia" },
+  { iso: "ES", name: "Spain" },
+  { iso: "SE", name: "Sweden" }
+];

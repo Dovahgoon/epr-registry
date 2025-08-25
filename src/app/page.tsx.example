@@ -1,0 +1,20 @@
+// Optional: use this Home page if you want the clickable tiles immediately.
+// If you already have a custom page, just import and render <FeatureTiles /> where you want.
+
+import FeatureTiles from '../components/FeatureTiles';
+import { fetchCountries } from '../lib/data';
+import CountryGrid from '../components/CountryGrid';
+
+export default async function HomePage() {
+  const countries = await fetchCountries();
+  return (
+    <div className="space-y-12">
+      <section className="hero p-6 md:p-10">
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight hero-title">EPR / PPWR Directory</h1>
+        <p className="mt-2 text-slate-700">A workflow-first platform: directory, calculators, alerts, evidence vault, and API.</p>
+      </section>
+      <FeatureTiles />
+      <CountryGrid countries={countries as any} />
+    </div>
+  );
+}

@@ -1,0 +1,54 @@
+{
+  "year": 2025,
+  "currency": "EUR/kg",
+  "sources": [
+    {
+      "id": "NL_VERPACT",
+      "countryIso": "NL",
+      "schemeId": "verpact",
+      "schemeName": "Verpact (Afvalfonds Verpakkingen)",
+      "type": "html",
+      "url": "https://www.verpact.nl/nl/tarieven",
+      "parser": "./src/parsers/nl-verpact.js",
+      "effectiveFrom": "2025-01-01",
+      "notes": "Rates page in Dutch; plastics split by rigid/flexible.",
+      "enabled": true
+    },
+    {
+      "id": "BE_FOSTPLUS",
+      "countryIso": "BE",
+      "schemeId": "fostplus",
+      "schemeName": "Fost Plus",
+      "type": "html",
+      "url": "https://www.fostplus.be/nl/leden/de-groene-punt-tarieven",
+      "parser": "./src/parsers/be-fostplus.js",
+      "effectiveFrom": "2025-01-01",
+      "notes": "Many plastic categories; this parser extracts a subset you map in the file.",
+      "enabled": true
+    },
+    {
+      "id": "IT_CONAI_2025",
+      "countryIso": "IT",
+      "schemeId": "conai",
+      "schemeName": "CONAI \u2013 Guida contributo ambientale 2025 (PDF)",
+      "type": "pdf",
+      "url": "https://www.cial.it/wp-content/uploads/2025/01/Guida_Conai_Contributo_Ambientale_2025.pdf",
+      "parser": "./src/parsers/it-conai.js",
+      "effectiveFrom": "2025-01-01",
+      "notes": "CONAI publishes \u20ac/t; parser converts to \u20ac/kg and maps bands.",
+      "enabled": true
+    },
+    {
+      "id": "ES_ECOEMBES",
+      "countryIso": "ES",
+      "schemeId": "ecoembes",
+      "schemeName": "Ecoembes \u2013 Precios",
+      "type": "html",
+      "url": "https://ecoembesempresas.com/precios",
+      "parser": "./src/parsers/es-ecoembes.js",
+      "effectiveFrom": "2025-01-01",
+      "notes": "Some pages preview 2026; parser is resilient to headings changes.",
+      "enabled": true
+    }
+  ]
+}

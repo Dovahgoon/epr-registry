@@ -1,0 +1,93 @@
+{
+  "countries": {
+    "expected_columns": [
+      "iso2",
+      "country",
+      "languages",
+      "ppwr_status",
+      "notes"
+    ],
+    "source_to_canonical": {
+      "country_code": "iso2",
+      "name": "name",
+      "authority_name": "authority_name",
+      "authority_url": "authority_url",
+      "register_name": "register_name",
+      "register_url": "register_url",
+      "unique_identifier_name": "unique_identifier_name",
+      "labeling_rules_summary": "labeling_rules_summary",
+      "last_verified_at": "last_verified_at",
+      "notes": "notes"
+    }
+  },
+  "pros": {
+    "expected_columns": [
+      "country",
+      "name",
+      "website",
+      "covered_materials",
+      "scope_b2c_b2b",
+      "signup_link",
+      "fee_model",
+      "contact_email",
+      "contact_phone"
+    ],
+    "source_to_canonical": {
+      "id": "id",
+      "country_code": "iso2",
+      "name": "name",
+      "url": "website",
+      "streams": "streams",
+      "b2c": "b2c",
+      "b2b": "b2b",
+      "onboarding_sla_days": "onboarding_sla_days",
+      "contact_email": "contact_email",
+      "contact_phone": "contact_phone",
+      "notes": "notes",
+      "last_verified_at": "last_verified_at"
+    }
+  },
+  "rules": {
+    "expected_columns": [
+      "country",
+      "registration_steps",
+      "ids_required",
+      "thresholds",
+      "reporting_frequency",
+      "eco_modulation",
+      "penalties",
+      "official_sources"
+    ],
+    "source_to_canonical": {
+      "id": "id",
+      "country_code": "iso2",
+      "topic": "topic",
+      "text": "text",
+      "source_url": "source_url",
+      "checked_at": "checked_at"
+    }
+  },
+  "consultants": {
+    "expected_columns": [
+      "country",
+      "firm",
+      "services",
+      "languages",
+      "website",
+      "contact_email",
+      "contact_phone"
+    ],
+    "source_to_canonical": {
+      "id": "id",
+      "name": "name",
+      "country_codes": "country_codes",
+      "services": "services",
+      "languages": "languages",
+      "url": "website",
+      "contact_email": "contact_email",
+      "verified": "verified",
+      "notes": "notes",
+      "last_verified_at": "last_verified_at"
+    }
+  }
+}

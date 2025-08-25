@@ -1,0 +1,119 @@
+{
+  "countries": [
+    "DE",
+    "FR",
+    "IT",
+    "ES",
+    "NL"
+  ],
+  "sources": {
+    "DE": [
+      {
+        "name": "ZSVR dual systems (info page)",
+        "url": "https://www.verpackungsregister.org/en/information-orientation/dual-systems",
+        "selector": "main a",
+        "attr": "href"
+      }
+    ],
+    "FR": [
+      {
+        "name": "Citeo",
+        "url": "https://www.citeo.com/",
+        "selector": "a",
+        "attr": "href"
+      },
+      {
+        "name": "Léko",
+        "url": "https://www.leko-organisme.fr/",
+        "selector": "a",
+        "attr": "href"
+      },
+      {
+        "name": "Adelphe",
+        "url": "https://www.adelphe.fr/",
+        "selector": "a",
+        "attr": "href"
+      }
+    ],
+    "IT": [
+      {
+        "name": "CONAI consorzi",
+        "url": "https://www.conai.org/chi-siamo/consorzi-di-filiera/",
+        "selector": "article a",
+        "attr": "href"
+      }
+    ],
+    "ES": [
+      {
+        "name": "Ecoembes",
+        "url": "https://www.ecoembes.com/",
+        "selector": "a",
+        "attr": "href"
+      },
+      {
+        "name": "Ecovidrio",
+        "url": "https://www.ecovidrio.es/",
+        "selector": "a",
+        "attr": "href"
+      }
+    ],
+    "NL": [
+      {
+        "name": "Afvalfonds Verpakkingen",
+        "url": "https://www.afvalfondsverpakkingen.nl/",
+        "selector": "a",
+        "attr": "href"
+      }
+    ]
+  },
+  "normalization": {
+    "blocklist": [
+      "cookie",
+      "policy",
+      "privacy",
+      "login",
+      "search",
+      "impressum",
+      "contact",
+      "terms",
+      "jobs",
+      "vacancies",
+      "newsletter",
+      "press",
+      "facebook",
+      "twitter",
+      "linkedin",
+      "youtube"
+    ],
+    "whitelistHints": [
+      "dual",
+      "system",
+      "organisme",
+      "eco",
+      "embes",
+      "pack",
+      "verpakk",
+      "producer",
+      "register",
+      "consorz",
+      "conai",
+      "citeo",
+      "leko",
+      "adelphe",
+      "ecovidrio",
+      "afvalfonds",
+      "lucid",
+      "zsvr",
+      "interseroh",
+      "gruener",
+      "green",
+      "punkt",
+      "belland",
+      "noventiz",
+      "prezero",
+      "veolia",
+      "landbell",
+      "reclay"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+Fee Calculator (Tools) — v1 interactive prototype
+=================================================
+
+Adds:
+- src/lib/tariffs.ts       (demo EUR/kg tariffs + labels)
+- src/app/tools/fee-calculator/page.tsx (client-side calculator with CSV export)
+
+Usage:
+1) Copy files into your project root (they live under /src/...).
+2) Ensure tsconfig.json has:
+   {
+     "compilerOptions": {
+       "baseUrl": ".",
+       "paths": { "@/*": ["src/*"] }
+     }
+   }
+3) Restart dev server: npm run dev
+4) Open /tools/fee-calculator
+
+Notes:
+- No `export const metadata` in the page (it’s a Client Component).
+- Tariff values are placeholders. Replace when connecting to your updater.

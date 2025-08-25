@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "year": 2025,
+  "currency": "EUR/kg",
+  "countries": {
+    "NL": {
+      "name": "Netherlands",
+      "schemes": [
+        {
+          "id": "verpact",
+          "name": "Verpact (Afvalfonds Verpakkingen)",
+          "effectiveFrom": "2025-01-01",
+          "sourceUrl": "https://www.verpact.nl/nl/tarieven",
+          "materials": {
+            "paper": 0.017,
+            "glass": 0.1,
+            "aluminum": 0.3,
+            "steel": 0.36,
+            "wood": 0.015
+          },
+          "plastic": {
+            "label": "Plastic",
+            "subMaterials": [
+              {
+                "code": "plastic_rigid",
+                "label": "Plastic (rigid)",
+                "rate": 1.22
+              },
+              {
+                "code": "plastic_flexible",
+                "label": "Plastic (flexible)",
+                "rate": 1.32
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "BE": {
+      "name": "Belgium",
+      "schemes": [
+        {
+          "id": "fostplus",
+          "name": "Fost Plus",
+          "effectiveFrom": "2025-01-01",
+          "sourceUrl": "https://www.fostplus.be/nl/leden/de-groene-punt-tarieven",
+          "materials": {
+            "paper": 0.1503,
+            "glass": 0.096,
+            "steel": 0.1117,
+            "aluminum": 0.0481
+          },
+          "plastic": {
+            "label": "Plastic (examples)",
+            "subMaterials": [
+              {
+                "code": "pet_bottles_clear",
+                "label": "PET bottles \u2013 clear",
+                "rate": 0.2718
+              },
+              {
+                "code": "pe_films",
+                "label": "PE films",
+                "rate": 1.2844
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "IT": {
+      "name": "Italy",
+      "schemes": [
+        {
+          "id": "conai",
+          "name": "CONAI \u2013 CAC",
+          "effectiveFrom": "2025-01-01",
+          "sourceUrl": "https://www.cial.it/wp-content/uploads/2025/01/Guida_Conai_Contributo_Ambientale_2025.pdf",
+          "materials": {
+            "paper": 0.065,
+            "glass": 0.015,
+            "aluminum": 0.012,
+            "steel": 0.005,
+            "wood": 0.007
+          },
+          "plastic": {
+            "label": "Plastic bands",
+            "subMaterials": [
+              {
+                "code": "A1_1",
+                "label": "Band A1.1",
+                "rate": 0.024
+              },
+              {
+                "code": "A1_2",
+                "label": "Band A1.2",
+                "rate": 0.09
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

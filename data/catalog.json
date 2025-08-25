@@ -1,0 +1,115 @@
+{
+  "countries": [
+    {
+      "iso2": "GR",
+      "name": "Greece"
+    },
+    {
+      "iso2": "RO",
+      "name": "Romania"
+    },
+    {
+      "iso2": "CY",
+      "name": "Cyprus"
+    },
+    {
+      "iso2": "DE",
+      "name": "Germany"
+    },
+    {
+      "iso2": "FR",
+      "name": "France"
+    },
+    {
+      "iso2": "ES",
+      "name": "Spain"
+    },
+    {
+      "iso2": "IT",
+      "name": "Italy"
+    },
+    {
+      "iso2": "NL",
+      "name": "Netherlands"
+    },
+    {
+      "iso2": "PL",
+      "name": "Poland"
+    }
+  ],
+  "pros": [
+    {
+      "countryIso2": "GR",
+      "name": "Example PRO Greece",
+      "type": "PRO"
+    },
+    {
+      "countryIso2": "RO",
+      "name": "Example PRO Romania",
+      "type": "PRO"
+    },
+    {
+      "countryIso2": "CY",
+      "name": "Example PRO Cyprus",
+      "type": "PRO"
+    },
+    {
+      "countryIso2": "DE",
+      "name": "Example Dual System A (Germany)",
+      "type": "Dual System"
+    },
+    {
+      "countryIso2": "DE",
+      "name": "Example Dual System B (Germany)",
+      "type": "Dual System"
+    }
+  ],
+  "rules": [
+    {
+      "countryIso2": "GR",
+      "regime": "EPR Packaging",
+      "law": "placeholder",
+      "notes": "placeholder"
+    },
+    {
+      "countryIso2": "RO",
+      "regime": "EPR Packaging",
+      "law": "placeholder",
+      "notes": "placeholder"
+    },
+    {
+      "countryIso2": "DE",
+      "regime": "Packaging EPR",
+      "law": "Packaging Act (VerpackG)",
+      "notes": "Registration with LUCID; system participation required"
+    },
+    {
+      "countryIso2": "DE",
+      "regime": "WEEE",
+      "law": "ElektroG",
+      "notes": "Foundation EAR registration required"
+    }
+  ],
+  "consultants": [
+    {
+      "countryIso2": "GR",
+      "name": "Example Compliance Advisors",
+      "email": "info@example.gr"
+    },
+    {
+      "countryIso2": "RO",
+      "name": "Romania EPR Consulting",
+      "email": "contact@example.ro"
+    },
+    {
+      "countryIso2": "DE",
+      "name": "DE EPR Advisors GmbH",
+      "email": "hello@example-de.de"
+    },
+    {
+      "countryIso2": "DE",
+      "name": "Berlin Compliance Services",
+      "email": "contact@berlin-compliance.example"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "registry-updater",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.mjs --help",
+    "all": "node src/main.mjs --all",
+    "country": "node src/main.mjs --country",
+    "export-json": "node src/export.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.56.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.6.1",
+    "zod": "^3.23.8"
+  }
+}

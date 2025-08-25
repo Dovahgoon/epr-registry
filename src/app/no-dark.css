@@ -1,0 +1,15 @@
+/* Force light theme; ignore any data-theme="dark" */
+:root,
+:root[data-theme='dark']{
+  --bg: #fafafc;
+  --fg: #0f172a; /* slate-900 */
+  --muted: #64748b; /* slate-500 */
+  --card: rgba(255,255,255,0.7);
+  --border: rgba(15,23,42,0.12);
+  --ring: rgba(99,102,241,0.35);
+}
+
+html, body { background: var(--bg); color: var(--fg); }
+
+/* Ensure the UA prefers light styling regardless of any prior toggle */
+html[data-theme="dark"] { color-scheme: light; }

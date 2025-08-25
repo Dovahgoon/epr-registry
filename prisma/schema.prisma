@@ -1,0 +1,80 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum RegulatorRole {
+  ministry
+  authority
+  register
+}
+
+model Country {
+  id         Int       @id @default(autoincrement())
+  iso2       String    @unique
+  name       String
+  slug       String    @unique
+  region     String?
+  currency   String?
+  euMember   Boolean   @default(false)
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  regulators        Regulator[]
+  producerRegister  ProducerRegister?
+  reporting         Reporting?
+  pros              Pro[]
+  laws              LawLink[]
+}
+
+model Regulator {
+  id        Int           @id @default(autoincrement())
+  country   Country       @relation(fields: [countryId], references: [id], onDelete: Cascade)
+  countryId Int
+  name      String
+  role      RegulatorRole
+  url       String?
+  createdAt DateTime      @default(now())
+}
+
+model ProducerRegister {
+  id        Int      @id @default(autoincrement())
+  country   Country  @relation(fields: [countryId], references: [id], onDelete: Cascade)
+  countryId Int      @unique
+  name      String
+  url       String?
+}
+
+model Reporting {
+  id          Int      @id @default(autoincrement())
+  country     Country  @relation(fields: [countryId], references: [id], onDelete: Cascade)
+  countryId   Int      @unique
+  frequencies String[]
+  portal      String?
+  notes       String?
+}
+
+model Pro {
+  id        Int      @id @default(autoincrement())
+  country   Country  @relation(fields: [countryId], references: [id], onDelete: Cascade)
+  countryId Int
+  name      String
+  url       String?
+  notes     String?
+
+  @@unique([countryId, name])
+}
+
+model LawLink {
+  id        Int      @id @default(autoincrement())
+  country   Country  @relation(fields: [countryId], references: [id], onDelete: Cascade)
+  countryId Int
+  title     String
+  year      Int?
+  url       String?
+}

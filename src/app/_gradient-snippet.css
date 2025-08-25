@@ -1,0 +1,22 @@
+/* --- gradient utilities (brand) ----------------------------------------- */
+/* A soft dual‑radial gradient we've been using: violet + sky accents */
+:root {
+  --app-gradient-1: radial-gradient(800px circle at 0% -10%,
+      rgba(99, 102, 241, 0.10), /* indigo-500 @ 10% */
+      rgba(99, 102, 241, 0.00) 40%);
+  --app-gradient-2: radial-gradient(700px circle at 100% -10%,
+      rgba(56, 189, 248, 0.10), /* sky-400 @ 10% */
+      rgba(56, 189, 248, 0.00) 42%);
+}
+
+/* Apply to full page wrapper */
+.bg-gradient-app {
+  background-image: var(--app-gradient-1), var(--app-gradient-2);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Optional: card elevation looks better over gradient */
+.card {
+  @apply rounded-2xl border border-border/60 bg-background/70 backdrop-blur-sm shadow-sm;
+}

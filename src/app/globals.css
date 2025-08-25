@@ -1,0 +1,92 @@
+/* Dark mode variables and base styles */
+:root{
+  --bg: #fafafc;
+  --fg: #0f172a; /* slate-900 */
+  --muted: #64748b; /* slate-500 */
+  --card: rgba(255,255,255,0.7);
+  --border: rgba(15,23,42,0.12);
+  --ring: rgba(99,102,241,0.35);
+}
+:root[data-theme='dark']{
+  --bg:#0b1020; /* deep navy */
+  --fg:#e2e8f0; /* slate-200 */
+  --muted:#94a3b8; /* slate-400 */
+  --card: rgba(8,12,24,0.6);
+  --border: rgba(226,232,240,0.14);
+  --ring: rgba(168,85,247,0.45);
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.brand-gradient {
+  background-image:
+    radial-gradient(1100px 720px at -12% -18%, rgba(196, 181, 253, 0.32), rgba(196, 181, 253, 0) 58%),
+    radial-gradient(1050px 650px at 112% -14%, rgba(244, 114, 182, 0.28), rgba(244, 114, 182, 0) 60%),
+    radial-gradient(1300px 800px at 50% 120%, rgba(251, 207, 232, 0.20), rgba(251, 207, 232, 0) 62%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* --- Header (nav) theming ----------------------------------------------- */
+.nav{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--border);
+  background: var(--card);              /* light: soft white */
+  backdrop-filter: blur(10px);
+}
+
+/* Darker, solid strip in dark mode */
+:root[data-theme='dark'] .nav{
+  background: rgba(10, 14, 24, 0.92);
+}
+
+.nav-inner{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Force header links to themed foreground; remove default blue/purple */
+.nav a,
+.nav a:visited{
+  color: var(--fg) !important;
+  text-decoration: none;
+}
+
+/* Brand title */
+.brand{
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+/* Tabs row */
+.tabs{
+  display: flex;
+  gap: 18px;
+  margin-left: 24px;
+}
+
+.tab{
+  color: var(--fg);
+  opacity: .9;
+  padding: 6px 6px;
+  border-radius: 8px;
+  transition: background .15s ease, opacity .15s ease;
+}
+
+:root[data-theme='dark'] .tab:hover{
+  background: rgba(255, 255, 255, 0.06);
+  opacity: 1;
+}
+:root:not([data-theme='dark']) .tab:hover{
+  background: rgba(15, 23, 42, 0.06);
+  opacity: 1;
+}

@@ -1,0 +1,536 @@
+{
+  "countries": [
+    {
+      "iso2": "DE",
+      "country": "",
+      "languages": "",
+      "ppwr_status": "",
+      "notes": "Follow official ZSVR guidance for system participation and reporting."
+    },
+    {
+      "iso2": "FR",
+      "country": "",
+      "languages": "",
+      "ppwr_status": "",
+      "notes": "Use ADEME for official guidance and eco-organisme lists."
+    },
+    {
+      "iso2": "ES",
+      "country": "",
+      "languages": "",
+      "ppwr_status": "",
+      "notes": "Use MITECO portal and procedures for registration and reporting."
+    },
+    {
+      "iso2": "IT",
+      "country": "",
+      "languages": "",
+      "ppwr_status": "",
+      "notes": "Legal basis in Legislative Decree 152/2006; consortia per material."
+    },
+    {
+      "iso2": "NL",
+      "country": "",
+      "languages": "",
+      "ppwr_status": "",
+      "notes": "See business.gov.nl guidance and Verpact producer info."
+    },
+    {
+      "iso2": "PL",
+      "country": "",
+      "languages": "",
+      "ppwr_status": "",
+      "notes": "Use official BDO portal for registration and guidance."
+    }
+  ],
+  "pros": [
+    {
+      "country": "",
+      "name": "BellandVision GmbH",
+      "website": "https://www.bellandvision.de/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Der Grüne Punkt – Duales System Deutschland GmbH",
+      "website": "https://www.verpackgo.de/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "EKO-PUNKT GmbH & Co. KG",
+      "website": "https://www.eko-punkt.de/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Interzero Recycling Alliance / Lizenzero",
+      "website": "https://www.lizenzero.de/en",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Landbell AG für Rückhol-Systeme",
+      "website": "https://www.landbell.de/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Noventiz Dual GmbH",
+      "website": "https://www.noventiz.de/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "PreZero Dual GmbH",
+      "website": "https://www.prezero.de/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Reclay Systems GmbH",
+      "website": "https://www.reclay-group.com/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Recycling Dual GmbH",
+      "website": "https://www.recycling-dual.de/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Zentek GmbH & Co. KG",
+      "website": "https://www.zentek.de/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Citeo",
+      "website": "https://www.citeo.com/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Adelphe",
+      "website": "https://www.adelphe.fr/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Léko",
+      "website": "https://www.leko-organisme.fr/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Ecoembes",
+      "website": "https://www.ecoembes.com/en",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Ecovidrio",
+      "website": "https://www.ecovidrio.es/en",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "CONAI",
+      "website": "https://www.conai.org/en/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "CIAL (Aluminium)",
+      "website": "https://www.cial.it/en/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "COMIECO (Paper/Cardboard)",
+      "website": "https://www.comieco.org/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "COREPLA (Plastic)",
+      "website": "https://www.corepla.it/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "COREVE (Glass)",
+      "website": "https://www.coreve.it/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "RICREA (Steel)",
+      "website": "https://www.consorzioricrea.org/en/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "RILEGNO (Wood)",
+      "website": "https://www.rilegno.it/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Verpact (formerly Afvalfonds Verpakkingen)",
+      "website": "https://www.verpact.nl/en/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Rekopol Organizacja Odzysku Opakowań S.A.",
+      "website": "https://rekopol.pl/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Interzero Organizacja Odzysku Opakowań S.A.",
+      "website": "https://interzero.pl/en/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "name": "Biosystem Organizacja Odzysku Opakowań S.A.",
+      "website": "https://www.biosystem.pl/",
+      "covered_materials": "",
+      "scope_b2c_b2b": "",
+      "signup_link": "",
+      "fee_model": "",
+      "contact_email": "",
+      "contact_phone": ""
+    }
+  ],
+  "rules": [
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    },
+    {
+      "country": "",
+      "registration_steps": "",
+      "ids_required": "",
+      "thresholds": "",
+      "reporting_frequency": "",
+      "eco_modulation": "",
+      "penalties": "",
+      "official_sources": ""
+    }
+  ],
+  "consultants": [
+    {
+      "country": "",
+      "firm": "",
+      "services": "EPR advisory;Registration support;Reporting",
+      "languages": "EN;DE;FR;ES;IT",
+      "website": "https://www.ecosistant.eu/",
+      "contact_email": "",
+      "contact_phone": ""
+    },
+    {
+      "country": "",
+      "firm": "",
+      "services": "EPR advisory;Dual system onboarding;Reporting",
+      "languages": "DE;EN",
+      "website": "https://deutsche-recycling.de/",
+      "contact_email": "",
+      "contact_phone": ""
+    }
+  ]
+}

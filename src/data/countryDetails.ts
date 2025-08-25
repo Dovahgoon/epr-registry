@@ -1,0 +1,957 @@
+// src/data/countryDetails.ts
+// Auto-generated from user's countryDetails.json — do not edit by hand.
+// If you need to update content, update the JSON and re-run the generator.
+
+export type Linkish = string | { name?: string; label?: string; url?: string };
+
+// Keep fields optional so the UI can read absent keys without TS errors
+export interface CountryDetails {
+  iso?: string;
+  name?: string;
+  notes?: string;
+  schemes?: string[];
+
+  overview?: {
+    status?: string;
+    scope?: string;
+  };
+
+  producerRegister?: Linkish;
+  register?: Linkish;
+
+  regulators?: Linkish[];
+  regulatorsAndRegisters?: Linkish[];
+
+  pros?: Linkish[];
+  organizations?: Linkish[];
+  prosPackaging?: Linkish[];
+
+  reporting?: {
+    frequencies?: string[];
+    portal?: Linkish;
+    methods?: string[];
+    deadlines?: string[];
+    notes?: string;
+  };
+  reportingFrequencies?: string[];
+
+  links?: Linkish[];
+
+  // Allow any extra keys used by the UI without failing the build
+  [k: string]: any;
+}
+
+export const COUNTRY_DETAILS: Record<string, CountryDetails> = {
+  "FI": {
+    iso: "FI",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "Producer Register (Pirkanmaa ELY Centre)",
+      url: "https://www.ely-keskus.fi/"
+    },
+    regulators: [{
+        name: "Pirkanmaa ELY Centre",
+        url: "https://www.ely-keskus.fi/"
+      }],
+    reporting: {
+      frequencies: ["annual"],
+      notes: "Reporting via RINKI producer portal."
+    },
+    pros: [{
+        name: "RINKI",
+        url: "https://www.rinkiin.fi/"
+      }],
+    links: [{
+        label: "ELY",
+        url: "https://www.ely-keskus.fi/"
+      }]
+  },
+  "DE": {
+    iso: "DE",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "LUCID Packaging Register (ZSVR)",
+      url: "https://lucid.verpackungsregister.org/"
+    },
+    regulators: [{
+        name: "ZSVR",
+        url: "https://www.verpackungsregister.org/"
+      }],
+    reporting: {
+      frequencies: ["annual"],
+      notes: "Report to PRO and ZSVR."
+    },
+    pros: [{
+        name: "Der Grüne Punkt (DSD)",
+        url: "https://www.gruener-punkt.de/"
+      }, {
+        name: "Interseroh+",
+        url: "https://www.interseroh.plus/"
+      }, {
+        name: "Interseroh+ (Interzero)",
+        url: "https://www.interseroh.plus/"
+      }, {
+        name: "BellandVision GmbH",
+        url: "https://www.bellandvision.de/"
+      }, {
+        name: "Zentek",
+        url: "https://www.zentek.de/"
+      }, {
+        name: "NOVENTIZ Dual",
+        url: "https://www.noventiz.de/dual-system/"
+      }, {
+        name: "PreZero Dual",
+        url: "https://www.prezero.com/de/loesungen/dual-system"
+      }, {
+        name: "Veolia Dual",
+        url: "https://www.veolia.de/dual"
+      }, {
+        name: "Landbell System",
+        url: "https://www.landbell.de/"
+      }, {
+        name: "Reclay Systems (Redual)",
+        url: "https://www.reclay-group.com/de/geschaeftsbereiche/dual-system/"
+      }, {
+        name: "verpackungsregister",
+        url: "https://www.verpackungsregister.org/en/"
+      }],
+    links: [{
+        label: "Packaging Act",
+        url: "https://www.verpackungsregister.org/en/packaging-act"
+      }]
+  },
+  "FR": {
+    iso: "FR",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "Registre PRO (ADEME)",
+      url: "https://registre-pro.numerique.gouv.fr/"
+    },
+    regulators: [{
+        name: "ADEME / Ministry of Ecological Transition",
+        url: "https://www.ecologie.gouv.fr/"
+      }],
+    reporting: {
+      frequencies: ["annual"],
+      notes: "Eco-modulations apply."
+    },
+    pros: [{
+        name: "Citeo",
+        url: "https://www.citeo.com/"
+      }, {
+        name: "Léko",
+        url: "https://www.leko-organisme.fr/"
+      }, {
+        name: "Adelphe (brand of Citeo)",
+        url: "https://www.adelphe.fr/"
+      }, {
+        name: "Eco concevoir"
+      }, {
+        name: "Nouveaux cahiers du hors foyer : enseignements, recommandations et bonnes pratiques pour choisir son dispositif"
+      }, {
+        name: "Les cahiers du hors foyer Découvrez les bonnes pratiques et recommandations de Citeo pour développer la collecte hors foyers !"
+      }, {
+        name: "Adelphe (Citeo)",
+        url: "https://www.adelphe.fr/"
+      }, {
+        name: "on-ne-lache-rien.citeo",
+        url: "https://on-ne-lache-rien.citeo.com/#open-modal-guide-du-tri"
+      }, {
+        name: "why become citeo client",
+        url: "https://www.citeo.com/why-become-citeo-client"
+      }, {
+        name: "citeo entreprise mission",
+        url: "https://www.citeo.com/citeo-entreprise-mission"
+      }, {
+        name: "talents.citeo",
+        url: "https://talents.citeo.com/"
+      }, {
+        name: "pourquoi adherer a citeo",
+        url: "https://v2.citeo.com/pourquoi-adherer-a-citeo/"
+      }, {
+        name: "ecoconcevoir",
+        url: "https://v2.citeo.com/ecoconcevoir/"
+      }, {
+        name: "citeo.guidedutri",
+        url: "https://citeo.guidedutri.fr/"
+      }, {
+        name: "citeofrance",
+        url: "https://www.facebook.com/citeofrance"
+      }, {
+        name: "clients-emballages.citeo",
+        url: "https://clients-emballages.citeo.com/fr/public/login"
+      }, {
+        name: "clients.citeo",
+        url: "https://clients.citeo.com/fr/public/registration/type"
+      }, {
+        name: "visite-centre-tri.citeo",
+        url: "https://visite-centre-tri.citeo.com/"
+      }, {
+        name: "territoires.citeo",
+        url: "https://territoires.citeo.com/"
+      }, {
+        name: "adelphe",
+        url: "https://www.adelphe.fr/"
+      }, {
+        name: "citeopro",
+        url: "https://www.citeopro.com/"
+      }, {
+        name: "lamediatheque.citeo",
+        url: "http://lamediatheque.citeo.com/"
+      }, {
+        name: "leko-organisme",
+        url: "https://www.leko-organisme.fr/"
+      }, {
+        name: "producer-app.affiliate.leko",
+        url: "https://producer-app.affiliate.leko.eco/fr"
+      }, {
+        name: "pourquoi leko",
+        url: "https://www.leko-organisme.fr/pourquoi-leko/"
+      }, {
+        name: "leko",
+        url: "https://www.instagram.com/leko.organisme/"
+      }, {
+        name: "@leko",
+        url: "https://www.tiktok.com/@leko.organisme"
+      }, {
+        name: "lancement de notre plateforme la leko academy",
+        url: "https://www.leko-organisme.fr/lancement-de-notre-plateforme-la-leko-academy/"
+      }, {
+        name: "decouvrez la leko academy notre plateforme de formation",
+        url: "https://www.leko-organisme.fr/decouvrez-la-leko-academy-notre-plateforme-de-formation/"
+      }, {
+        name: "leko sensibilise au tri sur we love green yardland et peacock society",
+        url: "https://www.leko-organisme.fr/leko-sensibilise-au-tri-sur-we-love-green-yardland-et-peacock-society/"
+      }, {
+        name: "leko lance son appel a projets reemploi 2025",
+        url: "https://www.leko-organisme.fr/leko-lance-son-appel-a-projets-reemploi-2025/"
+      }, {
+        name: "le club des collectivites leko au symevad 24 25 juin 2025",
+        url: "https://www.leko-organisme.fr/le-club-des-collectivites-leko-au-symevad-24-25-juin-2025/"
+      }, {
+        name: "nos tables de tri a we love green",
+        url: "https://www.leko-organisme.fr/nos-tables-de-tri-a-we-love-green/"
+      }, {
+        name: "leco conception",
+        url: "https://www.leko-organisme.fr/leco-conception/"
+      }, {
+        name: "activate by reclay",
+        url: "https://www.leko-organisme.fr/activate-by-reclay/"
+      }, {
+        name: "AdelpheOfficiel",
+        url: "https://www.facebook.com/AdelpheOfficiel/"
+      }, {
+        name: "Adelphe fr",
+        url: "https://twitter.com/Adelphe_fr"
+      }, {
+        name: "monespace.adelphe",
+        url: "https://monespace.adelphe.fr/fr/public/login"
+      }, {
+        name: "millesime.adelphe",
+        url: "https://millesime.adelphe.fr/"
+      }],
+    links: [{
+        label: "Registre PRO",
+        url: "https://registre-pro.numerique.gouv.fr/"
+      }]
+  },
+  "IE": {
+    iso: "IE",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "Producer Responsibility (EPA Ireland)",
+      url: "https://www.epa.ie/"
+    },
+    regulators: [{
+        name: "EPA Ireland",
+        url: "https://www.epa.ie/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "Repak",
+        url: "https://www.repak.ie/"
+      }],
+    links: [{
+        label: "EPA",
+        url: "https://www.epa.ie/"
+      }]
+  },
+  "PL": {
+    iso: "PL",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "BDO Register",
+      url: "https://bdo.mos.gov.pl/"
+    },
+    regulators: [{
+        name: "Ministry of Climate and Environment",
+        url: "https://www.gov.pl/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "Rekopol",
+        url: "https://www.rekopol.pl/"
+      }, {
+        name: "Interseroh Organizacja Odzysku Opakowań (Interzero)",
+        url: "https://interzero.pl/"
+      }, {
+        name: "EKO-PUNKT Organizacja Odzysku Opakowań",
+        url: "https://ekopunkt.pl/"
+      }, {
+        name: "EKO-CYKL Organizacja Odzysku Opakowań",
+        url: "https://www.ekocykl.org/"
+      }],
+    links: [{
+        label: "BDO Portal",
+        url: "https://bdo.mos.gov.pl/"
+      }]
+  },
+  "NL": {
+    iso: "NL",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "UPV Verpakkingen / Afvalfonds",
+      url: "https://www.afvalfondsverpakkingen.nl/"
+    },
+    regulators: [{
+        name: "Afvalfonds Verpakkingen",
+        url: "https://www.afvalfondsverpakkingen.nl/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "Afvalfonds Verpakkingen",
+        url: "https://www.afvalfondsverpakkingen.nl/"
+      }, {
+        name: "Verpakkingen"
+      }, {
+        name: "Verpakkingencatalogus"
+      }, {
+        name: "Uw verpakkingen"
+      }, {
+        name: "Inloggen op Packtool"
+      }, {
+        name: "afvalfondsverpakkingen",
+        url: "https://www.afvalfondsverpakkingen.nl/nl/"
+      }],
+    links: [{
+        label: "Afvalfonds",
+        url: "https://www.afvalfondsverpakkingen.nl/"
+      }]
+  },
+  "AT": {
+    iso: "AT",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "EDM Portal – Packaging",
+      url: "https://www.edm.gv.at/"
+    },
+    regulators: [{
+        name: "BMK",
+        url: "https://www.bmk.gv.at/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "ARA",
+        url: "https://www.ara.at/"
+      }, {
+        name: "ARA (Altstoff Recycling Austria)",
+        url: "https://www.ara.at/"
+      }],
+    links: [{
+        label: "EDM",
+        url: "https://www.edm.gv.at/"
+      }]
+  },
+  "BE": {
+    iso: "BE",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "Interregional Packaging Commission (IRPC/IVCIE)",
+      url: "https://www.ivcie.be/"
+    },
+    regulators: [{
+        name: "IRPC/IVCIE",
+        url: "https://www.ivcie.be/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "Fost Plus",
+        url: "https://www.fostplus.be/"
+      }, {
+        name: "Valipac",
+        url: "https://www.valipac.be/"
+      }],
+    links: [{
+        label: "IRPC",
+        url: "https://www.ivcie.be/"
+      }]
+  },
+  "ES": {
+    iso: "ES",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "Registro de productores de productos",
+      url: "https://www.miteco.gob.es/"
+    },
+    regulators: [{
+        name: "MITECO",
+        url: "https://www.miteco.gob.es/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "Ecoembes",
+        url: "https://www.ecoembes.com/"
+      }, {
+        name: "Ecovidrio",
+        url: "https://www.ecovidrio.es/"
+      }, {
+        name: "Ecoembes (household)",
+        url: "https://www.ecoembes.com/"
+      }, {
+        name: "Ecovidrio (glass)",
+        url: "https://www.ecovidrio.es/"
+      }, {
+        name: "Equilibrio ecológico"
+      }, {
+        name: "MITECO impulsa 27 comunidades energéticas Las propuestas seleccionadas suman 68 MW de nueva potencia de generación renovable, 13 MW de térmica y 56 kWh de almacenamiento, así como 57 nuevos puntos de recarga de vehículos eléctricos."
+      }, {
+        name: "MITECO recibe 485 propuestas ambientales La Fundación Biodiversidad ha finalizado en julio los plazos de presentación de solicitudes de cuatro convocatorias de ayudas con una amplia respuesta de propuestas recibidas, con un importe total solicitado de más de 260 millones de euros"
+      }, {
+        name: "MITECO refuerza suministro eléctrico en Canarias La nueva orden reconoce los costes de 137,8 MW de potencia gestionable en Gran Canaria, de 71,6 MW de Tenerife y de 32,8 MW en Fuerteventura."
+      }, {
+        name: "Récord histórico de aves en Tablas de Daimiel El parque alcanza cifras muy positivas en número y variedad de aves acuáticas. La reproducción de especies emblemáticas y amenazadas marca máximos de la serie histórica reciente. El éxito del censo reafirma el valor ecológico del humedal y el esfuerzo de conservación"
+      }, {
+        name: "Conoce ecoembes QUÉ ES ECOEMBES Nuestra razón de ser y propósito Quiénes somos Portal de transparencia Colaboradores y alianzas Junta General de Accionistas Informes anuales Más allá del reciclaje en el hogar PROYECTOS QUE CREAN VALOR Circularity Day Medioambiental Social Educación Innovación Otros ámbitos Trabaja con nosotros"
+      }, {
+        name: "Conoce ecoembes"
+      }, {
+        name: "QUÉ ES ECOEMBES Nuestra razón de ser y propósito Quiénes somos Portal de transparencia Colaboradores y alianzas Junta General de Accionistas Informes anuales Más allá del reciclaje en el hogar"
+      }, {
+        name: "QUÉ ES ECOEMBES"
+      }, {
+        name: "Empresas SI ERES EMPRESA Haz más fácil el reciclaje de envases de tu negocio con Ecoembes. Descubre nuestras soluciones a medida para gestionar residuos y fomentar la economía circular. IR A LA WEB"
+      }, {
+        name: "Administraciones Públicas TRÁMITES Y GESTIONES GUÍAS Y RECOMENDACIONES RECURSOS Y PROYECTOS PLANTAS DE SELECCIÓN PROPUESTA NUEVO CONVENIO ACCESO AL ÁREA PRIVADA"
+      }, {
+        name: "GUÍAS Y RECOMENDACIONES"
+      }, {
+        name: "Recicladores y recogidas fuera del hogar RECICLADORES Homologación Especificaciones técnicas Trazabilidad Convocatorias y adjudicaciones Documentación y contratos modelo RECOGIDAS FUERA DEL HOGAR Recogida Material de concienciación ACCESO AL ÁREA PRIVADA"
+      }, {
+        name: "Recicladores y recogidas fuera del hogar"
+      }, {
+        name: "RECOGIDAS FUERA DEL HOGAR Recogida Material de concienciación"
+      }, {
+        name: "RECOGIDAS FUERA DEL HOGAR"
+      }, {
+        name: "Recogida"
+      }, {
+        name: "Más allá de las 3Rs Si ya conoces las 3Rs  Reducir, Reutilizar, Reciclar  y quieres ir más allá para fomentar la economía circular, ¡amplía tu vocabulario sostenible! Conoce las otras 4 y aprovecha al máximo todos los recursos a tu alcance."
+      }, {
+        name: "Ecoembes Empleo"
+      }, {
+        name: "MOVISAT obtiene el sello de calidad tecnológica “Works with Ecoembes”"
+      }, {
+        name: "Ecoembes supera los 20.000 clientes en un año clave para la circularidad de las empresas"
+      }, {
+        name: "TRABAJAMOS EN Recogida Contenedores Hostelería y restauración Tratamiento y venta Prevención Innovación Sostenibilidad"
+      }, {
+        name: "Ecovidrio galardona a los diez establecimientos hosteleros de la costa española más comprometidos con la sostenibilidad"
+      }, {
+        name: "Ecovidrio y el Ayuntamiento de Toledo presentan el plan integral ‘Toledo Recicla Vidrio’ para incrementar en un 50% la recogida selectiva de envases de vidrio en la ciudad"
+      }, {
+        name: "Ecovidrio lanza Ecovidrio Administraciones: Transparencia, innovación y tecnología en la gestión de los residuos de envases de vidrio"
+      }, {
+        name: "#ecosabios"
+      }, {
+        name: "Ir a Ecosabios >"
+      }, {
+        name: "Ecoembes (household packaging)",
+        url: "https://www.ecoembes.com/"
+      }, {
+        name: "ecoembestransparencia",
+        url: "https://www.ecoembestransparencia.com/"
+      }, {
+        name: "ecoembesempresas",
+        url: "https://ecoembesempresas.com/"
+      }, {
+        name: "ecoembesempleo",
+        url: "https://ecoembesempleo.es/"
+      }, {
+        name: "@ecoembes",
+        url: "https://www.tiktok.com/@ecoembes"
+      }, {
+        name: "ecoembes com",
+        url: "https://www.twitter.com/ecoembes_com"
+      }, {
+        name: "ecoembesthecircularcampus",
+        url: "https://ecoembesthecircularcampus.com/"
+      }, {
+        name: "serviciosaempresas.ecovidrio",
+        url: "https://serviciosaempresas.ecovidrio.es/"
+      }, {
+        name: "agora.ecovidrio",
+        url: "https://agora.ecovidrio.es/"
+      }, {
+        name: "portal ecovidrio administraciones",
+        url: "https://www.ecovidrio.es/portal-ecovidrio-administraciones"
+      }, {
+        name: "ecolatras",
+        url: "https://www.ecolatras.es/"
+      }, {
+        name: "ecosabios",
+        url: "https://ecosabios.com/"
+      }, {
+        name: "@ecovidrio ",
+        url: "https://www.tiktok.com/@ecovidrio_"
+      }],
+    links: [{
+        label: "RD 1055/2022",
+        url: "https://www.boe.es/"
+      }]
+  },
+  "IT": {
+    iso: "IT",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "CONAI",
+      url: "https://www.conai.org/"
+    },
+    regulators: [{
+        name: "CONAI",
+        url: "https://www.conai.org/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "CONAI",
+        url: "https://www.conai.org/"
+      }, {
+        name: "CONAI (umbrella)",
+        url: "https://www.conai.org/"
+      }, {
+        name: "CIAL (Aluminium)",
+        url: "https://www.cial.it/"
+      }, {
+        name: "COMIECO (Paper)",
+        url: "https://www.comieco.org/"
+      }, {
+        name: "COREPLA (Plastics)",
+        url: "https://www.corepla.it/"
+      }, {
+        name: "COREVE (Glass)",
+        url: "https://www.coreve.it/"
+      }, {
+        name: "RICREA (Steel)",
+        url: "https://www.ricrea.org/"
+      }, {
+        name: "RILEGNO (Wood)",
+        url: "https://www.rilegno.it/"
+      }, {
+        name: "BIOREPACK (Compostables)",
+        url: "https://www.biorepack.org/"
+      }],
+    links: [{
+        label: "CONAI Guide",
+        url: "https://www.conai.org/"
+      }]
+  },
+  "SE": {
+    iso: "SE",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "Naturvårdsverket Producer Register",
+      url: "https://www.naturvardsverket.se/"
+    },
+    regulators: [{
+        name: "Naturvårdsverket",
+        url: "https://www.naturvardsverket.se/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "Authorized PROs",
+        url: "https://www.naturvardsverket.se/"
+      }, {
+        name: "FTI (legacy system; see Naturvårdsverket updates)",
+        url: "https://www.ftiab.se/"
+      }, {
+        name: "Svensk Plaståtervinning (plastics)",
+        url: "https://www.svenskplastatervinning.se/"
+      }],
+    links: [{
+        label: "NVV",
+        url: "https://www.naturvardsverket.se/"
+      }]
+  },
+  "CZ": {
+    iso: "CZ",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "MŽP Register",
+      url: "https://www.mzp.cz/"
+    },
+    regulators: [{
+        name: "MŽP",
+        url: "https://www.mzp.cz/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "EKO-KOM",
+        url: "https://www.ekokom.cz/"
+      }],
+    links: [{
+        label: "MŽP",
+        url: "https://www.mzp.cz/"
+      }]
+  },
+  "PT": {
+    iso: "PT",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "APA Register",
+      url: "https://apambiente.pt/"
+    },
+    regulators: [{
+        name: "APA",
+        url: "https://apambiente.pt/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "Sociedade Ponto Verde",
+        url: "https://www.pontoverde.pt/"
+      }, {
+        name: "Novo Verde",
+        url: "https://www.novoverde.pt/"
+      }],
+    links: [{
+        label: "APA",
+        url: "https://apambiente.pt/"
+      }]
+  },
+  "RO": {
+    iso: "RO",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "ANPM Register",
+      url: "http://www.anpm.ro/"
+    },
+    regulators: [{
+        name: "ANPM",
+        url: "http://www.anpm.ro/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "GreenPoint",
+        url: "https://www.greenpoint.ro/"
+      }, {
+        name: "FEPRA",
+        url: "https://www.fepra.ro/"
+      }, {
+        name: "GreenPoint Management (OIREP)",
+        url: "https://www.greenpoint.ro/"
+      }, {
+        name: "FEPRA (OIREP)",
+        url: "https://www.fepra.ro/"
+      }, {
+        name: "Eco Synergy (OIREP)",
+        url: "https://www.ecosynergy.ro/"
+      }],
+    links: [{
+        label: "ANPM",
+        url: "http://www.anpm.ro/"
+      }]
+  },
+  "GR": {
+    iso: "GR",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "EOAN Register",
+      url: "https://www.eoan.gr/"
+    },
+    regulators: [{
+        name: "EOAN",
+        url: "https://www.eoan.gr/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "HERRCO",
+        url: "https://www.herrco.gr/"
+      }],
+    links: [{
+        label: "EOAN",
+        url: "https://www.eoan.gr/"
+      }]
+  },
+  "HU": {
+    iso: "HU",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "MOHU System",
+      url: "https://mohu.hu/"
+    },
+    regulators: [{
+        name: "MOHU",
+        url: "https://mohu.hu/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "MOHU",
+        url: "https://mohu.hu/"
+      }, {
+        name: "MOHU (Concession System)",
+        url: "https://mohu.hu/"
+      }],
+    links: [{
+        label: "Guidance",
+        url: "https://mohu.hu/"
+      }]
+  },
+  "LT": {
+    iso: "LT",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "AAA Register",
+      url: "https://aaa.lrv.lt/"
+    },
+    regulators: [{
+        name: "AAA",
+        url: "https://aaa.lrv.lt/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "Žaliasis taškas",
+        url: "https://www.zaliasistaskas.lt/"
+      }, {
+        name: "PTO",
+        url: "https://www.pto.lt/"
+      }],
+    links: [{
+        label: "AAA",
+        url: "https://aaa.lrv.lt/"
+      }]
+  },
+  "LV": {
+    iso: "LV",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    producerRegister: {
+      name: "VVD Register",
+      url: "https://www.vvd.gov.lv/"
+    },
+    regulators: [{
+        name: "VVD",
+        url: "https://www.vvd.gov.lv/"
+      }],
+    reporting: {
+      frequencies: ["annual"]
+    },
+    pros: [{
+        name: "Latvijas Zaļais punkts",
+        url: "https://www.zalais.lv/"
+      }, {
+        name: "Zaļā josta",
+        url: "https://www.zalajosta.lv/"
+      }],
+    links: [{
+        label: "VVD",
+        url: "https://www.vvd.gov.lv/"
+      }]
+  },
+  "BG": {
+    iso: "BG",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    pros: [{
+        name: "ECOPACK Bulgaria",
+        url: "https://www.ecopack.bg/"
+      }, {
+        name: "ECOBULPACK",
+        url: "https://www.ecobulpack.bg/"
+      }]
+  },
+  "HR": {
+    iso: "HR",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    pros: [{
+        name: "Authorized packaging schemes (FZOEU)",
+        url: "https://www.fzoeu.hr/"
+      }]
+  },
+  "CY": {
+    iso: "CY",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    pros: [{
+        name: "Green Dot Cyprus",
+        url: "https://www.greendot.com.cy/"
+      }]
+  },
+  "DK": {
+    iso: "DK",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    pros: [{
+        name: "Authorized schemes (DPA-System)",
+        url: "https://producentansvar.dk/"
+      }]
+  },
+  "EE": {
+    iso: "EE",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    pros: [{
+        name: "ETO (Eesti Taaskasutusorganisatsioon)",
+        url: "https://www.eto.ee/"
+      }, {
+        name: "Eesti Pakendiringlus",
+        url: "https://www.pakendiringlus.ee/"
+      }]
+  },
+  "LU": {
+    iso: "LU",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    pros: [{
+        name: "Valorlux",
+        url: "https://www.valorlux.lu/"
+      }]
+  },
+  "MT": {
+    iso: "MT",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    pros: [{
+        name: "GreenPak",
+        url: "https://www.greenpak.com.mt/"
+      }, {
+        name: "GreenMT",
+        url: "https://www.greenmt.org/"
+      }]
+  },
+  "SK": {
+    iso: "SK",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    pros: [{
+        name: "ENVI-PAK",
+        url: "https://www.envipak.sk/"
+      }, {
+        name: "NATUR-PACK",
+        url: "https://www.naturpack.sk/"
+      }]
+  },
+  "SI": {
+    iso: "SI",
+    overview: {
+      status: "active",
+      scope: "Packaging"
+    },
+    pros: [{
+        name: "SLOPAK",
+        url: "https://www.slopak.si/"
+      }]
+  }
+};
+
+export const countryDetails = COUNTRY_DETAILS;
+
+export function getCountryDetails(iso: string): CountryDetails | undefined {
+  if (!iso) return undefined;
+  return COUNTRY_DETAILS[iso.toUpperCase()];
+}

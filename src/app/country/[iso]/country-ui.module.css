@@ -1,0 +1,61 @@
+.countryWrap { max-width: 1100px; margin: 0 auto; padding: 20px; }
+.countryHeader { display:flex; flex-direction:column; gap:8px; margin-bottom:16px; }
+.countryCode {
+  font-size: 28px; font-weight: 750; letter-spacing:-0.02em;
+  background: linear-gradient(90deg,#7c3aed 0%, #ec4899 50%, #6d28d9 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.countrySub { color: rgba(255,255,255,0.6); font-size: 14px; }
+
+.pillTabs { display:flex; gap:8px; flex-wrap:wrap; padding:10px; background: rgba(255,255,255,0.04); border-radius: 9999px; }
+.pillTab { padding: 8px 12px; border-radius: 9999px; font-size: 13px; opacity: .8; border:1px solid rgba(255,255,255,0.08); }
+.pillTab:hover { opacity: 1; }
+.active { background: white; color: black; box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+
+.section { margin: 18px 0; }
+.sectionTitle {
+  font-size: 18px; font-weight: 600; margin-bottom: 10px;
+  background: linear-gradient(90deg,#7c3aed 0%, #ec4899 50%, #6d28d9 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+.overviewGrid {
+  display:grid;
+  grid-template-columns: repeat(12, minmax(0,1fr));
+  gap: 12px;
+}
+.card { grid-column: span 4 / span 4; border:1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 14px; background: rgba(255,255,255,0.02); }
+.cardLabel { font-size: 12px; color: rgba(255,255,255,0.6); }
+.cardValue { font-size: 16px; font-weight: 600; }
+.cardLink { color: #60a5fa; text-decoration: underline; }
+
+.wide { grid-column: 1 / -1; }
+
+.chips { display:flex; flex-wrap:wrap; gap:8px; }
+.linkChip {
+  display:inline-flex; align-items:center; gap:8px; padding:8px 12px;
+  border-radius: 9999px; border:1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.02); font-size: 13px;
+}
+.chipDot { width:8px; height:8px; border-radius:9999px; background: #34d399; }
+.chipExternal { opacity: .6; }
+.linkChip:hover { border-color: rgba(255,255,255,0.2); }
+.disabled { opacity: .6; pointer-events:none; }
+
+.empty { color: rgba(255,255,255,0.6); font-size: 14px; }
+
+.skeleton {
+  border:1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 18px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.02) 25%, rgba(255,255,255,0.06) 37%, rgba(255,255,255,0.02) 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+.errorBox { border:1px solid rgba(255,0,0,0.25); background: rgba(255,0,0,0.06); padding:16px; border-radius: 12px; }
+.errorTitle { font-weight: 700; margin-bottom: 6px; }
+.errorMsg { color: #ff9a9a; font-size: 14px; }
+.errorHelp { color: rgba(255,255,255,0.7); font-size: 13px; }

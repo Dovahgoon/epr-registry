@@ -1,0 +1,103 @@
+
+/* === Revert-to-liked UI (light gradient + modern cards) === */
+:root{
+  --ink:#0f172a;
+  --muted:#475569;
+  --bg:#fbfbfe;
+  --surface:#ffffff;
+  --border:rgba(15,23,42,.12);
+  --ring:rgba(99,102,241,.35);
+  --brand:#4f46e5;
+  --brand-2:#ec4899;
+}
+
+html,body{background:var(--bg); color:var(--ink);}
+/* Brand background like the one you liked */
+.brand-gradient{
+  background-image:
+    radial-gradient(1100px 720px at -12% -18%, rgba(196,181,253,.32), rgba(196,181,253,0) 58%),
+    radial-gradient(1050px 650px at 112% -14%, rgba(244,114,182,.28), rgba(244,114,182,0) 60%),
+    radial-gradient(1300px 800px at 50% 120%, rgba(251,207,232,.20), rgba(251,207,232,0) 62%);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+/* Header / Tabs */
+.nav{
+  position:sticky; top:0; z-index:50;
+  background:rgba(255,255,255,.85);
+  backdrop-filter:saturate(180%) blur(8px);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner{
+  max-width:1120px; margin:0 auto; padding:12px 20px;
+  display:flex; align-items:center; gap:20px;
+}
+.brand{font-weight:800; font-size:18px; color:var(--ink); text-decoration:none;}
+.tabs{display:flex; gap:18px; margin-left:16px;}
+.tabs a{
+  font-size:14px; text-decoration:none; color:#243040;
+  padding:6px 2px; border-bottom:2px solid transparent;
+  opacity:.9;
+}
+.tabs a:hover{opacity:1; border-bottom-color:var(--border);}
+.tabs a[aria-current="page"], .tabs a.active{
+  color:var(--ink); border-bottom-color:var(--brand);
+}
+
+/* Cards / Helpers */
+.container{max-width:1120px; margin:0 auto; padding:28px 20px;}
+.card{
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:20px; padding:18px; box-shadow:0 6px 28px rgba(79,70,229,.06);
+}
+.card.soft{background:rgba(255,255,255,.7);}
+.section-title{font-weight:800; letter-spacing:-.02em; font-size:38px;}
+.subtle{color:var(--muted); font-size:14px}
+
+/* Pill tabs (overview / regulators / PROs / reporting / fees) */
+.pill-tabs{display:flex; gap:10px; padding:12px; background:rgba(255,255,255,.6);
+  border:1px solid var(--border); border-radius:999px; width:max-content;}
+.pill-tabs a{font-size:14px; padding:8px 14px; border-radius:999px; color:#1f2b3a; text-decoration:none;}
+.pill-tabs a[aria-current="page"], .pill-tabs a.active{ background:#f1f5ff; border:1px solid rgba(79,70,229,.25);}
+
+/* KPI cards like the screenshot (Status / Scope / Producer Register) */
+.kpi-grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin-top:18px; margin-bottom:10px;}
+.kpi{
+  border:1px solid var(--border); border-radius:22px; padding:18px 20px;
+  background:linear-gradient(180deg, rgba(255,255,255,.85), rgba(253,253,255,.7));
+  box-shadow:0 8px 36px rgba(99,102,241,.08);
+}
+.kpi .label{font-weight:700; margin-bottom:8px;}
+.kpi .value{color:#111827}
+
+/* Link chips list for PROs & Regulators */
+.chip-list{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:12px}
+.chip{
+  display:block; background:var(--surface); border:1px solid var(--border);
+  border-radius:16px; padding:14px 16px; text-decoration:none; color:#111827;
+  box-shadow:0 8px 28px rgba(79,70,229,.06);
+}
+.chip:hover{box-shadow:0 10px 34px rgba(79,70,229,.12); transform:translateY(-1px);}
+.chip small{display:block; color:var(--muted); margin-top:2px}
+
+/* Fee calculator look (keeps your current logic) */
+.calc-wrap{margin-top:16px;}
+.calc-toolbar{display:grid; grid-template-columns:1fr 1fr 1fr; gap:24px; align-items:flex-end;}
+.select-like{
+  display:flex; align-items:center; justify-content:space-between;
+  border:1px solid var(--border); border-radius:14px; padding:12px 14px; background:var(--surface);
+  min-width:260px;
+}
+.unit-switch{display:inline-flex; gap:6px; padding:4px; border-radius:999px; border:1px solid var(--border); background:#fff;}
+.unit-switch button{border:0; padding:8px 14px; border-radius:999px; background:transparent; font-size:14px; cursor:pointer;}
+.unit-switch button.active{background:#eef2ff; border:1px solid rgba(79,70,229,.28);}
+
+.table-card{overflow:hidden; border-radius:18px; border:1px solid var(--border); background:#fff;
+  box-shadow:0 10px 38px rgba(99,102,241,.08), inset 0 1px 0 rgba(255,255,255,.9);}
+.table{width:100%; border-collapse:collapse; font-size:14px;}
+.table th,.table td{padding:14px 16px; border-top:1px solid rgba(15,23,42,.06);}
+.table thead th{background:linear-gradient(180deg,#fbfbff,#f5f7ff); color:#243040; text-align:left;}
+.table tfoot td{font-weight:700;}
+.table input[type="number"]{width:120px; padding:8px 10px; text-align:right; border:1px solid var(--border); border-radius:10px; background:#fff;}
+.helper{font-size:12px; color:var(--muted); margin-top:6px}
