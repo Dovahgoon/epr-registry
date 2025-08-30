@@ -12,7 +12,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout (force our branch)
         uses: actions/checkout@v4
         with:
           ref: chore/tariff-sources-and-scrapers
