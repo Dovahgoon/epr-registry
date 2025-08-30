@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node src/main.mjs --help",
+    "start": "node src/main.mjs --all",
     "all": "node src/main.mjs --all",
     "country": "node src/main.mjs --country",
     "export-json": "node src/export.mjs",
