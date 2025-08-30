@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: chore/tariff-sources-and-scrapers
 
       - name: Use Node 20
         uses: actions/setup-node@v4
