@@ -1,0 +1,9 @@
+iso,pro_name,scope,material,packagingType,rate,currency,unit,effectiveFrom,effectiveTo,sourceUrl
+ES,Ecoembes,household,steel,,0.197,EUR,per_kg,2025-01-01,,https://ecoembesempresas.com/precios
+ES,Ecoembes,household,aluminum,,0.04,EUR,per_kg,2025-01-01,,https://ecoembesempresas.com/precios
+ES,Ecoembes,household,plastic,PET_bottles_other,0.26,EUR,per_kg,2025-01-01,,https://ecoembesempresas.com/precios
+ES,Ecoembes,household,plastic,PET_bottles_SUP_le_3L,0.271,EUR,per_kg,2025-01-01,,https://ecoembesempresas.com/precios
+ES,Ecoembes,household,plastic,HDPE_rigid,0.285,EUR,per_kg,2025-01-01,,https://ecoembesempresas.com/precios
+ES,Ecoembes,household,plastic,trays_other_rigid,0.659,EUR,per_kg,2025-01-01,,https://ecoembesempresas.com/precios
+ES,Ecovidrio,household,glass,,0.03515,EUR,per_kg,2025-01-01,,https://www.ecovidrio.es/envasadores/punto-verde
+ES,Ecovidrio,household,glass,,0.00498,EUR,per_unit,2025-01-01,,https://www.ecovidrio.es/envasadores/punto-verde

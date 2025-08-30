@@ -1,4 +1,4 @@
-const REG_SOURCE = 'https://www.naturvardsverket.se/'; // Naturvårdsverket
+const REG_SOURCE = 'https://www.naturvardsverket.se/';
 
 export async function fetchSE() {
   const regulators = [{
@@ -7,6 +7,6 @@ export async function fetchSE() {
     url: REG_SOURCE,
     sourceUrl: REG_SOURCE,
   }];
-  const pros = []; // fill when list available
+  const pros = [];
   return { regulators, pros };
 }

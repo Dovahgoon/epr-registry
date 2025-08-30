@@ -1,4 +1,9 @@
 /* Dark mode variables and base styles */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
   --bg: #fafafc;
   --fg: #0f172a; /* slate-900 */

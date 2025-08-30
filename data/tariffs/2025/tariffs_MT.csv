@@ -1,0 +1,11 @@
+country,scheme,stream,material,packagingType,rate,currency,unit,effectiveFrom,effectiveTo,sourceUrl
+MT,GreenPak,household,plastic,,205.0,EUR,per_tonne,2025-01-01,,https://www.pro-e.org/files/PRO-Europe-Participation-Costs-Overview-2025.pdf
+MT,GreenPak,household,paper,,203.0,EUR,per_tonne,2025-01-01,,https://www.pro-e.org/files/PRO-Europe-Participation-Costs-Overview-2025.pdf
+MT,GreenPak,household,glass,,147.0,EUR,per_tonne,2025-01-01,,https://www.pro-e.org/files/PRO-Europe-Participation-Costs-Overview-2025.pdf
+MT,GreenPak,household,steel,,207.0,EUR,per_tonne,2025-01-01,,https://www.pro-e.org/files/PRO-Europe-Participation-Costs-Overview-2025.pdf
+MT,GreenPak,household,aluminum,,202.0,EUR,per_tonne,2025-01-01,,https://www.pro-e.org/files/PRO-Europe-Participation-Costs-Overview-2025.pdf
+MT,GreenPak,commercial,plastic,,70.31,EUR,per_tonne,2025-01-01,,https://www.pro-e.org/files/PRO-Europe-Participation-Costs-Overview-2025.pdf
+MT,GreenPak,commercial,paper,,70.31,EUR,per_tonne,2025-01-01,,https://www.pro-e.org/files/PRO-Europe-Participation-Costs-Overview-2025.pdf
+MT,GreenPak,commercial,steel,,63.33,EUR,per_tonne,2025-01-01,,https://www.pro-e.org/files/PRO-Europe-Participation-Costs-Overview-2025.pdf
+MT,GreenPak,commercial,aluminum,,27.94,EUR,per_tonne,2025-01-01,,https://www.pro-e.org/files/PRO-Europe-Participation-Costs-Overview-2025.pdf
+MT,GreenPak,commercial,wood,,67.98,EUR,per_tonne,2025-01-01,,https://www.pro-e.org/files/PRO-Europe-Participation-Costs-Overview-2025.pdf

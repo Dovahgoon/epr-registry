@@ -1,0 +1,10 @@
+iso,pro_name,scope,material,packagingType,rate,currency,unit,effectiveFrom,effectiveTo,sourceUrl
+BE,Fost Plus,household,glass,,0.096,EUR,per_kg,2025-01-01,,https://www.fostplus.be/en/members/green-dot-rates
+BE,Fost Plus,household,paper,paper-cardboard,0.1503,EUR,per_kg,2025-01-01,,https://www.fostplus.be/en/members/green-dot-rates
+BE,Fost Plus,household,steel,,0.1117,EUR,per_kg,2025-01-01,,https://www.fostplus.be/en/members/green-dot-rates
+BE,Fost Plus,household,aluminum,ge_50um,0.0481,EUR,per_kg,2025-01-01,,https://www.fostplus.be/en/members/green-dot-rates
+BE,Fost Plus,household,beverage_cartons,,0.818,EUR,per_kg,2025-01-01,,https://www.fostplus.be/en/members/green-dot-rates
+BE,Fost Plus,household,plastic,PET_bottles_colourless,0.2718,EUR,per_kg,2025-01-01,,https://www.fostplus.be/en/members/green-dot-rates
+BE,Valipac,commercial,plastic,recyclable,63.0,EUR,per_tonne,2025-01-01,,https://academy.valipac.be/en/updates/funding-contributions-for-2025
+BE,Valipac,commercial,other,recyclable_non_plastic,20.0,EUR,per_tonne,2025-01-01,,https://academy.valipac.be/en/updates/funding-contributions-for-2025
+BE,Valipac,commercial,mixed,non_recyclable,106.0,EUR,per_tonne,2025-01-01,,https://academy.valipac.be/en/updates/funding-contributions-for-2025

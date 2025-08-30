@@ -23,7 +23,29 @@ jobs:
         working-directory: updater
         run: npm ci
 
-      # (Optional) Pull latest data into DB (DE/DK/HR/SE etc.)
+      # --- NEW: Sync PRO Europe members into your Pro table
+      - name: Sync PRO Europe members
+        working-directory: updater
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }} # optional, if your code reads this
+        run: node src/fetchers/proe_members.mjs
+
+      # --- NEW: Generate CSVs from the official PRO Europe fees PDF
+      - name: Generate PRO Europe fee CSVs
+        working-directory: updater
+        run: node src/fetchers/proe_fees_to_csv.mjs
+
+      # --- NEW: Import the generated fees into your DB
+      - name: Import generated fee CSVs
+        working-directory: updater
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
+        run: node src/import_tariffs.mjs ../data/tariffs/2025/generated/proe
+
+      # (Optional) Your existing updater step for other sources
       - name: Run updater (DB upserts)
         working-directory: updater
         env:
@@ -37,4 +59,20 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }} # optional
         run: node src/export.mjs
+
+      - name: Install root deps for tariffs builder
+  	run: npm ci
+
+      - name: Build tariffs JSON from CSVs
+  	run: npm run build:tariffs
+
+      - name: Commit updated tariffs JSON
+  	run: |
+    	  git config user.name "github-actions[bot]"
+    	  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    	  git add public/data/tariffs-2025.json
+   	  git commit -m "chore: update tariffs-2025.json" || echo "No changes to commit."
+    	  git push
+

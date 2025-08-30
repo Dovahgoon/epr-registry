@@ -1,0 +1,213 @@
+{
+  "items": [
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Sales Packaging",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Glass and ceramics",
+      "rate": 0.12,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Paper and carton (monomaterial)",
+      "rate": 0.115,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Paper and carton ( composite)",
+      "rate": 0.13,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Plastic (monomaterial)",
+      "rate": 0.46,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Plastic beverage bottles",
+      "rate": 0.46,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Plastic (composite)",
+      "rate": 0.57,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Wood",
+      "rate": 0.044,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Ferrous metal",
+      "rate": 0.26,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Aluminum",
+      "rate": 0.29,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Beverage carton",
+      "rate": 0.115,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Other material",
+      "rate": 0.57,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Transport and group packaging:",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Paper and carton",
+      "rate": 0.096,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Plastic",
+      "rate": 0.125,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Ferrous metal",
+      "rate": 0.115,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Aluminum",
+      "rate": 0.13,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Wood",
+      "rate": 0.044,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    },
+    {
+      "country": "EE",
+      "scheme": "Eesti Taaskasutusorganisatsioon (ETO)",
+      "stream": "both",
+      "material": "Other material",
+      "rate": 0.125,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.eto.ee/en/producerimporter/service-fees/"
+    }
+  ]
+}

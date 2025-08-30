@@ -1,0 +1,169 @@
+{
+  "items": [
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "Stiklinė pakuotė (perdirbama)",
+      "rate": 0.183,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "Popierinė pakuotė (perdirbama)",
+      "rate": 0.26,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "Plastikinė pakuotė (perdirbama)***",
+      "rate": 0.545,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "PET pakuotė (perdirbama)***",
+      "rate": 0.79,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "Medinė pakuotė (perdirbama)",
+      "rate": 0.029,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "Kombinuota pakuotė (perdirbama)***",
+      "rate": 0.99,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "Metalinė (juodojo metalo) pakuotė (perdirbama)",
+      "rate": 0.349,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "Metalinė (aliuminio) pakuotė (perdirbama)",
+      "rate": 0.113,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "Kita pakuotė (perdirbama)",
+      "rate": 0.43,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "Popierinė pakuotė (neperdirbama)****",
+      "rate": 0.99,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "Plastikinė pakuotė (neperdirbama)****",
+      "rate": 0.99,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "PET pakuotė (neperdirbama)****",
+      "rate": 0.99,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "Medinė pakuotė (neperdirbama)****",
+      "rate": 0.99,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "Kombinuota pakuotė (neperdirbama)****",
+      "rate": 0.99,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Gamtos ateitis",
+      "stream": "both",
+      "material": "Kita pakuotė (neperdirbama)****",
+      "rate": 0.99,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://gamtosateitis.lt/tvarkymo-ikainiai/"
+    }
+  ]
+}

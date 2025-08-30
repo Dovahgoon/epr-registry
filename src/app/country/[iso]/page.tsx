@@ -1,8 +1,8 @@
 // src/app/country/[iso]/page.tsx
-import CountryClient from "./CountryClient";
+import dynamic from 'next/dynamic';
+const CountryClient = dynamic(() => import('./CountryClient'), { ssr: false });
 
-// Minimal server wrapper: no data fetching here (avoids RSC errors entirely)
 export default function Page({ params }: { params: { iso: string } }) {
-  const iso = (params.iso || "").toUpperCase();
+  const iso = (params.iso || '').toUpperCase();
   return <CountryClient iso={iso} />;
 }
