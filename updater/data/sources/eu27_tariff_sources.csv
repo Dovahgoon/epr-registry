@@ -1,0 +1,41 @@
+countryISO,country,regulatorName,regulatorUrl,proOrScheme,proUrl,priceType,parsingMethod,scope,notes
+AT,Austria,Federal Ministry (BMK) / PRO context,https://www.bmk.gv.at/,ARA,https://www.ara.at/en/fees/,public_official,pdf,both,ARA publishes fee schedules
+BE,Belgium,OVAM / Regional regulators,https://ovam.vlaanderen.be/,Fost Plus (HH),https://www.fostplus.be/en/business/rates,public_official,pdf,household,Official HH fees
+BE,Belgium,OVAM / Regional regulators,https://ovam.vlaanderen.be/,Valipac (B2B),https://www.valipac.be/en/companies/our-services/rates/,public_official,pdf,commercial,Official B2B fees
+BG,Bulgaria,MOEW,https://www.moew.government.bg/en/,Ecopack Bulgaria,https://www.ecopack.bg/en/tariffs,public_official,pdf,both,To confirm mapping
+BG,Bulgaria,MOEW,https://www.moew.government.bg/en/,ECObulpack,https://www.ecobulpack.bg/en/tariffs/,public_official,pdf,both,To confirm mapping
+HR,Croatia,FZOEU,https://www.fzoeu.hr/,Deposit system,https://mzozt.gov.hr/,deposit,manual,household,€0.10 per beverage container; material €/kg via FZOEU regulation
+CY,Cyprus,Dept. of Environment,https://www.moa.gov.cy/environment/,Green Dot Cyprus,https://greendot.com.cy/en/fees/,public_official,pdf,household,Official fees
+CZ,Czechia,Ministry of Environment,https://www.mzp.cz/,EKO‑KOM,https://en.ekokom.cz/pricing/,public_official,pdf,both,Official fees
+DK,Denmark,DPA‑System / Danish EPA,https://producentansvar.dk/en/,Collective schemes (2025+),https://eng.mst.dk/industry/waste/extended-producer-responsibility,contractual,manual,both,Schemes publish contractual prices
+EE,Estonia,Keskkonnaministeerium,https://envir.ee/en,Eesti Pakendiringlus,https://pakendiringlus.ee/en/services/for-the-entrepreneurs/how-much-does-it-cost/,public_official,html,household,Calculator/table
+EE,Estonia,Keskkonnaministeerium,https://envir.ee/en,ETO,https://www.eto.ee/en/producerimporter/service-fees/,public_official,html,both,Table
+FI,Finland,Pirkanmaa ELY / RINKI,https://rinkiin.fi/,Finnish Packaging Producers (FPP),https://suomenpakkaustuottajat.fi/en/fees/,public_official,pdf,both,Official
+FI,Finland,Pirkanmaa ELY / RINKI,https://rinkiin.fi/,Sumi Oy,https://sumi.fi/en/6166-2/joining-sumi/,public_official,pdf,both,Official
+FR,France,ADEME,https://librairie.ademe.fr/,Citeo,https://entreprises.adelphe.fr/tarifs-et-eco-modulations,public_official,pdf,household,Citeo/Adelphe HH
+FR,France,ADEME,https://librairie.ademe.fr/,Léko,https://www.leko.fr/entreprises/tarifs/,public_official,pdf,household,Alternative HH
+DE,Germany,ZSVR / LUCID,https://www.verpackungsregister.org/,Dual systems (operators),https://www.verpackungsregister.org/en/information-orientation/system-partners,contractual,manual,both,Operator contracts define rates
+GR,Greece,EOAN,https://www.eoan.gr/,HERRCO (Blue Bin),https://www.herrco.gr/en/,contractual,manual,household,PRO contractual pricing
+GR,Greece,EOAN,https://www.eoan.gr/,Antapodotiki Anakyklosi,https://www.antapodotiki.gr/en/system,contractual,manual,household,PRO contractual pricing
+HU,Hungary,Concession (MOHU),https://mohu.hu,MOHU (state concession EPR),https://www.pwc.com/hu/en/pressroom/2023/kiterjesztett_gyartoi_felelosseg_dijtetelek.html,regulator_fee,html,both,Official EPR fees (HUF/kg)
+IE,Ireland,EPA / Local authorities,https://www.epa.ie/,Repak,https://repak.ie/for-businesses/fees,public_official,pdf,both,Official fees
+IT,Italy,MASE / CONAI network,https://www.conai.org/en/,CONAI (consortia),https://www.conai.org/en/conai-contribution/amounts/,public_official,html,both,CAC €/t by material; sub-consortia
+LV,Latvia,MEPRD,https://www.varam.gov.lv/en/,Zaļā josta,https://www.zalajosta.lv/en/for-companies/cooperation-with-zala-josta/,public_official,html,both,Official €/kg table
+LV,Latvia,MEPRD,https://www.varam.gov.lv/en/,Latvijas Zaļais punkts,https://www.zalais.lv/biznesam/saistosie-noteikumi,public_official,html,both,Official €/kg table
+LT,Lithuania,EPA / Aplinkos ministerija,https://am.lrv.lt/en/,Žaliasis taškas,https://www.zaliasistaskas.lt/ikainiai/,public_official,html,both,Official €/t table
+LT,Lithuania,EPA / Aplinkos ministerija,https://am.lrv.lt/en/,Gamtos ateitis,https://gamtosateitis.lt/tvarkymo-ikainiai/,public_official,html,both,Official €/t table
+LU,Luxembourg,Environment Ministry,https://environnement.public.lu/,VALORLUX,https://www.valorlux.lu/en/recyclable-packaging,public_official,pdf,both,Official
+MT,Malta,ERA,https://era.org.mt/,GreenPak,https://www.greenpak.com.mt/producer-responsibility/fees,public_official,pdf,both,Official
+MT,Malta,ERA,https://era.org.mt/,Green MT,https://greenmt.org.mt/business/packaging-waste-management-fees/,public_official,pdf,both,Official
+NL,Netherlands,ILT / Verpact,https://www.verpact.nl/en/,Verpact,https://www.verpact.nl/en/your-packaging,public_official,html,both,Official
+PL,Poland,BDO (Gov),https://bdo.mos.gov.pl/,Rekopol,https://www.rekopol.pl/,contractual,manual,both,Awaiting 2025 public list
+PT,Portugal,APA,https://apambiente.pt/,Sociedade Ponto Verde,https://www.pontoverde.pt/en/producers/fees/,public_official,pdf,household,Official
+PT,Portugal,APA,https://apambiente.pt/,Novo Verde,https://novoverde.pt/empresas/tarifario/,public_official,pdf,both,Official
+RO,Romania,AFM,https://www.afm.ro/,OIREPs (approved list),https://www.afm.ro/oirep.php,public_official,html,both,Parse AFM list of OIREPs
+SK,Slovakia,MŽP SR,https://www.minzp.sk/,ENVI‑PAK (OZV),https://cms.envipak.sk/media/files/cenniky/2025/2025-obaly-cennik-platny-od-1-1-2025.pdf,public_official,pdf,both,Official 2025
+SI,Slovenia,ARSO,https://www.arso.gov.si/,SLOPAK,https://www.slopak.si/ceniki,public_official,pdf,both,Official 2025
+ES,Spain,MITECO,https://www.miteco.gob.es/,Ecoembes (HH),https://www.ecoembes.com/en/business/fees,public_official,pdf,household,Official HH
+ES,Spain,MITECO,https://www.miteco.gob.es/,Ecovidrio (glass),https://www.ecovidrio.es/empresas/tarifas,public_official,pdf,household,Official glass
+SE,Sweden,Naturvårdsverket,https://www.naturvardsverket.se/,TMR (to confirm),https://tmr.se/foretag/,public_official,html,both,Verify current scheme landscape
+SE,Sweden,Naturvårdsverket,https://www.naturvardsverket.se/,NPA (to confirm),https://npa.se/foretag/producentansvar-forpackningar/,public_official,html,both,Verify current scheme landscape
+IE,Ireland,EPA,https://www.epa.ie/,Repak (duplicate guard),https://repak.ie/for-businesses/fees,public_official,pdf,both,

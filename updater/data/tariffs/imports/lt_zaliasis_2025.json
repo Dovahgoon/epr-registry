@@ -1,0 +1,224 @@
+{
+  "items": [
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "Perdirbama pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "1. Stiklinė pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "2. Plastikinė pakuotė *",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "3. PET pakuotė *",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "4. Kombinuota pakuotė *",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "5.1. Metalinė juodųjų metalų pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "5.2. Metalinė aliuminio pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "6. Popierinė ir kartoninė pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "7. Medinė pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "8. Kita pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "Neperdirbama pakuotė **",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "1. Stiklinė pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "2. Plastikinė pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "3. PET pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "4. Kombinuota pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "5.1. Metalinė juodųjų metalų pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "5.2. Metalinė aliuminio pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "6. Popierinė ir kartoninė pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "7. Medinė pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    },
+    {
+      "country": "LT",
+      "scheme": "Žaliasis taškas",
+      "stream": "both",
+      "material": "8. Kita pakuotė",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://www.zaliasistaskas.lt/ikainiai/"
+    }
+  ]
+}

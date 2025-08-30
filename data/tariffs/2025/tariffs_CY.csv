@@ -1,0 +1,10 @@
+country,scheme,stream,material,packagingType,rate,currency,unit,effectiveFrom,effectiveTo,sourceUrl
+CY,Green Dot Cyprus,household,glass,,27.61,EUR,per_tonne,2025-01-01,,https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/
+CY,Green Dot Cyprus,household,paper,carton,44.78,EUR,per_tonne,2025-01-01,,https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/
+CY,Green Dot Cyprus,household,steel,metal,90.62,EUR,per_tonne,2025-01-01,,https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/
+CY,Green Dot Cyprus,household,aluminum,,20.31,EUR,per_tonne,2025-01-01,,https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/
+CY,Green Dot Cyprus,household,plastic,PET,100.6,EUR,per_tonne,2025-01-01,,https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/
+CY,Green Dot Cyprus,household,plastic,HDPE,100.6,EUR,per_tonne,2025-01-01,,https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/
+CY,Green Dot Cyprus,commercial,paper,corrugated,41.14,EUR,per_tonne,2025-01-01,,https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/
+CY,Green Dot Cyprus,commercial,plastic,,36.05,EUR,per_tonne,2025-01-01,,https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/
+CY,Green Dot Cyprus,commercial,wood,,11.8,EUR,per_tonne,2025-01-01,,https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/

@@ -1,0 +1,9 @@
+iso,pro_name,scope,material,packagingType,rate,currency,unit,effectiveFrom,effectiveTo,sourceUrl
+NL,Verpact,both,glass,,0.1,EUR,per_kg,2025-01-01,,https://www.verpact.nl/nl/tarieven
+NL,Verpact,both,paper,paper-cardboard,0.017,EUR,per_kg,2025-01-01,,https://www.verpact.nl/nl/tarieven
+NL,Verpact,both,aluminum,,0.3,EUR,per_kg,2025-01-01,,https://www.verpact.nl/nl/tarieven
+NL,Verpact,both,steel_other_metals,,0.36,EUR,per_kg,2025-01-01,,https://www.verpact.nl/nl/tarieven
+NL,Verpact,both,plastic,rigid,1.22,EUR,per_kg,2025-01-01,,https://www.verpact.nl/nl/tarieven
+NL,Verpact,both,plastic,flexible,1.32,EUR,per_kg,2025-01-01,,https://www.verpact.nl/nl/tarieven
+NL,Verpact,both,wood,,0.015,EUR,per_kg,2025-01-01,,https://www.verpact.nl/nl/tarieven
+NL,Verpact,both,beverage_cartons,,0.88,EUR,per_kg,2025-01-01,,https://www.verpact.nl/nl/tarieven

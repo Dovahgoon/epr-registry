@@ -1,4 +1,4 @@
-const REG_SOURCE = 'https://www.fzoeu.hr/'; // FZOEU – Environmental Protection & Energy Efficiency Fund
+const REG_SOURCE = 'https://www.fzoeu.hr/';
 
 export async function fetchHR() {
   const regulators = [{
@@ -7,6 +7,6 @@ export async function fetchHR() {
     url: REG_SOURCE,
     sourceUrl: REG_SOURCE,
   }];
-  const pros = []; // fill when list available
+  const pros = [];
   return { regulators, pros };
 }

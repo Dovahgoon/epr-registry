@@ -7,12 +7,22 @@
     "start": "node src/main.mjs --help",
     "all": "node src/main.mjs --all",
     "country": "node src/main.mjs --country",
-    "export-json": "node src/export.mjs"
+    "export-json": "node src/export.mjs",
+    "update:proe:members": "node src/fetchers/proe_members.mjs",
+    "update:proe:fees": "node src/fetchers/proe_fees_to_csv.mjs",
+    "scrape:tariffs:ee:eto": "node src/fetchers/tariffs/ee_eto.mjs",
+    "scrape:tariffs:lt:zaliasis": "node src/fetchers/tariffs/lt_zaliasis.mjs",
+    "scrape:tariffs:lt:gamtos": "node src/fetchers/tariffs/lt_gamtos_ateitis.mjs",
+    "tariffs:merge": "node src/merge_tariffs_items.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.56.0",
-    "cheerio": "^1.0.0-rc.12",
+    "cheerio": "^1.1.2",
     "dotenv": "^16.6.1",
-    "zod": "^3.23.8"
+    "node-fetch": "^3.3.2",
+    "pdf-parse": "^1.1.1",
+    "zod": "^3.23.8",
+    "undici": "^6.19.8",
+    "@fast-csv/parse": "^5.0.0"
   }
 }

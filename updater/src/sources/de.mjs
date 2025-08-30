@@ -16,20 +16,20 @@ export async function fetchDE() {
     const res = await fetch(SOURCE);
     const html = await res.text();
     const $ = cheerio.load(html);
-    // Very loose: collect anchors that look like dual systems (we also keep a safe fallback list)
     $('a[href]').each((_, a) => {
       const name = $(a).text().trim();
       const href = $(a).attr('href');
       if (!name || !href) return;
       if (/dual|system|punkt|interseroh|belland|reclay|noventiz|prezero|veolia|eko/i.test(name)) {
-        pros.push({ name: normalizeName(name), url: href.startsWith('http') ? href : `https://www.verpackungsregister.org${href}`, sourceUrl: SOURCE });
+        pros.push({
+          name: normalizeName(name),
+          url: href.startsWith('http') ? href : `https://www.verpackungsregister.org${href}`,
+          sourceUrl: SOURCE
+        });
       }
     });
-  } catch(e) {
-    // fall back to static list below
-  }
+  } catch (e) {}
 
-  // Fallback full list (keeps you covered even if scraping fails)
   const fallback = [
     ['Der Grüne Punkt – Duales System Deutschland (DSD)', 'https://www.gruener-punkt.de/'],
     ['Interseroh+ (ALBA Group)', 'https://www.interseroh.plus/'],
@@ -39,11 +39,16 @@ export async function fetchDE() {
     ['PreZero Dual GmbH', 'https://www.prezero.com/'],
     ['Veolia Umweltservice Dual GmbH', 'https://www.veolia.de/'],
     ['EKO-PUNKT (REMONDIS Group)', 'https://www.recyclingpoints.de/eko-punkt'],
-  ].map(([name,url]) => ({ name, url, sourceUrl: SOURCE }));
+  ].map(([name, url]) => ({ name, url, sourceUrl: SOURCE }));
 
   if (pros.length < fallback.length) pros = fallback;
 
-  pros = uniqueBy(pros, x => x.name.toLowerCase());
+  pros = uniqueBy(pros, x => x.name.toLowerCase())
+    .map(p => ({
+      ...p,
+      scope: 'household',
+      materials: []
+    }));
 
   return { regulators, pros };
 }

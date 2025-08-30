@@ -9,17 +9,32 @@
     "lint": "next lint",
     "updater:de": "cd updater && node src/main.mjs --country DE",
     "updater:all": "cd updater && node src/main.mjs --all",
-    "updater:export": "cd updater && node src/export.mjs"
+    "updater:export": "cd updater && node src/export.mjs",
+    "build:tariffs": "node ./scripts/build-tariffs-json.mjs",
+    "tariffs:audit+build": "node scripts/audit-and-build-tariffs.mjs"
+
   },
   "dependencies": {
+    "@radix-ui/react-select": "^2.2.6",
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "lucide-react": "^0.541.0",
     "next": "14.2.32",
+    "next-auth": "^4.24.11",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "stripe": "^18.4.0",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
-    "typescript": "^5.5.4",
-    "@types/node": "^18.19.31",
+    "@types/node": "^18.19.123",
     "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0"
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.21",
+    "csv-parse": "^5.5.6",
+    "postcss": "^8.5.6",
+    "tailwindcss": "3.4",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.5.4"
   }
 }

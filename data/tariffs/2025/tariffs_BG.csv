@@ -1,0 +1,7 @@
+countryIso,schemeName,stream,material,packagingType,rate,currency,unit,sourceUrl,effectiveFrom,effectiveTo
+BG,Eco Partners Bulgaria,both,plastic,,0.159,BGN,per_kg,https://ecopartners.bg/en/tarifa/,2025-01-01,
+BG,Eco Partners Bulgaria,both,paper,,0.15,BGN,per_kg,https://ecopartners.bg/en/tarifa/,2025-01-01,
+BG,Eco Partners Bulgaria,both,steel,,0.082,BGN,per_kg,https://ecopartners.bg/en/tarifa/,2025-01-01,
+BG,Eco Partners Bulgaria,both,aluminum,,0.198,BGN,per_kg,https://ecopartners.bg/en/tarifa/,2025-01-01,
+BG,Eco Partners Bulgaria,both,wood,,0.082,BGN,per_kg,https://ecopartners.bg/en/tarifa/,2025-01-01,
+BG,Eco Partners Bulgaria,both,glass,,0.185,BGN,per_kg,https://ecopartners.bg/en/tarifa/,2025-01-01,

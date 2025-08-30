@@ -1,0 +1,12 @@
+country,scheme,stream,material,rate,unit,currency,effective_from,source
+LU,Valorlux,household,glass,0.0177,per_kg,EUR,,
+LU,Valorlux,household,paper,0.0402,per_kg,EUR,,
+LU,Valorlux,household,steel,0.0271,per_kg,EUR,,
+LU,Valorlux,household,aluminum,0.0145,per_kg,EUR,,
+LU,Valorlux,household,plastic,0.1957,per_kg,EUR,,
+LU,Valorlux,household,glass,0.0177,kg,EUR,2025-01-01,https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf
+LU,Valorlux,household,paper,0.0402,kg,EUR,2025-01-01,https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf
+LU,Valorlux,household,steel,0.0271,kg,EUR,2025-01-01,https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf
+LU,Valorlux,household,aluminium,0.0145,kg,EUR,2025-01-01,https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf
+LU,Valorlux,household,plastic-PET-bottles-transparent,0.1957,kg,EUR,2025-01-01,https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf
+LU,Valorlux,household,beverage-cartons,0.2900,kg,EUR,2025-01-01,https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf

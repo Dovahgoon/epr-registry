@@ -36,3 +36,4 @@ dist/
 # Supabase local artifacts (if you run local stack)
 supabase/.temp/
 supabase/.branches/
+-e "\n# local env\n.env*\n# generated imports\nupdater/data/tariffs/imports/*.json\n" 

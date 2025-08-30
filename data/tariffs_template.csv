@@ -1,0 +1,13 @@
+country_iso,pro_name,stream,scheme_name,effective_from,effective_to,material,packaging_type,rate,currency,unit,source_url
+IT,CIAL,household,CONAI 2025,2025-01-01,,aluminum,,0.000,EUR,per_kg,https://www.cial.it/
+IT,COMIECO,household,CONAI 2025,2025-01-01,,paper,,0.000,EUR,per_kg,https://www.comieco.org/
+IT,COREPLA,household,CONAI 2025,2025-01-01,,plastic,,0.000,EUR,per_kg,https://www.corepla.it/
+IT,RICREA,household,CONAI 2025,2025-01-01,,steel,,0.000,EUR,per_kg,https://www.ricrea.org/
+IT,RILEGNO,household,CONAI 2025,2025-01-01,,wood,,0.000,EUR,per_kg,https://www.rilegno.it/
+IT,COREVE,household,CONAI 2025,2025-01-01,,glass,,0.000,EUR,per_kg,https://www.coreve.it/
+IT,BIOREPACK,household,CONAI 2025,2025-01-01,,bioplastic,,0.000,EUR,per_kg,https://www.biorepack.org/
+FR,CITEO,household,CITEO 2025,2025-01-01,,plastic,,0.000,EUR,per_kg,https://www.citeo.com/
+FR,ADELPHE,household,ADELPHE 2025,2025-01-01,,glass,,0.000,EUR,per_kg,https://www.adelphe.fr/
+BE,Fost Plus,household,Fost Plus 2025,2025-01-01,,plastic,,0.000,EUR,per_kg,https://www.fostplus.be/
+BE,Valipac,commercial,Valipac 2025,2025-01-01,,plastic,,0.000,EUR,per_kg,https://www.valipac.be/
+DE,Der Grüne Punkt – Duales System Deutschland (DSD),household,DSD 2025,2025-01-01,,plastic,,0.000,EUR,per_kg,https://www.gruener-punkt.de/

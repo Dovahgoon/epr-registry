@@ -1,0 +1,15 @@
+country,scheme,stream,material,packagingType,rate,currency,unit,effectiveFrom,effectiveTo,sourceUrl
+RO,Marathon EPR,household,paper,,430.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/
+RO,Marathon EPR,commercial,paper,,360.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/
+RO,Marathon EPR,household,plastic,,460.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/
+RO,Marathon EPR,commercial,plastic,,390.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/
+RO,Marathon EPR,household,plastic,,800.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/
+RO,Marathon EPR,commercial,plastic,,790.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/
+RO,Marathon EPR,household,glass,,600.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/
+RO,Marathon EPR,commercial,glass,,590.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/
+RO,Marathon EPR,household,steel,,500.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/
+RO,Marathon EPR,commercial,steel,,480.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/
+RO,Marathon EPR,household,aluminum,,800.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/
+RO,Marathon EPR,commercial,aluminum,,800.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/
+RO,Marathon EPR,household,wood,,340.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/
+RO,Marathon EPR,commercial,wood,,340.0,RON,per_tonne,2025-01-01,,https://marathonepr.ro/tarife/

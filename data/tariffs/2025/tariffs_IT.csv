@@ -1,0 +1,9 @@
+iso,pro_name,scope,material,packagingType,rate,currency,unit,effectiveFrom,effectiveTo,sourceUrl
+IT,CONAI,both,plastic,A1.1,40.0,EUR,per_tonne,2025-07-01,2025-12-31,https://www.conai.org/imprese/contributo-ambientale/
+IT,CONAI,both,plastic,A1.2,87.0,EUR,per_tonne,2025-07-01,,https://www.conai.org/imprese/contributo-ambientale/
+IT,CONAI,both,plastic,A2,258.0,EUR,per_tonne,2025-07-01,,https://www.conai.org/imprese/contributo-ambientale/
+IT,CONAI,both,plastic,B1.1,219.0,EUR,per_tonne,2025-07-01,,https://www.conai.org/imprese/contributo-ambientale/
+IT,CONAI,both,plastic,B1.2,180.0,EUR,per_tonne,2025-07-01,2025-12-31,https://www.conai.org/imprese/contributo-ambientale/
+IT,CONAI,both,wood,,9.0,EUR,per_tonne,2025-07-01,,https://www.conai.org/notizie/conai-da-luglio-2025-variano-i-contributi-ambientali-per-gli-imballaggi-in-legno-plastica-e-vetro-e-per-i-compositi-a-base-carta/
+IT,CONAI,both,glass,,35.0,EUR,per_tonne,2025-07-01,,https://www.conai.org/notizie/conai-da-luglio-2025-variano-i-contributi-ambientali-per-gli-imballaggi-in-legno-plastica-e-vetro-e-per-i-compositi-a-base-carta/
+IT,CONAI,both,paper,monomateriale,65.0,EUR,per_tonne,2025-01-01,,https://www.conai.org/imprese/contributo-ambientale/contributo-diversificato-carta/

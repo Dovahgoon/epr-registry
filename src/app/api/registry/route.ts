@@ -1,29 +1,31 @@
-// Next.js route: /api/registry
 import { NextResponse } from "next/server";
-import fallback from "../../../data/registry.json";
 
 export const runtime = "edge";
 export const revalidate = 3600;
 
-const REMOTE = process.env.NEXT_PUBLIC_REGISTRY_URL || process.env.REGISTRY_URL;
-
-async function loadAll() {
+/** Load registry from env URL; fall back to /public/data/registry.json; final minimal JSON. */
+export async function GET(req: Request) {
+  const envUrl = process.env.NEXT_PUBLIC_REGISTRY_URL || process.env.REGISTRY_URL;
+  if (envUrl) {
+    try {
+      const res = await fetch(envUrl, { cache: "no-store" });
+      if (res.ok) {
+        const json = await res.json();
+        return NextResponse.json(json, {
+          headers: { "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400" },
+        });
+      }
+    } catch {}
+  }
   try {
-    if (REMOTE) {
-      const r = await fetch(REMOTE, { next: { revalidate: 3600 } });
-      if (r.ok) return await r.json();
+    const origin = new URL(req.url).origin;
+    const res2 = await fetch(origin + "/data/registry.json", { cache: "no-store" });
+    if (res2.ok) {
+      const json = await res2.json();
+      return NextResponse.json(json, {
+        headers: { "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400" },
+      });
     }
   } catch {}
-  return fallback;
-}
-
-export async function GET(req: Request) {
-  const { searchParams } = new URL(req.url);
-  const iso = (searchParams.get("country") || "").toUpperCase();
-  const data = await loadAll();
-  let items = Array.isArray(data) ? data : (data.items || []);
-  const out = iso ? items.filter((x: any) => x.country === iso || x.iso === iso) : items;
-  return NextResponse.json({ ok: true, count: out.length, items: out }, {
-    headers: { "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400" }
-  });
+  return NextResponse.json({ ok: false, items: [] }, { status: 503 });
 }

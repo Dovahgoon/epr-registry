@@ -1,0 +1,9 @@
+countryIso,schemeName,stream,material,packagingType,rate,currency,unit,sourceUrl,effectiveFrom,effectiveTo
+HR,FZOEU (Packaging),household,Plastic,,0.40-1.00,EUR,per_kg,placeholder:openai,,
+HR,FZOEU (Packaging),household,Glass,,0.05-0.12,EUR,per_kg,placeholder:openai,,
+HR,FZOEU (Packaging),household,Paper/Cardboard,,0.10-0.25,EUR,per_kg,placeholder:openai,,
+HR,FZOEU (Packaging),household,Plastic,,,EUR,per_kg,https://www.fzoeu.hr,,
+HR,FZOEU (Packaging),household,Glass,,,EUR,per_kg,https://www.fzoeu.hr,,
+HR,FZOEU (Packaging),household,Paper/Cardboard,,,EUR,per_kg,https://www.fzoeu.hr,,
+HR,National system (EEE),both,EEE general,,,EUR,per_kg,https://mingor.gov.hr,,
+HR,National system (Batteries),both,Portable batteries,,,EUR,per_kg,https://mingor.gov.hr,,

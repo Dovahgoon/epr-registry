@@ -1,234 +1,233 @@
-// src/app/country/[iso]/CountryClient.tsx
-"use client";
+'use client';
+import React from 'react';
 
-import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import styles from "./country-ui.module.css";
+type Pro = { name: string; url?: string | null; scope?: 'household'|'commercial'|'both'|'unknown'|null };
+type Regulator = { name: string; url?: string | null };
+type ItemRow = { country: string; pros?: Pro[]; regulators?: Regulator[]; updatedAt?: string };
+type RegistryItems = { ok?: boolean; year?: string; items: ItemRow[]; generatedAt?: string };
 
-type ItemLink = { name: string; url?: string };
+type PlasticSub = { code: string; label: string; rate: number };
+type Scheme = { id: string; name: string; effectiveFrom: string; materials?: Record<string, number>; plastic?: { subMaterials?: PlasticSub[] } };
+type CountryTariffs = { name: string; schemes: Scheme[] };
+type TariffsDoc = { countries: Record<string, CountryTariffs> };
 
-type RegistryItem = {
-  country: string; // ISO-2
-  updatedAt?: string;
-  regulators?: unknown; // accept array/object/mixed
-  pros?: unknown;       // accept array/object/mixed
-};
-type Registry = { ok?: boolean; year?: string | number; items?: RegistryItem[] };
+const REGISTRY_URL = process.env.NEXT_PUBLIC_REGISTRY_URL as string;
+const TARIFFS_URL = (process.env.NEXT_PUBLIC_TARIFFS_URL as string) || '/data/tariffs-2025.json';
 
-function isObj(v: unknown): v is Record<string, unknown> {
-  return typeof v === "object" && v !== null && !Array.isArray(v);
+async function fetchRegistryItems(): Promise<RegistryItems> {
+  if (!REGISTRY_URL) throw new Error('NEXT_PUBLIC_REGISTRY_URL is not set');
+  const res = await fetch(REGISTRY_URL, { cache: 'no-store' });
+  if (!res.ok) throw new Error('Failed to fetch registry items');
+  return await res.json();
+}
+async function fetchTariffs(): Promise<TariffsDoc | null> {
+  try {
+    const res = await fetch(TARIFFS_URL, { cache: 'no-store' });
+    if (!res.ok) return null;
+    const json = await res.json();
+    if (json && json.countries) return json as TariffsDoc;
+    if (json && json.items) {
+      // build a light structure from flat items[] (country-level)
+      const byIso: Record<string, CountryTariffs> = {};
+      for (const it of json.items) {
+        const iso = (it.country || '').toUpperCase();
+        const scheme = (it.scheme || 'Unknown');
+        const material = (it.material || '').replace(/\s+/g,'-').toLowerCase();
+        const rate = typeof it.rate === 'number' ? it.rate : Number(it.rate || 0);
+        byIso[iso] ||= { name: iso, schemes: [] };
+        let s = byIso[iso].schemes.find(x => x.name === scheme);
+        if (!s) {
+          s = { id: scheme, name: scheme, effectiveFrom: it.effective_from || '2025-01-01', materials: {} };
+          byIso[iso].schemes.push(s);
+        }
+        if (material) (s.materials as any)[material] = rate;
+      }
+      return { countries: byIso };
+    }
+  } catch {}
+  return null;
 }
 
-function normalizeLinks(v: unknown): ItemLink[] {
-  if (!v) return [];
-  // Case A: array
-  if (Array.isArray(v)) {
-    return (v as unknown[]).map((x): ItemLink => {
-      if (isObj(x)) {
-        const xx = x as Record<string, unknown>;
-        const name = String(xx.name ?? xx.label ?? xx.title ?? "");
-        const url = typeof xx.url === "string" ? xx.url : undefined;
-        return { name, url };
-      }
-      if (Array.isArray(x) && x.length >= 1) {
-        const name = String(x[0]);
-        const url = x[1] != null ? String(x[1] as any) : undefined;
-        return { name, url };
-      }
-      return { name: String(x) };
-    }).filter(it => it.name);
+function unionMaterials(ctry?: CountryTariffs) {
+
+  const set = new Set<string>();
+  if (!ctry) return [] as string[];
+  for (const s of (ctry.schemes || [])) {
+    if (s.materials) for (const m of Object.keys(s.materials)) set.add(m.replace(/_/g, ' '));
+    if (s.plastic?.subMaterials) for (const p of s.plastic.subMaterials) set.add((p.label || p.code || 'Plastic'));
   }
-  // Case B: object with {items: [...]}
-  if (isObj(v) && Array.isArray((v as Record<string, unknown>).items as unknown[])) {
-    return normalizeLinks((v as Record<string, unknown>).items);
-  }
-  // Case C: plain object map {"Name": "https://..."} or nested objects
-  if (isObj(v)) {
-    const entries = Object.entries(v as Record<string, unknown>);
-    return entries.map(([k, val]): ItemLink => {
-      if (isObj(val)) {
-        const vv = val as Record<string, unknown>;
-        const name = String((vv.name ?? vv.label ?? vv.title ?? k) as any);
-        const url = typeof vv.url === "string" ? vv.url : undefined;
-        return { name, url };
-      }
-      return { name: String(k), url: val != null ? String(val as any) : undefined };
-    });
-  }
-  // Fallback
-  return [{ name: String(v) }];
+  return Array.from(set).sort((a,b)=>a.localeCompare(b));
 }
 
-function dedupeByName(list: ItemLink[]): ItemLink[] {
-  const seen = new Set<string>();
-  const out: ItemLink[] = [];
-  for (const it of list) {
-    const key = it.name.trim().toLowerCase();
-    if (!key || seen.has(key)) continue;
-    seen.add(key);
-    out.push(it);
+function sanitizeMaterials(list: string[]) {
+  const ALLOW = new Set([
+    'aluminum','steel','glass','paper','wood','plastic','pe films','pet bottles clear','bioplastic','composite','other'
+  ]);
+  return list.filter((m) => {
+    const t = (m || '').toLowerCase().trim();
+    if (/^a\d(\s*\d+)?$/i.test(t)) return false; // drop tokens like "a1 1", "a1 2"
+    // Allow if explicitly allowed or if it's clearly a material word (alpha-heavy)
+    if (ALLOW.has(t)) return true;
+    return /[a-z]{3,}/i.test(t);
+  });
+}
+
+function materialsByPro(ctry?: CountryTariffs): Record<string, Set<string>> {
+  const map: Record<string, Set<string>> = {};
+  if (!ctry) return map;
+  const schemes = ctry.schemes || [];
+  for (const sch of schemes) {
+    const mats = new Set<string>();
+    if (sch.materials) for (const k of Object.keys(sch.materials)) mats.add(k.replace(/_/g, ' '));
+    if (sch.plastic?.subMaterials?.length) mats.add('Plastic');
+    map[sch.name.toLowerCase()] = mats;
   }
-  return out;
+  return map;
+}
+function bestMaterialsForPro(proName: string, proMaterialsIndex: Record<string, Set<string>>): Set<string> {
+  const pn = proName.toLowerCase();
+  const found = new Set<string>();
+  for (const [schemeName, mats] of Object.entries(proMaterialsIndex)) {
+    if (schemeName.includes(pn) || pn.includes(schemeName)) mats.forEach(m => found.add(m));
+  }
+  return found;
+}
+function ScopeBadge({scope}:{scope:Pro['scope']}){
+  const txt = scope || 'unknown';
+  const cls = txt==='household' ? 'bg-emerald-100 text-emerald-800 border-emerald-200'
+            : txt==='commercial' ? 'bg-blue-100 text-blue-800 border-blue-200'
+            : txt==='both' ? 'bg-violet-100 text-violet-800 border-violet-200'
+            : 'bg-slate-100 text-slate-600 border-slate-200';
+  return <span className={`ml-auto px-2 py-0.5 rounded-full text-xs border whitespace-nowrap ${cls}`}>{txt}</span>;
 }
 
 export default function CountryClient({ iso }: { iso: string }) {
-  const search = useSearchParams();
-  const view = (search.get("view") ?? "overview").toLowerCase();
+  const [data, setData] = React.useState<RegistryItems | null>(null);
+  const [tariffs, setTariffs] = React.useState<TariffsDoc | null>(null);
+  const [query, setQuery] = React.useState('');
+  const [scopes, setScopes] = React.useState<Array<'household'|'commercial'|'both'|'unknown'>>(['household','commercial','both','unknown']);
+  const [selectedMaterials, setSelectedMaterials] = React.useState<string[]>([]);
 
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [entry, setEntry] = useState<RegistryItem | null>(null);
-  const [source, setSource] = useState<string>("");
+  React.useEffect(() => { (async () => setData(await fetchRegistryItems()))(); }, []);
+  React.useEffect(() => { (async () => setTariffs(await fetchTariffs()))(); }, []);
 
-  const REGISTRY_URL = process.env.NEXT_PUBLIC_REGISTRY_URL as string | undefined;
+  const row = React.useMemo(() => (data?.items || []).find(r => (r.country || '').toUpperCase() === iso), [data, iso]);
+  const proMatIndex = React.useMemo(() => materialsByPro(tariffs?.countries?.[iso]), [tariffs, iso]);
 
-  useEffect(() => {
-    const ac = new AbortController();
-    async function load() {
-      setLoading(true);
-      setError(null);
-      try {
-        let data: Registry | null = null;
-        if (REGISTRY_URL) {
-          const r = await fetch(REGISTRY_URL, { signal: ac.signal, cache: "no-store" });
-          if (r.ok) {
-            data = (await r.json()) as Registry;
-            setSource("GitHub (NEXT_PUBLIC_REGISTRY_URL)");
-          }
-        }
-        if (!data) {
-          const r2 = await fetch("/api/registry", { signal: ac.signal, cache: "no-store" });
-          if (r2.ok) {
-            data = (await r2.json()) as Registry;
-            setSource("/api/registry");
-          }
-        }
-        if (!data?.items?.length) throw new Error("Registry is empty");
-        const found = data.items.find(i => (i.country || "").toUpperCase() === iso.toUpperCase()) ?? null;
-        console.log("[CountryClient] entry for", iso, found);
-        setEntry(found);
-      } catch (e: any) {
-        setError(e?.message || "Failed to load registry");
-        setEntry(null);
-      } finally {
-        setLoading(false);
-      }
-    }
-    load();
-    return () => ac.abort();
-  }, [iso, REGISTRY_URL]);
+  const pros = React.useMemo(() => {
+    const list = (row?.pros || []).map(p => ({ ...p, scope: (p.scope || 'unknown') }));
+    const q = query.trim().toLowerCase();
+    return list
+      .filter(p => (q ? (p.name || '').toLowerCase().includes(q) : true))
+      .filter(p => scopes.includes((p.scope as any)));
+  }, [row, query, scopes]);
 
-  const regulators = useMemo(() => dedupeByName(normalizeLinks(entry?.regulators)), [entry]);
-  const pros = useMemo(() => dedupeByName(normalizeLinks(entry?.pros)), [entry]);
+  const regulators = row?.regulators || [];
+  const materials = React.useMemo(() => tariffs?.countries ? unionMaterials(tariffs.countries[iso]) : [], [tariffs, iso]);
 
-  if (loading) {
-    return <div className={styles.countryWrap}><div className={styles.skeleton}>Loading country…</div></div>;
+  function toggleScope(s: 'household'|'commercial'|'both'|'unknown') {
+    setScopes(prev => prev.includes(s) ? prev.filter(x => x !== s) : [...prev, s]);
   }
-  if (error) {
-    return (
-      <div className={styles.countryWrap}>
-        <div className={styles.errorBox}>
-          <div className={styles.errorTitle}>Couldn’t render this country</div>
-          <div className={styles.errorMsg}>{error}</div>
-          <div className={styles.errorHelp}>Check your NEXT_PUBLIC_REGISTRY_URL or /api/registry response.</div>
-        </div>
-      </div>
-    );
+  function toggleMaterial(m: string) {
+    setSelectedMaterials(prev => prev.includes(m) ? prev.filter(x => x !== m) : [...prev, m]);
   }
-  if (!entry) {
-    return (
-      <div className={styles.countryWrap}>
-        <div className={styles.errorBox}>
-          <div className={styles.errorTitle}>No data for {iso}</div>
-          <div className={styles.errorHelp}>This ISO isn’t present in the registry yet.</div>
-        </div>
-      </div>
-    );
-  }
+
+  const prosFiltered = React.useMemo(() => {
+    if (selectedMaterials.length === 0) return pros;
+    const want = new Set(selectedMaterials.map(s => s.toLowerCase()));
+    return pros.filter(p => {
+      const mats = bestMaterialsForPro(p.name, proMatIndex);
+      for (const m of mats) { if (want.has(m.toLowerCase())) return true; }
+      return false;
+    });
+  }, [pros, selectedMaterials, proMatIndex]);
 
   return (
-    <div className={styles.countryWrap}>
-      <header className={styles.countryHeader}>
-        <div className={styles.countryCode}>{iso}</div>
-        <p className={styles.countrySub}>Live overview, regulators, PROs, reporting & fees</p>
-        <div className={styles.meta}>
-          <span className={styles.metaItem}>Source: {source || "unknown"}</span>
-          <span className={styles.metaItem}>Regulators: {regulators.length}</span>
-          <span className={styles.metaItem}>PROs: {pros.length}</span>
-        </div>
-        <nav className={styles.pillTabs}>
-          <Link className={`${styles.pillTab} ${view === "overview" ? styles.active : ""}`} href={`?view=overview`}>Overview</Link>
-          <Link className={`${styles.pillTab} ${view === "regulators" ? styles.active : ""}`} href={`?view=regulators`}>Regulators</Link>
-          <Link className={`${styles.pillTab} ${view === "pros" ? styles.active : ""}`} href={`?view=pros`}>PROs</Link>
-          <Link className={`${styles.pillTab} ${view === "reporting" ? styles.active : ""}`} href={`?view=reporting`}>Reporting</Link>
-          <Link className={`${styles.pillTab} ${view === "fees" ? styles.active : ""}`} href={`?view=fees`}>Fees</Link>
-        </nav>
-      </header>
+    <div className="min-h-screen px-6 py-10 overflow-x-hidden bg-gradient-to-b from-violet-50 via-fuchsia-50 to-white text-slate-800">
+      <div className="mx-auto max-w-6xl">
+        <h1 className="text-6xl font-extrabold tracking-tight text-slate-900">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-700 via-fuchsia-600 to-sky-600">{iso}</span>
+        </h1>
+        <p className="text-slate-600">{iso}</p>
 
-      {view === "overview" && (
-        <div className={styles.overviewGrid}>
-          <div className={styles.card}><div className={styles.cardLabel}>Status</div><div className={styles.cardValue}>active</div></div>
-          <div className={styles.card}><div className={styles.cardLabel}>Scope</div><div className={styles.cardValue}>Packaging</div></div>
-          <div className={styles.card}><div className={styles.cardLabel}>Producer Register</div><a className={styles.cardLink} href="#" onClick={(e) => e.preventDefault()}>Open register ↗</a></div>
-        </div>
-      )}
-
-      {view === "regulators" && (
-        <Section title={`Regulators (${regulators.length})`}>
-          {regulators.length === 0 ? (
-            <div className={styles.empty}>No regulators in the registry yet.</div>
-          ) : (
-            <div className={styles.chips}>
-              {regulators.map((r, i) => <ChipLink key={i} name={r.name} url={r.url} />)}
+        <section className="mt-6">
+  <h3 className="text-lg font-semibold">Materials</h3>
+  {materials.length > 0 ? (
+    <div className="mt-2 flex flex-wrap gap-2">
+              {materials.map(m => {
+                const active = selectedMaterials.includes(m);
+                return (
+                  <button key={m} onClick={() => toggleMaterial(m)}
+                    className={`px-3 py-1.5 rounded-full border text-sm ${active ? 'border-violet-400 bg-violet-100 text-violet-800' : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'}`}>
+                    {m}
+                  </button>
+                );
+              })}
             </div>
-          )}
-        </Section>
-      )}
+  ) : (
+    <p className="mt-2 text-sm text-slate-500">No materials listed for this country yet.</p>
+  )}
+</section>
 
-      {view === "pros" && (
-        <Section title={`Producer Responsibility Organisations (PROs) (${pros.length})`}>
-          {pros.length === 0 ? (
-            <div className={styles.empty}>No PROs in the registry yet.</div>
-          ) : (
-            <div className={styles.chips}>
-              {pros.map((p, i) => <ChipLink key={i} name={p.name} url={p.url} />)}
+        <section className="mt-8">
+          <h2 className="text-2xl font-semibold">PROs</h2>
+          <div className="mt-3 flex items-center gap-3 flex-wrap">
+            <span className="text-sm text-slate-500">Results: {prosFiltered.length}</span>
+            <button className="px-3 py-1.5 rounded-xl bg-slate-100 border border-slate-300 hover:bg-slate-50" onClick={() => setQuery('')}>Clear</button>
+            <input value={query} onChange={e => setQuery(e.target.value)} placeholder="Search PRO name..." className="rounded-2xl bg-white border border-slate-300 px-4 py-2 w-64 shadow-sm min-w-0" />
+          </div>
+
+          <div className="mt-4">
+            <div className="text-sm font-medium text-slate-600 mb-2">Purpose</div>
+            <div className="flex gap-2 flex-wrap">
+              {(['household','commercial','both','unknown'] as const).map(s => (
+                <button key={s} onClick={() => toggleScope(s)} className={`px-3 py-1.5 rounded-full border ${scopes.includes(s) ? 'border-violet-400 bg-violet-100' : 'border-slate-300 bg-white hover:bg-slate-50'}`}>{s}</button>
+              ))}
             </div>
-          )}
-        </Section>
-      )}
+          </div>
 
-      {view === "reporting" && (
-        <Section title="Reporting">
-          <div className={styles.empty}>Coming soon.</div>
-        </Section>
-      )}
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {prosFiltered.length === 0 ? (
+              <div className="col-span-full text-slate-500">No PROs match your filters.</div>
+            ) : prosFiltered.map(p => {
+              const mats = sanitizeMaterials(Array.from(bestMaterialsForPro(p.name, proMatIndex)));
+              return (
+                <div key={p.name}
+                     className="relative min-w-0 rounded-2xl p-4 bg-white border border-slate-200 hover:border-violet-400 shadow-lg shadow-violet-100 overflow-visible pr-14
+                                before:content-[''] before:absolute before:top-2 before:bottom-2 before:right-[-12px] before:z-10 before:w-[4px]
+                                before:rounded-full before:bg-gradient-to-b before:from-violet-600 before:via-fuchsia-500 before:to-pink-500">
+                  <div className="relative">
+                    <div className="text-lg font-semibold pr-16">{p.name}</div>
+                    <div className="absolute top-2 right-3 z-10"><ScopeBadge scope={p.scope}/></div>
+                  </div>
+                  {p.url ? <a href={p.url} target="_blank" className="text-xs text-violet-700 hover:underline break-all mt-2 inline-block">{p.url}</a> : null}
+                  {mats.length > 0 && (
+                    <div className="mt-3 flex flex-wrap gap-1.5">
+                      {mats.slice(0,8).map(m => (
+                        <span key={p.name + m} className="px-2 py-0.5 rounded-full bg-slate-50 border border-slate-200 text-[11px] text-slate-700">{m}</span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
 
-      {view === "fees" && (
-        <Section title="Fees">
-          <div className={styles.empty}>Use the <Link href="/tools/fee-calculator">Fee Calculator</Link> for material rates by country.</div>
-        </Section>
-      )}
+        <section className="mt-10">
+          <h2 className="text-2xl font-semibold">Regulators</h2>
+          {row?.regulators?.length ? (
+            <ul className="mt-3 grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {row.regulators.map(r => (
+                <li key={r.name} className="rounded-2xl p-5 bg-white border border-slate-200 shadow-lg shadow-violet-100 overflow-hidden">
+                  <div className="font-medium">{r.name}</div>
+                  {r.url ? (<a href={r.url} target="_blank" className="text-sm text-violet-700 hover:underline break-all">{r.url}</a>) : null}
+                </li>
+              ))}
+            </ul>
+          ) : <p className="text-slate-500 mt-2">No regulators listed for this country yet.</p>}
+        </section>
+      </div>
     </div>
-  );
-}
-
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <section className={styles.section}>
-      <h2 className={styles.sectionTitle}>{title}</h2>
-      {children}
-    </section>
-  );
-}
-
-function ChipLink({ name, url }: { name: string; url?: string }) {
-  if (!url) return <div className={`${styles.linkChip} ${styles.disabled}`}>{name}</div>;
-  return (
-    <a className={styles.linkChip} href={url} target="_blank" rel="noopener noreferrer">
-      <span className={styles.chipDot} />
-      {name}
-      <span className={styles.chipExternal} aria-hidden>↗</span>
-    </a>
   );
 }
