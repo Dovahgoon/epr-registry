@@ -1,42 +1,25 @@
+// updater/src/main.mjs
 import 'dotenv/config';
+import path from 'node:path';
+import { readdir } from 'node:fs/promises';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { callRpc } from './lib/supabase.mjs';
 import { sleep } from './lib/utils.mjs';
 
-// ---- Implemented country fetchers (you already have these files)
-import { fetchDE } from './sources/de.mjs';
-import { fetchDK } from './sources/dk.mjs';
-import { fetchHR } from './sources/hr.mjs';
-import { fetchSE } from './sources/se.mjs';
-import { fetchES } from './sources/es.mjs';
-import { fetchFR } from './sources/fr.mjs';
-import { fetchIT } from './sources/it.mjs';
-import { fetchBE } from './sources/be.mjs';
-import { fetchNL } from './sources/nl.mjs';
-import { fetchAT } from './sources/at.mjs';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname  = path.dirname(__filename);
+const SOURCES_DIR = path.join(__dirname, 'sources');
 
-// ---- Fallback fetcher for countries not implemented yet
-const emptyFetcher = async () => ({ regulators: [], pros: [] });
-
-// ---- Target RPC wrapper (DB function you created in SQL)
-const UPSERT_PRO_FN = 'upsert_pro_api';
-
-// ---- We prefer this scope but will fallback if enum differs in DB
-const PREFERRED_SCOPE = 'packaging';
-const SCOPE_FALLBACKS = [
+// --- Constants / defaults ----------------------------------------------------
+const UPSERT_PRO_FN = 'upsert_pro_api';          // wrapper RPC you created in SQL
+const PREFERRED_SCOPE = 'packaging';             // try this first
+const SCOPE_FALLBACKS = [                        // then try these if enum mismatch
   'household', 'commercial', 'both', 'packaging_waste', 'pack', 'general', 'other'
 ];
 
-// ---- Country → fetcher map (EU-27)
-const countryFetchers = {
-  AT: fetchAT, BE: fetchBE, BG: emptyFetcher, CY: emptyFetcher, CZ: emptyFetcher,
-  DE: fetchDE, DK: fetchDK, EE: emptyFetcher, ES: fetchES, FI: emptyFetcher,
-  FR: fetchFR, GR: emptyFetcher, HR: fetchHR, HU: emptyFetcher, IE: emptyFetcher,
-  IT: fetchIT, LT: emptyFetcher, LU: emptyFetcher, LV: emptyFetcher, MT: emptyFetcher,
-  NL: fetchNL, PL: emptyFetcher, PT: emptyFetcher, RO: emptyFetcher, SE: fetchSE,
-  SI: emptyFetcher, SK: emptyFetcher,
-};
+const emptyFetcher = async () => ({ regulators: [], pros: [] });
 
-// ---- CLI args
+// --- CLI args ----------------------------------------------------------------
 function parseArgs() {
   const args = process.argv.slice(2);
   const opts = { all:false, country:null, dry:false };
@@ -44,7 +27,7 @@ function parseArgs() {
     const a = args[i];
     if (a === '--all') opts.all = true;
     else if (a === '--dry') opts.dry = true;
-    else if (a === '--country') opts.country = args[++i];
+    else if (a === '--country') opts.country = String(args[++i] || '').toUpperCase();
     else if (a === '--help') {
       console.log(`Usage:
   node src/main.mjs --all [--dry]
@@ -55,7 +38,49 @@ function parseArgs() {
   return opts;
 }
 
-async function upsertRegulator(iso, r) {
+// --- Dynamic discovery of country fetchers -----------------------------------
+function isoFromFilename(f) {
+  // 'de.mjs' -> 'DE' ; accept .js/.mjs/.cjs
+  return f.replace(/\.(mjs|cjs|js)$/i, '').toUpperCase();
+}
+
+async function discoverFetchers() {
+  let files = [];
+  try { files = (await readdir(SOURCES_DIR)).filter(f => /\.(mjs|cjs|js)$/i.test(f)); }
+  catch (e) {
+    console.warn('[main] No sources directory found:', SOURCES_DIR, e?.message || e);
+    return {};
+  }
+
+  const map = {};
+  for (const f of files) {
+    const iso = isoFromFilename(f);
+    const url = pathToFileURL(path.join(SOURCES_DIR, f)).href;
+    try {
+      const mod = await import(url);
+      // Prefer named export fetchXX, then default, then first function export
+      const preferred = mod[`fetch${iso}`];
+      const anyFunc = preferred || mod.default || mod.fetch || mod.main ||
+        Object.values(mod).find(v => typeof v === 'function');
+
+      if (typeof anyFunc === 'function') {
+        map[iso] = anyFunc;
+        console.log(`[main] Loaded ${f} as ${iso}`);
+      } else {
+        console.warn(`[main] ${f}: no callable export found; using empty fetcher`);
+        map[iso] = emptyFetcher;
+      }
+    } catch (err) {
+      console.warn(`[main] Failed to import ${f}:`, err?.message || err);
+      map[iso] = emptyFetcher;
+    }
+  }
+  return map;
+}
+
+// --- Upsert helpers -----------------------------------------------------------
+async function upsertRegulator(iso, r, { dry } = {}) {
+  if (dry || !process.env.SUPABASE_SERVICE_ROLE) return;
   await callRpc('upsert_regulator', {
     p_iso: iso,
     p_name: r.name,
@@ -69,7 +94,9 @@ async function upsertRegulator(iso, r) {
  * Upsert a PRO with automatic scope fallback (handles enum differences).
  * Always calls the unambiguous wrapper RPC: upsert_pro_api
  */
-async function upsertProWithFallback(iso, p) {
+async function upsertProWithFallback(iso, p, { dry } = {}) {
+  if (dry || !process.env.SUPABASE_SERVICE_ROLE) return;
+
   const materials = Array.isArray(p.materials)
     ? p.materials.map(x => (typeof x === 'string' ? x.trim().toLowerCase() : '')).filter(Boolean)
     : [];
@@ -87,7 +114,6 @@ async function upsertProWithFallback(iso, p) {
   let lastErr = null;
   for (const scope of toTry) {
     try {
-      // IMPORTANT: explicit wrapper call removes overloading ambiguity
       await callRpc(UPSERT_PRO_FN, {
         p_iso: iso,
         p_name: p.name,
@@ -101,66 +127,71 @@ async function upsertProWithFallback(iso, p) {
       }
       return; // success
     } catch (e) {
-      const msg = String(e && e.message || '');
+      const msg = String((e && e.message) || '');
       if (msg.includes('22P02') || msg.includes('invalid input value for enum')) {
-        lastErr = e;            // enum mismatch → try next
+        lastErr = e; // enum mismatch → try next
         continue;
       }
-      throw e;                  // not a scope issue
+      throw e; // not a scope issue
     }
   }
   const tried = toTry.join(', ');
-  throw new Error(`All scope candidates failed for PRO "${p.name}" (${iso}). Tried: [${tried}]. Last error: ${lastErr && lastErr.message}`);
+  throw new Error(
+    `All scope candidates failed for PRO "${p.name}" (${iso}). Tried: [${tried}]. Last error: ${lastErr && lastErr.message}`
+  );
 }
 
-// ---- Upsert one country
-async function upsertCountry(iso) {
-  const fetcher = countryFetchers[iso];
-  if (!fetcher) { console.warn(`[SKIP] No fetcher mapping for ${iso}`); return; }
-  console.log(`\n==> ${iso}`);
+// --- Orchestrate one country --------------------------------------------------
+async function runCountry(iso, fetcher, { dry } = {}) {
+  if (typeof fetcher !== 'function') {
+    console.warn(`[SKIP] No fetcher for ${iso}`);
+    return;
+  }
 
+  console.log(`\n[${iso}] fetching…`);
   const { regulators = [], pros = [] } = await fetcher();
 
   for (const r of regulators) {
     if (!r?.name) continue;
     console.log(`  Reg: ${r.name}`);
-    if (process.env.SUPABASE_SERVICE_ROLE) {
-      await upsertRegulator(iso, r);
-      await sleep(150);
-    }
+    await upsertRegulator(iso, r, { dry });
+    await sleep(150);
   }
 
   for (const p of pros) {
     if (!p?.name) continue;
     console.log(`  PRO: ${p.name}`);
-    if (process.env.SUPABASE_SERVICE_ROLE) {
-      await upsertProWithFallback(iso, p);
-      await sleep(150);
-    }
+    await upsertProWithFallback(iso, p, { dry });
+    await sleep(150);
   }
 }
 
-// ---- Main
+// --- Main ---------------------------------------------------------------------
 async function main() {
-  const { all, country } = parseArgs();
-
+  const { all, country, dry } = parseArgs();
   if (!all && !country) {
     console.log('Use --all or --country <ISO>. Try --help');
     process.exit(1);
   }
 
+  const fetchers = await discoverFetchers();
+
   if (country) {
     const iso = country.toUpperCase();
-    if (!countryFetchers[iso]) {
-      console.warn(`[WARN] Unknown ISO "${iso}". Known: ${Object.keys(countryFetchers).join(', ')}`);
+    if (!fetchers[iso]) {
+      console.warn(`[WARN] Unknown ISO "${iso}". Known: ${Object.keys(fetchers).sort().join(', ')}`);
     }
-    await upsertCountry(iso);
+    await runCountry(iso, fetchers[iso] || emptyFetcher, { dry });
   } else if (all) {
-    for (const iso of Object.keys(countryFetchers)) {
-      await upsertCountry(iso);
+    const isos = Object.keys(fetchers).sort();
+    if (!isos.length) console.warn('[main] No source files found; nothing to run.');
+    for (const iso of isos) {
+      await runCountry(iso, fetchers[iso] || emptyFetcher, { dry });
     }
   }
 
   console.log('\nDone.');
 }
+
 main().catch(err => { console.error(err); process.exit(1); });
+
