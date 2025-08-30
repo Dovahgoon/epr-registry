@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+	with:
+	  ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Use Node 20
         uses: actions/setup-node@v4
@@ -43,6 +45,14 @@ jobs:
       - name: Merge tariff imports
         run: npm run tariffs:merge
         working-directory: updater
+
+      - name: Debug: show main.mjs and sources
+        run: |
+          echo "--- main.mjs head ---"
+    	  sed -n '1,80p' src/main.mjs
+    	  echo "--- sources dir ---"
+    	  ls -la src/sources
+  	working-directory: updater
 
       - name: Run main updater (DB upserts)
         run: npm run start
