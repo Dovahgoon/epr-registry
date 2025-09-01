@@ -46,6 +46,13 @@ jobs:
         run: npm run tariffs:merge
         working-directory: updater
 
+- name: Merge EUROPEN mapping (PROs/regs scopes)
+  run: npm run europen:merge
+  working-directory: updater
+  env:
+    SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+    SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
+    EUROPEN_OVERVIEW_URL: https://www.europen-packaging.eu/publication/overview-of-member-states-epr-schemes/
       - name: Run main updater (DB upserts)
         run: npm run start
         working-directory: updater
