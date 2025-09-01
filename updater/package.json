@@ -17,14 +17,14 @@
     "europen:merge": "node src/run_europen_merge.mjs"
   },
   "dependencies": {
+    "@fast-csv/parse": "^5.0.0",
     "@supabase/supabase-js": "^2.56.0",
     "cheerio": "^1.1.2",
     "dotenv": "^16.6.1",
     "node-fetch": "^3.3.2",
     "pdf-parse": "^1.1.1",
-    "zod": "^3.23.8",
     "undici": "^6.19.8",
-    "@fast-csv/parse": "^5.0.0",
-    "xlsx": "^0.18.5"
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zod": "^3.23.8"
   }
 }
