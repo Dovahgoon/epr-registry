@@ -16,9 +16,6 @@ jobs:
       - name: Ensure dirs
         run: mkdir -p data/tariffs/imports data/sources
         working-directory: updater
-      - name: Place sources CSV
-        run: |
-          cat > data/sources/eu27_tariff_sources.csv <<'CSV'
 - name: Scrape EU-27
   run: |
     isos=(AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE)
