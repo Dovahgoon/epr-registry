@@ -1,0 +1,61 @@
+name: Tariffs Updater (Daily)
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # daily 02:00 UTC
+  workflow_dispatch:
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+
+      - name: Scrape operator sources (EU-27) from committed CSV
+        run: |
+          cd updater
+          npm ci
+          test -s data/sources/eu27_tariff_sources.csv
+          isos=(AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE)
+          for iso in "${isos[@]}"; do
+            echo "Scraping $iso"
+            node src/fetchers/tariffs/scrape_from_sources.mjs --iso=$iso || true
+          done
+          node src/merge_tariffs_items.mjs
+
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build tariffs JSON
+        run: npm run build:tariffs
+
+      - name: Verify JSON exists
+        run: |
+          test -f public/data/tariffs-2025.json || (echo 'tariffs-2025.json missing' && exit 1)
+          ls -l public/data/tariffs-2025.json
+
+      - name: Upload to Supabase Storage
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
+          STORAGE_BUCKET: public_
+          STORAGE_PATH: tariffs/tariffs-2025.json
+        run: |
+          set -e
+          echo "Uploading tariffs-2025.json to $SUPABASE_URL/storage/v1/object/$STORAGE_BUCKET/$STORAGE_PATH"
+          curl -sS -X POST             "$SUPABASE_URL/storage/v1/object/$STORAGE_BUCKET/$STORAGE_PATH"             -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE"             -H "Content-Type: application/json"             --data-binary @public/data/tariffs-2025.json             -o /dev/null -w "%{http_code}" | tee /tmp/status.txt
+          code=$(cat /tmp/status.txt)
+          if [ "$code" != "200" ] && [ "$code" != "201" ]; then
+            echo "Upload failed with HTTP $code"; exit 1; fi
+
+      - name: Print public URL hint
+        run: |
+          echo "Set NEXT_PUBLIC_TARIFFS_SOURCE_URL to:"
+          echo "${{ secrets.SUPABASE_URL }}/storage/v1/object/public/public_/tariffs/tariffs-2025.json"
