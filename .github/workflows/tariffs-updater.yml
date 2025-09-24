@@ -15,14 +15,15 @@ jobs:
       - name: Setup Node
 
       - name: Scrape operator sources (EU-27) from committed CSV
+        working-directory: updater
+        shell: bash
         run: |
-          cd updater
-          npm ci
+          npm ci || npm i
           test -s data/sources/eu27_tariff_sources.csv
           isos=(AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE)
           for iso in "${isos[@]}"; do
             echo "Scraping $iso"
-            node src/fetchers/tariffs/scrape_from_sources.mjs --iso=$iso || true
+            node src/fetchers/tariffs/scrape_from_sources.mjs --iso="$iso" || true
           done
           node src/merge_tariffs_items.mjs
 

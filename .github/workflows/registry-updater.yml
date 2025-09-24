@@ -1,58 +1,30 @@
 name: Daily Registry Updater
 on:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: '7 4 * * *'
   workflow_dispatch:
-
-concurrency:
-  group: daily-registry-updater
-  cancel-in-progress: false
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: chore/tariff-sources-and-scrapers
-
-      - name: Use Node 20
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
       - name: Install updater deps
         run: npm ci
         working-directory: updater
 
-      - name: Ensure import dir
-        run: mkdir -p data/tariffs/imports
+      - name: Merge umbrella + official sources
+        run: |
+          npm run update:proe:members || true
+          npm run expra:members || true
+          npm run sources:merge || true
         working-directory: updater
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
 
-      - name: Scrape EE ETO
-        run: npm run scrape:tariffs:ee:eto || true
-        working-directory: updater
-
-      - name: Scrape LT Žaliasis taškas
-        run: npm run scrape:tariffs:lt:zaliasis || true
-        working-directory: updater
-
-      - name: Scrape LT Gamtos ateitis
-        run: npm run scrape:tariffs:lt:gamtos || true
-        working-directory: updater
-
-      - name: Merge tariff imports
-        run: npm run tariffs:merge
-        working-directory: updater
-
-- name: Merge EUROPEN mapping (PROs/regs scopes)
-  run: npm run europen:merge
-  working-directory: updater
-  env:
-    SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-    SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
-    EUROPEN_OVERVIEW_URL: https://www.europen-packaging.eu/publication/overview-of-member-states-epr-schemes/
       - name: Run main updater (DB upserts)
         run: npm run start
         working-directory: updater
@@ -60,8 +32,9 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
 
-      - name: Export & upload registry.json (and tariffs)
-        run: npm run export-json
+      - name: Export (deduped) to Supabase Storage
+        run: |
+          if [ -f src/export_deduped.mjs ]; then npm run export-json-deduped; else npm run export-json; fi
         working-directory: updater
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}

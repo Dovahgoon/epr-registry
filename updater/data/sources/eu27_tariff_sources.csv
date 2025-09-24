@@ -39,12 +39,3 @@ ES,Spain,MITECO,https://www.miteco.gob.es/,Ecovidrio (glass),https://www.ecovidr
 SE,Sweden,Naturvårdsverket,https://www.naturvardsverket.se/,TMR (to confirm),https://tmr.se/foretag/,public_official,html,both,Verify current scheme landscape
 SE,Sweden,Naturvårdsverket,https://www.naturvardsverket.se/,NPA (to confirm),https://npa.se/foretag/producentansvar-forpackningar/,public_official,html,both,Verify current scheme landscape
 IE,Ireland,EPA,https://www.epa.ie/,Repak (duplicate guard),https://repak.ie/for-businesses/fees,public_official,pdf,both,
-ES,Spain,,,Ecoembes (domestic packaging prices tool),https://ecoembesempresas.com/precios,public_operator,calculator,household,"Interactive per-kg price tool; use as calculator, not a static table."
-ES,Spain,,,Ecovidrio (glass),https://www.ecovidrio.es/,landing,landing,household,Glass packaging PRO; public tariffs not exposed as static table.
-ES,Spain,,,Procircular (household),https://procircular.es/wp-content/uploads/2024/09/20240919_Tarifas-Domestico-2025.pdf,public_operator,pdf,household,"Tarifas RAP doméstico 2025, €/kg + UVC factors."
-ES,Spain,,,IMPLICA (commercial packaging),https://somosimplica.com/wp-content/uploads/2024/12/Tarifa_comercial_IMPLICA.pdf,public_operator,pdf,commercial,"Tarifa comercial 2025, €/kg."
-CZ,Czechia,,,EKO-KOM,https://www.ekokom.cz/wp-content/uploads/2025/05/Price_list_valid_from_1_7_2025.pdf,public_operator,pdf,both,"Price list valid from 1 July 2025, CZK/t."
-SE,Sweden,,,TMR (Material Companies),https://tmr.se/wp-content/uploads/2025/01/PRICINGAPPENDIX_information_2025.pdf,public_operator,pdf,both,"Packaging fee per material, 2025, SEK/kg."
-IT,Italy,,,CONAI (Consorzio Nazionale Imballaggi),https://www.conai.org/wp-content/uploads/2025/03/Guida_Conai_2025.pdf,public_operator,pdf,both,Guida 2025 includes CAC (contributo ambientale) per material.
-EE,Estonia,,,ETO (Eesti Taaskasutusorganisatsioon),https://www.eto.ee/,landing,landing,both,General info; no public numeric tariff table found.
-LV,Latvia,,,Zaļā josta,https://www.zalajosta.lv/en/,landing,landing,both,PRO landing; use for monitoring and onboarding.
