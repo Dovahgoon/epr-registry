@@ -17,7 +17,8 @@ const ISO = {
   Luxembourg: 'LU', Malta: 'MT', Netherlands: 'NL', Norway: 'NO', Poland: 'PL',
   Portugal: 'PT', Romania: 'RO', Serbia: 'RS', Slovakia: 'SK', Slovenia: 'SI',
   Spain: 'ES', Sweden: 'SE', Turkey: 'TR', UK: 'GB', 'North Macedonia': 'MK',
-  Israel: 'IL', Bosnia-Herzegovina: 'BA'
+  Israel: 'IL', 
+  'Bosnia-Herzegovina': 'BA',
 };
 
 async function preloadCountries() {
