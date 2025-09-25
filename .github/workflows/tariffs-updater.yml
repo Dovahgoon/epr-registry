@@ -11,7 +11,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
       - name: Setup Node
 
       - name: Scrape operator sources (EU-27) from committed CSV

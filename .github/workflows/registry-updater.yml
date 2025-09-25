@@ -18,6 +18,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
+
       - name: Install updater deps
         run: npm ci
         working-directory: updater
@@ -32,8 +33,16 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
 
+      - name: Debug: show main.mjs and sources
+        run: |
+          echo "--- main.mjs head ---"
+          sed -n '1,80p' src/main.mjs
+          echo "--- sources dir ---"
+          ls -la src/sources || true
+        working-directory: updater
+
       - name: Run main updater (DB upserts)
-        run: npm run start
+        run: npm run all
         working-directory: updater
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
