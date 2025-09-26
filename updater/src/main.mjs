@@ -1,3 +1,4 @@
+// updater/src/main.mjs
 import 'dotenv/config';
 import path from 'node:path';
 import { readdir } from 'node:fs/promises';
@@ -39,6 +40,7 @@ function parseArgs() {
 
 // --- Dynamic discovery of country fetchers -----------------------------------
 function isoFromFilename(f) {
+  // 'de.mjs' -> 'DE' ; accept .js/.mjs/.cjs
   return f.replace(/\.(mjs|cjs|js)$/i, '').toUpperCase();
 }
 
@@ -56,9 +58,11 @@ async function discoverFetchers() {
     const url = pathToFileURL(path.join(SOURCES_DIR, f)).href;
     try {
       const mod = await import(url);
+      // Prefer named export fetchXX, then default, then first function export
       const preferred = mod[`fetch${iso}`];
       const anyFunc = preferred || mod.default || mod.fetch || mod.main ||
         Object.values(mod).find(v => typeof v === 'function');
+
       if (typeof anyFunc === 'function') {
         map[iso] = anyFunc;
         console.log(`[main] Loaded ${f} as ${iso}`);
@@ -83,7 +87,10 @@ async function upsertRegulator(iso, r, { dry } = {}) {
   });
 }
 
-/** Upsert a PRO with automatic scope fallback (handles enum differences). */
+/**
+ * Upsert a PRO with automatic scope fallback (handles enum differences).
+ * Always calls the unambiguous wrapper RPC: upsert_pro_api
+ */
 async function upsertProWithFallback(iso, p, { dry } = {}) {
   if (dry || !process.env.SUPABASE_SERVICE_ROLE) return;
 
@@ -119,9 +126,10 @@ async function upsertProWithFallback(iso, p, { dry } = {}) {
     } catch (e) {
       const msg = String((e && e.message) || '');
       if (msg.includes('22P02') || msg.includes('invalid input value for enum')) {
-        lastErr = e; continue;
+        lastErr = e; // enum mismatch → try next
+        continue;
       }
-      throw e;
+      throw e; // not a scope issue
     }
   }
   const tried = toTry.join(', ');
@@ -136,6 +144,7 @@ async function runCountry(iso, fetcher, { dry } = {}) {
     console.warn(`[SKIP] No fetcher for ${iso}`);
     return;
   }
+
   console.log(`\n[${iso}] fetching…`);
   const { regulators = [], pros = [] } = await fetcher();
 
