@@ -182,4 +182,3 @@ async function main() {
 
 main().catch(err => { console.error(err); process.exit(1); });
 /* END main.mjs */
-/'@ | Set-Content -Encoding UTF8 -NoNewline 'updater/src/main.mjs'"
