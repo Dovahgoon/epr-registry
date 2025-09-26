@@ -1,11 +1,15 @@
 name: Daily Registry Updater
+
 on:
+  push:
+    branches: [ main ]
   schedule:
     - cron: '7 4 * * *'
   workflow_dispatch:
 
 jobs:
   update:
+    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
@@ -18,9 +22,15 @@ jobs:
         with:
           node-version: 20
           cache: npm
+
       - name: Install updater deps
         run: npm ci
         working-directory: updater
+
+      - name: Sanity check secrets
+        run: |
+          test -n "${{ secrets.SUPABASE_URL }}" || { echo "Missing SUPABASE_URL"; exit 1; }
+          test -n "${{ secrets.SUPABASE_SERVICE_ROLE }}" || { echo "Missing SUPABASE_SERVICE_ROLE"; exit 1; }
 
       - name: Merge umbrella + official sources
         run: |
@@ -32,8 +42,16 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
 
+      - name: Debug: show main.mjs and sources
+        run: |
+          echo "--- main.mjs head ---"
+          sed -n '1,120p' src/main.mjs || true
+          echo "--- sources dir ---"
+          ls -la src/sources || true
+        working-directory: updater
+
       - name: Run main updater (DB upserts)
-        run: npm run start
+        run: npm run all
         working-directory: updater
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}

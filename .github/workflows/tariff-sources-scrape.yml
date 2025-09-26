@@ -1,28 +1,41 @@
 name: Tariff Sources Scrape (EU-27)
+
 on:
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
-  scrape-all:
-    runs-on: ubuntu-latest
+  scrape:
+    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+
       - name: Install updater deps
         run: npm ci
         working-directory: updater
+
       - name: Ensure dirs
         run: mkdir -p data/tariffs/imports data/sources
         working-directory: updater
-- name: Scrape EU-27
-  run: |
-    isos=(AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE)
-    for iso in "${isos[@]}"; do
-      echo "Scraping $iso"
-      node src/fetchers/tariffs/scrape_from_sources.mjs --iso=$iso || true
-    done
-    # Merge all new imports
-    node src/merge_tariffs_items.mjs
-  working-directory: updater
+
+      - name: Scrape EU-27
+        run: |
+          isos=(AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE)
+          for iso in "${isos[@]}"; do
+            echo "Scraping $iso"
+            node src/fetchers/tariffs/scrape_from_sources.mjs --iso=$iso || true
+          done
+          # Merge all new imports
+          node src/merge_tariffs_items.mjs
+        working-directory: updater
