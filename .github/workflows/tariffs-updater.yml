@@ -42,13 +42,29 @@ jobs:
           STORAGE_PATH: tariffs/tariffs-2025.json
         run: |
           set -e
-          echo "Uploading tariffs-2025.json to $SUPABASE_URL/storage/v1/object/$STORAGE_BUCKET/$STORAGE_PATH"
-          curl -sS -X POST "$SUPABASE_URL/storage/v1/object/$STORAGE_BUCKET/$STORAGE_PATH?upsert=true"             -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE"             -H "Content-Type: application/json"             --data-binary @public/data/tariffs-2025.json             -o /dev/null -w "%{http_code}" | tee /tmp/status.txt
-          code=$(cat /tmp/status.txt)
-          if [ "$code" != "200" ] && [ "$code" != "201" ]; then
-            echo "Upload failed with HTTP $code"; exit 1; fi
 
-      - name: Print public URL hint
-        run: |
-          echo "Set NEXT_PUBLIC_TARIFFS_SOURCE_URL to:"
-          echo "${{ secrets.SUPABASE_URL }}/storage/v1/object/public/public_/tariffs/tariffs-2025.json"
+          # Pick whichever file exists (builder may write to either location)
+          FILE=""
+          if [ -f "public/data/tariffs-2025.json" ]; then
+            FILE="public/data/tariffs-2025.json"
+          elif [ -f "updater/out/tariffs-2025.json" ]; then
+            FILE="updater/out/tariffs-2025.json"
+          fi
+
+          if [ -z "$FILE" ]; then
+            echo "tariffs-2025.json not found in expected locations"; exit 1;
+          fi
+
+          echo "Uploading $FILE to $SUPABASE_URL/storage/v1/object/$STORAGE_BUCKET/$STORAGE_PATH"
+          code=$(curl -sS -X POST "$SUPABASE_URL/storage/v1/object/$STORAGE_BUCKET/$STORAGE_PATH" \
+            -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE" \
+            -H "apikey: $SUPABASE_SERVICE_ROLE" \
+            -H "x-upsert: true" \
+            -H "Content-Type: application/json" \
+            --data-binary @"$FILE" \
+            -o /dev/null -w "%{http_code}")
+
+          if [ "$code" != "200" ] && [ "$code" != "201" ]; then
+            echo "Upload failed with HTTP $code"; exit 1;
+          fi
+
