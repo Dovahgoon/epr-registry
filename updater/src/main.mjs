@@ -82,11 +82,8 @@ async function discoverFetchers() {
 async function upsertRegulator(iso, r, { dry } = {}) {
   if (dry || !process.env.SUPABASE_SERVICE_ROLE) return;
   await callRpc('upsert_regulator', {
-    p_iso: iso,
-    p_name: r.name,
-    p_role: r.role || 'authority',
-    p_url: r.url || null,
-    p_source_url: r.sourceUrl || null,
+    p_iso: iso, p_name: r.name, p_role: r.role || 'authority',
+    p_url: r.url || null, p_source_url: r.sourceUrl || null,
   });
 }
 
@@ -119,13 +116,13 @@ async function upsertProWithFallback(iso, p, { dry } = {}) {
         p_name: p.name,
         p_url: p.url || null,
         p_source_url: p.sourceUrl || null,
-        p_scope: scope,          // enum in DB; wrapper requires it
-        p_materials: materials,  // always an array
+        p_scope: scope,
+        p_materials: materials,
       });
       if (scope !== initial) {
         console.warn(`  [scope-fallback] Used '${scope}' for PRO "${p.name}" (${iso})`);
       }
-      return; // success
+      return;
     } catch (e) {
       const msg = String((e && e.message) || '');
       if (msg.includes('22P02') || msg.includes('invalid input value for enum')) {
@@ -189,8 +186,8 @@ async function main() {
       await runCountry(iso, fetchers[iso] || emptyFetcher, { dry });
     }
   }
-
   console.log('\nDone.');
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
+/* END main.mjs */

@@ -1,0 +1,54 @@
+name: Tariffs Updater (Daily)
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  build-and-publish:
+    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build tariffs JSON
+        run: npm run build:tariffs
+
+      - name: Sanity check secrets
+        run: |
+          test -n "${{ secrets.SUPABASE_URL }}" || { echo "Missing SUPABASE_URL"; exit 1; }
+          test -n "${{ secrets.SUPABASE_SERVICE_ROLE }}" || { echo "Missing SUPABASE_SERVICE_ROLE"; exit 1; }
+
+      - name: Upload to Supabase Storage
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
+          STORAGE_BUCKET: public_
+          STORAGE_PATH: tariffs/tariffs-2025.json
+        run: |
+          set -e
+          echo "Uploading tariffs-2025.json to $SUPABASE_URL/storage/v1/object/$STORAGE_BUCKET/$STORAGE_PATH"
+          curl -sS -X POST "$SUPABASE_URL/storage/v1/object/$STORAGE_BUCKET/$STORAGE_PATH?upsert=true"             -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE"             -H "Content-Type: application/json"             --data-binary @public/data/tariffs-2025.json             -o /dev/null -w "%{http_code}" | tee /tmp/status.txt
+          code=$(cat /tmp/status.txt)
+          if [ "$code" != "200" ] && [ "$code" != "201" ]; then
+            echo "Upload failed with HTTP $code"; exit 1; fi
+
+      - name: Print public URL hint
+        run: |
+          echo "Set NEXT_PUBLIC_TARIFFS_SOURCE_URL to:"
+          echo "${{ secrets.SUPABASE_URL }}/storage/v1/object/public/public_/tariffs/tariffs-2025.json"
