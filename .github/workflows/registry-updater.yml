@@ -1,12 +1,17 @@
-name: Daily Registry Updater
+name: Registry Updater (Daily)
 
 on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
   push:
     branches: [ main ]
-  schedule:
-    - cron: '7 4 * * *'
-  workflow_dispatch:
-
+    paths:
+      - updater/**
+      - .github/workflows/registry-updater.yml
+concurrency:
+  group: registry-updater
+  cancel-in-progress: true
 jobs:
   update:
     if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
@@ -14,6 +19,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+          with:
+            ref: ${{ github.head_ref || github.ref_name }}
         with:
           ref: ${{ github.head_ref || github.ref_name }}
 
