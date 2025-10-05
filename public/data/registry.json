@@ -1,8 +1,11 @@
 {
   "ok": true,
   "year": "2025",
+  "generatedAt": "2025-09-28T18:58:25.960366+00:00",
   "items": [
     {
+      "country": "AT",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.ara.at/",
@@ -26,27 +29,56 @@
           "sourceUrl": null,
           "lastVerifiedAt": "2025-08-27T12:19:39.989331+00:00",
           "scope": "unknown",
-          "purpose": "unknown"
+          "purpose": "unknown",
+          "disclaimer": "Consolidated naming: UFH appears under WEEE/batteries; packaging licensing via Reclay Austria.",
+          "aliases": [
+            "Reclay UFH GmbH"
+          ]
+        },
+        {
+          "name": "Bonus Holsystem für Verpackungen GmbH & Co KG",
+          "url": "https://bonus.at/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
+        },
+        {
+          "name": "European Recycling Platform (ERP) Austria GmbH",
+          "url": "https://erp-recycling.org/en-at/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
+        },
+        {
+          "name": "Austria Glas Recycling GmbH",
+          "url": "https://www.agr.at/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "collection-operator",
+          "packagingRelevance": "indirect",
+          "disclaimer": "Collection/logistics operator; not a licensing scheme."
         }
       ],
-      "country": "AT",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
-        {
-          "url": "https://www.vks-gmbh.at/",
-          "name": "VKS – Verpackungskoordinierungsstelle",
-          "sourceUrl": null,
-          "lastVerifiedAt": "2025-08-27T12:19:38.813298+00:00"
-        },
         {
           "url": "https://www.vks-gmbh.at/",
           "name": "VKS – Verpackungskoordinierungsstelle Austria",
           "sourceUrl": "https://www.vks-gmbh.at/",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00"
+          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
+          "scope": null
         }
       ]
     },
     {
+      "country": "BE",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.fostplus.be/en",
@@ -57,32 +89,14 @@
           "purpose": "household"
         },
         {
-          "url": "https://www.fostplus.be/en",
-          "name": "Fost Plus (household)",
-          "sourceUrl": null,
-          "lastVerifiedAt": "2025-08-26T18:47:00.301389+00:00",
-          "scope": "unknown",
-          "purpose": "unknown"
-        },
-        {
           "url": "https://www.valipac.be/en/",
           "name": "Valipac",
           "sourceUrl": "https://www.valipac.be/",
           "lastVerifiedAt": "2025-08-27T12:19:40.867409+00:00",
           "scope": "commercial",
           "purpose": "commercial"
-        },
-        {
-          "url": "https://www.valipac.be/en/",
-          "name": "Valipac (C&I)",
-          "sourceUrl": null,
-          "lastVerifiedAt": "2025-08-26T18:47:00.564748+00:00",
-          "scope": "unknown",
-          "purpose": "unknown"
         }
       ],
-      "country": "BE",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://www.fostplus.be/",
@@ -99,13 +113,15 @@
       ]
     },
     {
+      "country": "BG",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.ecopack.bg/en/",
           "name": "ECOPACK Bulgaria AD",
           "sourceUrl": "https://www.ecopack.bg/en/",
           "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
-          "scope": "unknown",
+          "scope": "both",
           "purpose": "unknown"
         },
         {
@@ -114,10 +130,38 @@
           "url": "https://ecobulpack.bg/",
           "scope": "both",
           "purpose": "both"
+        },
+        {
+          "name": "Eco Partners Bulgaria",
+          "url": "https://www.ecopartners.bg/en/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
+        },
+        {
+          "name": "Bulecopack JSC",
+          "url": "https://www.bulecopack.com/en",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": true,
+          "category": "packaging-licensing",
+          "packagingRelevance": "direct",
+          "disclaimer": ""
+        },
+        {
+          "name": "Ecocollect JSC",
+          "url": "https://www.ecocollect.bg/en",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
         }
       ],
-      "country": "BG",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://www.moew.government.bg/en/",
@@ -128,19 +172,8 @@
       ]
     },
     {
-      "pros": [],
-      "country": "HR",
-      "updatedAt": "2025-08-25T11:09:39.118",
-      "regulators": [
-        {
-          "url": "https://www.fzoeu.hr/",
-          "name": "FZOEU – Environmental Protection & Energy Efficiency Fund",
-          "sourceUrl": "https://www.fzoeu.hr/",
-          "lastVerifiedAt": "2025-08-27T18:50:31.3872+00:00"
-        }
-      ]
-    },
-    {
+      "country": "CY",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.greendot.com.cy/",
@@ -151,8 +184,6 @@
           "purpose": "unknown"
         }
       ],
-      "country": "CY",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://www.moa.gov.cy/environment",
@@ -163,6 +194,8 @@
       ]
     },
     {
+      "country": "CZ",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.ekokom.cz/en",
@@ -173,8 +206,6 @@
           "purpose": "unknown"
         }
       ],
-      "country": "CZ",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://www.mzp.cz/",
@@ -185,120 +216,8 @@
       ]
     },
     {
-      "pros": [],
-      "country": "DK",
-      "updatedAt": "2025-08-25T11:09:39.118",
-      "regulators": [
-        {
-          "url": "https://mst.dk/",
-          "name": "Danish EPA (Miljøstyrelsen)",
-          "sourceUrl": "https://mst.dk/",
-          "lastVerifiedAt": "2025-08-27T18:50:30.797124+00:00"
-        },
-        {
-          "name": "Producer Responsibility Denmark (portal)",
-          "lastVerifiedAt": "2025-08-29T10:35:06Z",
-          "url": "https://producentansvar.dk/en/"
-        }
-      ]
-    },
-    {
-      "pros": [
-        {
-          "url": "https://www.pakendiringlus.ee/",
-          "name": "Eesti Pakendiringlus",
-          "sourceUrl": "https://www.pakendiringlus.ee/",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
-          "scope": "unknown",
-          "purpose": "unknown"
-        },
-        {
-          "url": "https://www.eto.ee/",
-          "name": "Eesti Taaskasutusorganisatsioon (ETO)",
-          "sourceUrl": "https://www.eto.ee/",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
-          "scope": "unknown",
-          "purpose": "unknown"
-        },
-        {
-          "name": "Tootjavastutusorganisatsioon (TVO)",
-          "lastVerifiedAt": "2025-08-29T10:35:06Z",
-          "url": "https://tvo.ee",
-          "scope": "both",
-          "purpose": "both"
-        }
-      ],
-      "country": "EE",
-      "updatedAt": "2025-08-25T11:09:39.118",
-      "regulators": [
-        {
-          "url": "https://www.keskkonnaamet.ee/en",
-          "name": "Keskkonnaamet (Estonian Environment Board)",
-          "sourceUrl": "https://www.keskkonnaamet.ee/en",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00"
-        }
-      ]
-    },
-    {
-      "pros": [
-        {
-          "url": "https://rinkiin.fi/en/producers/",
-          "name": "Rinki Producer Responsibility",
-          "sourceUrl": "https://rinkiin.fi/en/producers/",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
-          "scope": "unknown",
-          "purpose": "unknown"
-        }
-      ],
-      "country": "FI",
-      "updatedAt": "2025-08-25T11:09:39.118",
-      "regulators": [
-        {
-          "url": "https://rinkiin.fi/",
-          "name": "Rinki Oy",
-          "sourceUrl": "https://rinkiin.fi/",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00"
-        }
-      ]
-    },
-    {
-      "pros": [
-        {
-          "url": "https://www.adelphe.fr/",
-          "name": "Adelphe (brand within Citeo)",
-          "sourceUrl": null,
-          "lastVerifiedAt": "2025-08-27T12:19:46.609483+00:00",
-          "scope": "household",
-          "purpose": "household"
-        },
-        {
-          "url": "https://www.citeo.com/",
-          "name": "Citeo",
-          "sourceUrl": null,
-          "lastVerifiedAt": "2025-08-27T12:19:46.266301+00:00",
-          "scope": "household",
-          "purpose": "household"
-        },
-        {
-          "url": "https://www.citeo.com/entreprises",
-          "name": "Citeo Entreprises",
-          "sourceUrl": "https://www.citeo.com/entreprises",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
-          "scope": "unknown",
-          "purpose": "unknown"
-        }
-      ],
-      "country": "FR",
-      "updatedAt": "2025-08-25T11:09:39.118",
-      "regulators": [
-        {
-          "name": "ADEME (with Ministry for Ecological Transition)",
-          "lastVerifiedAt": "2025-08-29T10:35:06Z",
-          "url": "https://www.ecologie.gouv.fr/"
-        }
-      ]
-    },
-    {
+      "country": "DE",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.bellandvision.com/",
@@ -313,15 +232,7 @@
           "name": "Der Grüne Punkt – Duales System Deutschland (DSD)",
           "sourceUrl": "https://www.verpackungsregister.org/en/faq/dual-systems",
           "lastVerifiedAt": "2025-08-27T18:50:26.70704+00:00",
-          "scope": "unknown",
-          "purpose": "unknown"
-        },
-        {
-          "url": "https://gruener-punkt.de",
-          "name": "DSD",
-          "sourceUrl": "https://source",
-          "lastVerifiedAt": "2025-08-27T18:46:37.951834+00:00",
-          "scope": "unknown",
+          "scope": null,
           "purpose": "unknown"
         },
         {
@@ -379,10 +290,38 @@
           "lastVerifiedAt": "2025-08-27T18:50:30.113068+00:00",
           "scope": "unknown",
           "purpose": "unknown"
+        },
+        {
+          "name": "Landbell",
+          "scope": "both",
+          "url": "",
+          "source": "EUROPEN Overview (Apr 2025) — name reference"
+        },
+        {
+          "name": "Zentek",
+          "scope": "both",
+          "url": "",
+          "source": "EUROPEN Overview (Apr 2025) — name reference"
+        },
+        {
+          "name": "RIGK",
+          "scope": "both",
+          "url": "",
+          "source": "EUROPEN Overview (Apr 2025) — name reference"
+        },
+        {
+          "name": "KBS Recycling",
+          "scope": "both",
+          "url": "",
+          "source": "EUROPEN Overview (Apr 2025) — name reference"
+        },
+        {
+          "name": "Recycling Dual",
+          "scope": "both",
+          "url": "",
+          "source": "EUROPEN Overview (Apr 2025) — name reference"
         }
       ],
-      "country": "DE",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://www.verpackungsregister.org/",
@@ -393,6 +332,178 @@
       ]
     },
     {
+      "country": "DK",
+      "updatedAt": "2025-10-03",
+      "pros": [],
+      "regulators": [
+        {
+          "url": "https://mst.dk/",
+          "name": "Danish EPA (Miljøstyrelsen)",
+          "sourceUrl": "https://mst.dk/",
+          "lastVerifiedAt": "2025-08-27T18:50:30.797124+00:00"
+        },
+        {
+          "name": "Producer Responsibility Denmark (portal)",
+          "lastVerifiedAt": "2025-08-29T10:35:06Z",
+          "url": "https://producentansvar.dk/en/"
+        }
+      ]
+    },
+    {
+      "country": "EE",
+      "updatedAt": "2025-10-03",
+      "pros": [
+        {
+          "url": "https://www.pakendiringlus.ee/",
+          "name": "Eesti Pakendiringlus",
+          "sourceUrl": "https://www.pakendiringlus.ee/",
+          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
+          "scope": "unknown",
+          "purpose": "unknown",
+          "disclaimer": "Consolidated: ETO references treated as alias of Eesti Pakendiringlus for packaging EPR.",
+          "aliases": [
+            "Eesti Taaskasutusorganisatsioon (ETO)"
+          ]
+        },
+        {
+          "name": "Tootjavastutusorganisatsioon (TVO)",
+          "lastVerifiedAt": "2025-08-29T10:35:06Z",
+          "url": "https://tvo.ee",
+          "scope": "both",
+          "purpose": "both"
+        }
+      ],
+      "regulators": [
+        {
+          "url": "https://www.keskkonnaamet.ee/en",
+          "name": "Keskkonnaamet (Estonian Environment Board)",
+          "sourceUrl": "https://www.keskkonnaamet.ee/en",
+          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00"
+        }
+      ]
+    },
+    {
+      "country": "ES",
+      "updatedAt": "2025-10-03",
+      "pros": [
+        {
+          "url": "https://ecoembesempresas.com/envases-domesticos",
+          "name": "Ecoembes",
+          "sourceUrl": null,
+          "lastVerifiedAt": "2025-08-27T12:19:45.475339+00:00",
+          "scope": "household",
+          "purpose": "household",
+          "disclaimer": "‘Ecoembes Empresas’ is a portal/brand variant; merged as alias of Ecoembes.",
+          "aliases": [
+            "Ecoembes Empresas"
+          ]
+        },
+        {
+          "url": "https://www.ecovidrio.es/",
+          "name": "Ecovidrio",
+          "sourceUrl": null,
+          "lastVerifiedAt": "2025-08-27T12:19:45.744973+00:00",
+          "scope": "household",
+          "purpose": "household"
+        }
+      ],
+      "regulators": [
+        {
+          "url": "https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/temas/prevencion-y-gestion-residuos/flujos/responsabilidad-ampliada.html",
+          "name": "MITECO (RAP Envases)",
+          "sourceUrl": null,
+          "lastVerifiedAt": "2025-08-27T12:19:45.220618+00:00"
+        }
+      ]
+    },
+    {
+      "country": "FI",
+      "updatedAt": "2025-10-03",
+      "pros": [
+        {
+          "url": "https://rinkiin.fi/en/producers/",
+          "name": "Rinki Producer Responsibility",
+          "sourceUrl": "https://rinkiin.fi/en/producers/",
+          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
+          "scope": "unknown",
+          "purpose": "unknown"
+        },
+        {
+          "name": "Suomen Pakkaustuottajat Oy (Finnish Packaging Producers Ltd)",
+          "url": "https://pakkaustuottajat.fi/en/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
+        },
+        {
+          "name": "SUMI Oy",
+          "url": "https://sumi.fi/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
+        }
+      ],
+      "regulators": [
+        {
+          "url": "https://rinkiin.fi/",
+          "name": "Rinki Oy",
+          "sourceUrl": "https://rinkiin.fi/",
+          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00"
+        },
+        {
+          "name": "Pirkanmaa ELY Centre (supervision)",
+          "url": "https://www.ely-keskus.fi/en/web/ely-en"
+        }
+      ]
+    },
+    {
+      "country": "FR",
+      "updatedAt": "2025-10-03",
+      "pros": [
+        {
+          "url": "https://www.adelphe.fr/",
+          "name": "Adelphe (brand within Citeo)",
+          "sourceUrl": null,
+          "lastVerifiedAt": "2025-08-27T12:19:46.609483+00:00",
+          "scope": "household",
+          "purpose": "household"
+        },
+        {
+          "url": "https://www.citeo.com/entreprises",
+          "name": "Citeo Entreprises",
+          "sourceUrl": "https://www.citeo.com/entreprises",
+          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
+          "scope": "household",
+          "purpose": "unknown"
+        },
+        {
+          "name": "Léko",
+          "url": "https://www.leko-organisme.fr/",
+          "scope": "household",
+          "purpose": "household",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
+        }
+      ],
+      "regulators": [
+        {
+          "name": "ADEME (with Ministry for Ecological Transition)",
+          "lastVerifiedAt": "2025-08-29T10:35:06Z",
+          "url": "https://www.ecologie.gouv.fr/"
+        }
+      ]
+    },
+    {
+      "country": "GR",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.herrco.gr/",
@@ -403,8 +514,6 @@
           "purpose": "unknown"
         }
       ],
-      "country": "GR",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://www.eoan.gr/",
@@ -415,6 +524,21 @@
       ]
     },
     {
+      "country": "HR",
+      "updatedAt": "2025-10-03",
+      "pros": [],
+      "regulators": [
+        {
+          "url": "https://www.fzoeu.hr/",
+          "name": "FZOEU – Environmental Protection & Energy Efficiency Fund",
+          "sourceUrl": "https://www.fzoeu.hr/",
+          "lastVerifiedAt": "2025-08-27T18:50:31.3872+00:00"
+        }
+      ]
+    },
+    {
+      "country": "HU",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://mohu.hu/",
@@ -425,8 +549,6 @@
           "purpose": "unknown"
         }
       ],
-      "country": "HU",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://mohu.hu/",
@@ -437,6 +559,8 @@
       ]
     },
     {
+      "country": "IE",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://repak.ie/",
@@ -447,8 +571,6 @@
           "purpose": "unknown"
         }
       ],
-      "country": "IE",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://www.epa.ie/",
@@ -459,6 +581,8 @@
       ]
     },
     {
+      "country": "IT",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "http://www.biorepack.org",
@@ -505,18 +629,24 @@
           "lastVerifiedAt": "2025-08-29T10:35:06Z",
           "url": "https://www.rilegno.it/",
           "scope": "both",
-          "purpose": "both"
+          "purpose": "both",
+          "disclaimer": "Official CONAI wood consortium; extended label moved to aliases.",
+          "aliases": [
+            "RILEGNO – Consorzio Legno"
+          ]
         },
         {
           "name": "RICREA",
           "lastVerifiedAt": "2025-08-29T10:35:06Z",
           "url": "https://www.ricrea.org/",
           "scope": "both",
-          "purpose": "both"
+          "purpose": "both",
+          "disclaimer": "Official CONAI steel consortium; extended label moved to aliases.",
+          "aliases": [
+            "RICREA – Consorzio Acciaio"
+          ]
         }
       ],
-      "country": "IT",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://www.conai.org/",
@@ -527,36 +657,8 @@
       ]
     },
     {
-      "pros": [
-        {
-          "url": "https://www.zalais.lv/",
-          "name": "Latvijas Zaļais punkts",
-          "sourceUrl": "https://www.zalais.lv/",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
-          "scope": "unknown",
-          "purpose": "unknown"
-        },
-        {
-          "url": "https://www.zalajosta.lv/",
-          "name": "Zaļā josta",
-          "sourceUrl": "https://www.zalajosta.lv/",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
-          "scope": "unknown",
-          "purpose": "unknown"
-        }
-      ],
-      "country": "LV",
-      "updatedAt": "2025-08-25T11:09:39.118",
-      "regulators": [
-        {
-          "url": "https://www.vvd.gov.lv/en",
-          "name": "State Environmental Service (VVD)",
-          "sourceUrl": "https://www.vvd.gov.lv/en",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00"
-        }
-      ]
-    },
-    {
+      "country": "LT",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.pto.lt/",
@@ -575,8 +677,6 @@
           "purpose": "unknown"
         }
       ],
-      "country": "LT",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://aad.lrv.lt/en/",
@@ -587,6 +687,8 @@
       ]
     },
     {
+      "country": "LU",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.valorlux.lu/",
@@ -597,8 +699,6 @@
           "purpose": "unknown"
         }
       ],
-      "country": "LU",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://environnement.public.lu/",
@@ -609,6 +709,38 @@
       ]
     },
     {
+      "country": "LV",
+      "updatedAt": "2025-10-03",
+      "pros": [
+        {
+          "url": "https://www.zalais.lv/",
+          "name": "Latvijas Zaļais punkts",
+          "sourceUrl": "https://www.zalais.lv/",
+          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
+          "scope": "unknown",
+          "purpose": "unknown"
+        },
+        {
+          "url": "https://www.zalajosta.lv/",
+          "name": "Zaļā josta",
+          "sourceUrl": "https://www.zalajosta.lv/",
+          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
+          "scope": "unknown",
+          "purpose": "unknown"
+        }
+      ],
+      "regulators": [
+        {
+          "url": "https://www.vvd.gov.lv/en",
+          "name": "State Environmental Service (VVD)",
+          "sourceUrl": "https://www.vvd.gov.lv/en",
+          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00"
+        }
+      ]
+    },
+    {
+      "country": "MT",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.greenmt.org/",
@@ -627,8 +759,6 @@
           "purpose": "unknown"
         }
       ],
-      "country": "MT",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://era.org.mt/",
@@ -639,6 +769,8 @@
       ]
     },
     {
+      "country": "NL",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "name": "Verpact",
@@ -646,31 +778,40 @@
           "url": "https://www.verpact.nl/en",
           "scope": "both",
           "purpose": "both"
+        },
+        {
+          "name": "Nedvang",
+          "url": "https://www.nedvang.nl/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
         }
       ],
-      "country": "NL",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://www.verpact.nl/",
           "name": "Verpact (Netherlands Packaging Waste Fund)",
           "sourceUrl": "https://www.verpact.nl/",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00"
-        },
-        {
-          "url": "https://www.verpact.nl/en/we-are-verpact",
-          "name": "Verpact (Packaging Waste Fund)",
-          "sourceUrl": null,
-          "lastVerifiedAt": "2025-08-27T12:20:03.040341+00:00"
+          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
+          "scope": null
         },
         {
           "name": "ILT (enforcement) / Rijkswaterstaat guidance",
           "lastVerifiedAt": "2025-08-29T10:35:06Z",
           "url": "https://business.gov.nl/regulation/packaging/"
+        },
+        {
+          "name": "Human Environment and Transport Inspectorate (ILT)",
+          "url": "https://www.ilent.nl/"
         }
       ]
     },
     {
+      "country": "PL",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.interzero.pl/",
@@ -689,8 +830,6 @@
           "purpose": "unknown"
         }
       ],
-      "country": "PL",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://bdo.mos.gov.pl/",
@@ -701,6 +840,8 @@
       ]
     },
     {
+      "country": "PT",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.novoverde.pt/",
@@ -717,10 +858,18 @@
           "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
           "scope": "unknown",
           "purpose": "unknown"
+        },
+        {
+          "name": "Electrão",
+          "url": "https://www.electrao.pt/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
         }
       ],
-      "country": "PT",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://apambiente.pt/",
@@ -731,6 +880,8 @@
       ]
     },
     {
+      "country": "RO",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.fepra.ro/",
@@ -747,10 +898,88 @@
           "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
           "scope": "unknown",
           "purpose": "unknown"
+        },
+        {
+          "name": "Clean Recycle",
+          "url": "https://cleanrecycle.ro/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
+        },
+        {
+          "name": "Eco Synergy",
+          "url": "https://www.ecosynergy.ro/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
+        },
+        {
+          "name": "Green Resources Management",
+          "url": "https://www.greenresources.ro/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
+        },
+        {
+          "name": "Ecologic 3R Ambalaje",
+          "url": "https://www.ecologic3rambalaje.ro/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
+        },
+        {
+          "name": "Ecorep Group",
+          "url": "https://www.ecorep.ro/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
+        },
+        {
+          "name": "ECO-X",
+          "url": "https://www.ecox.ro/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
+        },
+        {
+          "name": "Enviro Pack Consult",
+          "url": "https://www.enviropack.ro/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
+        },
+        {
+          "name": "RecicladOR",
+          "url": "https://reciclador.green/en/",
+          "scope": "both",
+          "purpose": "both",
+          "isPackagingLicensing": false,
+          "category": "unknown",
+          "packagingRelevance": "unknown",
+          "disclaimer": "Scope unclear; verify before use."
         }
       ],
-      "country": "RO",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://www.anpm.ro/",
@@ -761,36 +990,36 @@
       ]
     },
     {
+      "country": "SE",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
-          "url": "https://www.envipak.sk/",
-          "name": "ENVI-PAK",
-          "sourceUrl": "https://www.envipak.sk/",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
-          "scope": "unknown",
-          "purpose": "unknown"
+          "name": "TMResponsibility AB (TMR)",
+          "lastVerifiedAt": "2025-08-29T10:35:06Z",
+          "url": "https://tmr.se/en/",
+          "scope": "both",
+          "purpose": "both"
         },
         {
-          "url": "https://www.natur-pack.sk/",
-          "name": "NATUR-PACK",
-          "sourceUrl": "https://www.natur-pack.sk/",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
-          "scope": "unknown",
-          "purpose": "unknown"
+          "name": "Näringslivets Producentansvar i Sverige AB (NPA)",
+          "lastVerifiedAt": "2025-08-29T10:35:06Z",
+          "url": "https://npaab.se/",
+          "scope": "both",
+          "purpose": "both"
         }
       ],
-      "country": "SK",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
-          "url": "https://www.minzp.sk/en/",
-          "name": "Ministry of Environment of the Slovak Republic",
-          "sourceUrl": "https://www.minzp.sk/en/",
-          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00"
+          "url": "https://www.naturvardsverket.se/",
+          "name": "Naturvårdsverket (Swedish EPA)",
+          "sourceUrl": "https://www.naturvardsverket.se/",
+          "lastVerifiedAt": "2025-08-27T18:50:31.732146+00:00"
         }
       ]
     },
     {
+      "country": "SI",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
           "url": "https://www.interzero.si/",
@@ -809,8 +1038,6 @@
           "purpose": "unknown"
         }
       ],
-      "country": "SI",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
           "url": "https://www.arso.gov.si/en/",
@@ -821,87 +1048,34 @@
       ]
     },
     {
+      "country": "SK",
+      "updatedAt": "2025-10-03",
       "pros": [
         {
-          "url": "https://ecoembesempresas.com/envases-domesticos",
-          "name": "Ecoembes",
-          "sourceUrl": null,
-          "lastVerifiedAt": "2025-08-27T12:19:45.475339+00:00",
-          "scope": "household",
-          "purpose": "household"
-        },
-        {
-          "url": "https://ecoembesempresas.com/envases-domesticos",
-          "name": "Ecoembes (household)",
-          "sourceUrl": null,
-          "lastVerifiedAt": "2025-08-26T18:46:43.521282+00:00",
-          "scope": "unknown",
-          "purpose": "unknown"
-        },
-        {
-          "url": "https://www.ecoembes.com/es/empresas",
-          "name": "Ecoembes Empresas",
-          "sourceUrl": "https://www.ecoembes.com/es/empresas",
+          "url": "https://www.envipak.sk/",
+          "name": "ENVI-PAK",
+          "sourceUrl": "https://www.envipak.sk/",
           "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
           "scope": "unknown",
           "purpose": "unknown"
         },
         {
-          "url": "https://www.ecovidrio.es/",
-          "name": "Ecovidrio",
-          "sourceUrl": null,
-          "lastVerifiedAt": "2025-08-27T12:19:45.744973+00:00",
-          "scope": "household",
-          "purpose": "household"
-        },
-        {
-          "url": "https://www.ecovidrio.es/",
-          "name": "Ecovidrio (glass)",
-          "sourceUrl": null,
-          "lastVerifiedAt": "2025-08-26T18:46:43.823775+00:00",
+          "url": "https://www.natur-pack.sk/",
+          "name": "NATUR-PACK",
+          "sourceUrl": "https://www.natur-pack.sk/",
+          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00",
           "scope": "unknown",
           "purpose": "unknown"
         }
       ],
-      "country": "ES",
-      "updatedAt": "2025-08-25T11:09:39.118",
       "regulators": [
         {
-          "url": "https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/temas/prevencion-y-gestion-residuos/flujos/responsabilidad-ampliada.html",
-          "name": "MITECO (RAP Envases)",
-          "sourceUrl": null,
-          "lastVerifiedAt": "2025-08-27T12:19:45.220618+00:00"
-        }
-      ]
-    },
-    {
-      "pros": [
-        {
-          "name": "TMResponsibility AB (TMR)",
-          "lastVerifiedAt": "2025-08-29T10:35:06Z",
-          "url": "https://tmr.se/en/",
-          "scope": "both",
-          "purpose": "both"
-        },
-        {
-          "name": "Näringslivets Producentansvar i Sverige AB (NPA)",
-          "lastVerifiedAt": "2025-08-29T10:35:06Z",
-          "url": "https://npaab.se/",
-          "scope": "both",
-          "purpose": "both"
-        }
-      ],
-      "country": "SE",
-      "updatedAt": "2025-08-25T11:09:39.118",
-      "regulators": [
-        {
-          "url": "https://www.naturvardsverket.se/",
-          "name": "Naturvårdsverket (Swedish EPA)",
-          "sourceUrl": "https://www.naturvardsverket.se/",
-          "lastVerifiedAt": "2025-08-27T18:50:31.732146+00:00"
+          "url": "https://www.minzp.sk/en/",
+          "name": "Ministry of Environment of the Slovak Republic",
+          "sourceUrl": "https://www.minzp.sk/en/",
+          "lastVerifiedAt": "2025-08-25T12:06:01.167433+00:00"
         }
       ]
     }
-  ],
-  "generatedAt": "2025-08-29T21:38:43Z"
+  ]
 }
