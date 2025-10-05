@@ -12,28 +12,6 @@
       "source": ""
     },
     {
-      "country": "BG",
-      "scheme": "Unknown",
-      "stream": "both",
-      "material": "aluminum",
-      "rate": 0.198,
-      "unit": "per_kg",
-      "currency": "BGN",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "SE",
-      "scheme": "Unknown",
-      "stream": "both",
-      "material": "Annual affiliation fee",
-      "rate": 500.0,
-      "unit": "flat_fee",
-      "currency": "SEK",
-      "effective_from": "",
-      "source": ""
-    },
-    {
       "country": "",
       "scheme": "Unknown",
       "stream": "commercial",
@@ -50,7 +28,7 @@
       "stream": "both",
       "material": "Batteries general fee",
       "rate": 77.65,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "DKK",
       "effective_from": "",
       "source": ""
@@ -111,17 +89,6 @@
       "source": ""
     },
     {
-      "country": "SE",
-      "scheme": "Unknown",
-      "stream": "both",
-      "material": "Consumer electronics",
-      "rate": null,
-      "unit": "per_unit",
-      "currency": "SEK",
-      "effective_from": "",
-      "source": ""
-    },
-    {
       "country": "",
       "scheme": "Unknown",
       "stream": "both",
@@ -138,7 +105,7 @@
       "stream": "both",
       "material": "EEE general fee",
       "rate": 67.05,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "DKK",
       "effective_from": "",
       "source": ""
@@ -149,7 +116,7 @@
       "stream": "household",
       "material": "EEE household supplement",
       "rate": 22.07,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "DKK",
       "effective_from": "",
       "source": ""
@@ -182,30 +149,8 @@
       "stream": "household",
       "material": "glass",
       "rate": 35.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "SE",
-      "scheme": "Unknown",
-      "stream": "household",
-      "material": "Glass",
-      "rate": null,
-      "unit": "per_kg",
-      "currency": "SEK",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "BG",
-      "scheme": "Unknown",
-      "stream": "both",
-      "material": "glass",
-      "rate": 0.185,
-      "unit": "per_kg",
-      "currency": "BGN",
       "effective_from": "",
       "source": ""
     },
@@ -287,17 +232,6 @@
       "source": ""
     },
     {
-      "country": "SE",
-      "scheme": "Unknown",
-      "stream": "household",
-      "material": "Metal",
-      "rate": null,
-      "unit": "per_kg",
-      "currency": "SEK",
-      "effective_from": "",
-      "source": ""
-    },
-    {
       "country": "",
       "scheme": "Unknown",
       "stream": "household",
@@ -314,7 +248,7 @@
       "stream": "household",
       "material": "mixed",
       "rate": 106.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -325,7 +259,7 @@
       "stream": "household",
       "material": "other",
       "rate": 20.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -336,7 +270,7 @@
       "stream": "household",
       "material": "paper",
       "rate": 65.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -353,17 +287,6 @@
       "source": ""
     },
     {
-      "country": "BG",
-      "scheme": "Unknown",
-      "stream": "both",
-      "material": "paper",
-      "rate": 0.15,
-      "unit": "per_kg",
-      "currency": "BGN",
-      "effective_from": "",
-      "source": ""
-    },
-    {
       "country": "",
       "scheme": "Unknown",
       "stream": "household",
@@ -371,17 +294,6 @@
       "rate": null,
       "unit": "per_kg",
       "currency": "EUR",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "SE",
-      "scheme": "Unknown",
-      "stream": "household",
-      "material": "Paper/Cardboard",
-      "rate": null,
-      "unit": "per_kg",
-      "currency": "SEK",
       "effective_from": "",
       "source": ""
     },
@@ -413,30 +325,8 @@
       "stream": "household",
       "material": "plastic",
       "rate": 63.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "SE",
-      "scheme": "Unknown",
-      "stream": "household",
-      "material": "Plastic",
-      "rate": null,
-      "unit": "per_kg",
-      "currency": "SEK",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "BG",
-      "scheme": "Unknown",
-      "stream": "both",
-      "material": "plastic",
-      "rate": 0.159,
-      "unit": "per_kg",
-      "currency": "BGN",
       "effective_from": "",
       "source": ""
     },
@@ -496,35 +386,13 @@
       "source": ""
     },
     {
-      "country": "SE",
-      "scheme": "Unknown",
-      "stream": "both",
-      "material": "Portable batteries",
-      "rate": null,
-      "unit": "per_kg",
-      "currency": "SEK",
-      "effective_from": "",
-      "source": ""
-    },
-    {
       "country": "DK",
       "scheme": "Unknown",
       "stream": "both",
       "material": "Portable batteries supplement",
       "rate": 267.45,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "DKK",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "SE",
-      "scheme": "Unknown",
-      "stream": "both",
-      "material": "Professional equipment",
-      "rate": null,
-      "unit": "per_unit",
-      "currency": "SEK",
       "effective_from": "",
       "source": ""
     },
@@ -547,17 +415,6 @@
       "rate": 0.197,
       "unit": "per_kg",
       "currency": "EUR",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "BG",
-      "scheme": "Unknown",
-      "stream": "both",
-      "material": "steel",
-      "rate": 0.082,
-      "unit": "per_kg",
-      "currency": "BGN",
       "effective_from": "",
       "source": ""
     },
@@ -611,7 +468,7 @@
       "stream": "household",
       "material": "wood",
       "rate": 9.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -628,375 +485,12 @@
       "source": ""
     },
     {
-      "country": "BG",
-      "scheme": "Unknown",
-      "stream": "both",
-      "material": "wood",
-      "rate": 0.082,
-      "unit": "per_kg",
-      "currency": "BGN",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "AT",
-      "scheme": "ARA",
-      "stream": "household",
-      "material": "aluminium",
-      "rate": 0.48,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "ARA",
-      "stream": "household",
-      "material": "beverage-cartons",
-      "rate": 0.97,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "ARA",
-      "stream": "household",
-      "material": "ceramics",
-      "rate": 0.14,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "ARA",
-      "stream": "household",
-      "material": "glass",
-      "rate": 0.102,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "ARA",
-      "stream": "household",
-      "material": "other-composites",
-      "rate": 1.08,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "ARA",
-      "stream": "household",
-      "material": "paper",
-      "rate": 0.19,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "ARA",
-      "stream": "household",
-      "material": "plastic",
-      "rate": 0.99,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "ARA",
-      "stream": "household",
-      "material": "steel",
-      "rate": 0.45,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "ARA",
-      "stream": "household",
-      "material": "wood",
-      "rate": 0.02,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "Interzero",
-      "stream": "household",
-      "material": "aluminium",
-      "rate": 620.0,
-      "unit": "tonnes",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://licensing.interzero.at/wp-content/uploads/2024/12/VP_Interzero-Tarifliste_ab_2025_01_01_HHundGew-Stand-25.11.2024.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "Interzero",
-      "stream": "household",
-      "material": "beverage-cartons",
-      "rate": 935.0,
-      "unit": "tonnes",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://licensing.interzero.at/wp-content/uploads/2024/12/VP_Interzero-Tarifliste_ab_2025_01_01_HHundGew-Stand-25.11.2024.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "Interzero",
-      "stream": "household",
-      "material": "ceramics",
-      "rate": 140.0,
-      "unit": "tonnes",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://licensing.interzero.at/wp-content/uploads/2024/12/VP_Interzero-Tarifliste_ab_2025_01_01_HHundGew-Stand-25.11.2024.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "Interzero",
-      "stream": "household",
-      "material": "glass",
-      "rate": 97.0,
-      "unit": "tonnes",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://licensing.interzero.at/wp-content/uploads/2024/12/VP_Interzero-Tarifliste_ab_2025_01_01_HHundGew-Stand-25.11.2024.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "Interzero",
-      "stream": "household",
-      "material": "other-composites",
-      "rate": 990.0,
-      "unit": "tonnes",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://licensing.interzero.at/wp-content/uploads/2024/12/VP_Interzero-Tarifliste_ab_2025_01_01_HHundGew-Stand-25.11.2024.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "Interzero",
-      "stream": "household",
-      "material": "paper",
-      "rate": 185.0,
-      "unit": "tonnes",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://licensing.interzero.at/wp-content/uploads/2024/12/VP_Interzero-Tarifliste_ab_2025_01_01_HHundGew-Stand-25.11.2024.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "Interzero",
-      "stream": "household",
-      "material": "plastic",
-      "rate": 935.0,
-      "unit": "tonnes",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://licensing.interzero.at/wp-content/uploads/2024/12/VP_Interzero-Tarifliste_ab_2025_01_01_HHundGew-Stand-25.11.2024.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "Interzero",
-      "stream": "household",
-      "material": "steel",
-      "rate": 595.0,
-      "unit": "tonnes",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://licensing.interzero.at/wp-content/uploads/2024/12/VP_Interzero-Tarifliste_ab_2025_01_01_HHundGew-Stand-25.11.2024.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "Interzero",
-      "stream": "household",
-      "material": "wood",
-      "rate": 20.0,
-      "unit": "tonnes",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://licensing.interzero.at/wp-content/uploads/2024/12/VP_Interzero-Tarifliste_ab_2025_01_01_HHundGew-Stand-25.11.2024.pdf"
-    },
-    {
-      "country": "BE",
-      "scheme": "Fost Plus",
-      "stream": "household",
-      "material": "aluminum",
-      "rate": 0.0481,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/nl/leden/de-groene-punt-tarieven"
-    },
-    {
-      "country": "BE",
-      "scheme": "Fost Plus",
-      "stream": "household",
-      "material": "glass",
-      "rate": 0.096,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/nl/leden/de-groene-punt-tarieven"
-    },
-    {
-      "country": "BE",
-      "scheme": "Fost Plus",
-      "stream": "household",
-      "material": "paper",
-      "rate": 0.1503,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/nl/leden/de-groene-punt-tarieven"
-    },
-    {
-      "country": "BE",
-      "scheme": "Fost Plus",
-      "stream": "household",
-      "material": "pe_films",
-      "rate": 1.2844,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/nl/leden/de-groene-punt-tarieven"
-    },
-    {
-      "country": "BE",
-      "scheme": "Fost Plus",
-      "stream": "household",
-      "material": "pet_bottles_clear",
-      "rate": 0.2718,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/nl/leden/de-groene-punt-tarieven"
-    },
-    {
-      "country": "BE",
-      "scheme": "Fost Plus",
-      "stream": "household",
-      "material": "steel",
-      "rate": 0.1117,
-      "unit": "kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/nl/leden/de-groene-punt-tarieven"
-    },
-    {
-      "country": "CY",
-      "scheme": "Green Dot Cyprus",
-      "stream": "household",
-      "material": "aluminum",
-      "rate": 20.31,
-      "unit": "per_tonne",
-      "currency": "EUR",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "CY",
-      "scheme": "Green Dot Cyprus",
-      "stream": "household",
-      "material": "glass",
-      "rate": 27.61,
-      "unit": "per_tonne",
-      "currency": "EUR",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "CY",
-      "scheme": "Green Dot Cyprus",
-      "stream": "household",
-      "material": "paper",
-      "rate": 44.78,
-      "unit": "per_tonne",
-      "currency": "EUR",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "CY",
-      "scheme": "Green Dot Cyprus",
-      "stream": "commercial",
-      "material": "paper",
-      "rate": 41.14,
-      "unit": "per_tonne",
-      "currency": "EUR",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "CY",
-      "scheme": "Green Dot Cyprus",
-      "stream": "household",
-      "material": "plastic",
-      "rate": 100.6,
-      "unit": "per_tonne",
-      "currency": "EUR",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "CY",
-      "scheme": "Green Dot Cyprus",
-      "stream": "commercial",
-      "material": "plastic",
-      "rate": 36.05,
-      "unit": "per_tonne",
-      "currency": "EUR",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "CY",
-      "scheme": "Green Dot Cyprus",
-      "stream": "household",
-      "material": "steel",
-      "rate": 90.62,
-      "unit": "per_tonne",
-      "currency": "EUR",
-      "effective_from": "",
-      "source": ""
-    },
-    {
-      "country": "CY",
-      "scheme": "Green Dot Cyprus",
-      "stream": "commercial",
-      "material": "wood",
-      "rate": 11.8,
-      "unit": "per_tonne",
-      "currency": "EUR",
-      "effective_from": "",
-      "source": ""
-    },
-    {
       "country": "IT",
       "scheme": "CONAI – CAC",
       "stream": "household",
       "material": "a1_1",
       "rate": 0.024,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.cial.it/wp-content/uploads/2025/01/Guida_Conai_Contributo_Ambientale_2025.pdf"
@@ -1007,7 +501,7 @@
       "stream": "household",
       "material": "a1_2",
       "rate": 0.09,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.cial.it/wp-content/uploads/2025/01/Guida_Conai_Contributo_Ambientale_2025.pdf"
@@ -1018,7 +512,7 @@
       "stream": "household",
       "material": "aluminum",
       "rate": 0.012,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.cial.it/wp-content/uploads/2025/01/Guida_Conai_Contributo_Ambientale_2025.pdf"
@@ -1029,7 +523,7 @@
       "stream": "household",
       "material": "glass",
       "rate": 0.015,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.cial.it/wp-content/uploads/2025/01/Guida_Conai_Contributo_Ambientale_2025.pdf"
@@ -1040,7 +534,7 @@
       "stream": "household",
       "material": "paper",
       "rate": 0.065,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.cial.it/wp-content/uploads/2025/01/Guida_Conai_Contributo_Ambientale_2025.pdf"
@@ -1051,7 +545,7 @@
       "stream": "household",
       "material": "steel",
       "rate": 0.005,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.cial.it/wp-content/uploads/2025/01/Guida_Conai_Contributo_Ambientale_2025.pdf"
@@ -1062,7 +556,7 @@
       "stream": "household",
       "material": "wood",
       "rate": 0.007,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.cial.it/wp-content/uploads/2025/01/Guida_Conai_Contributo_Ambientale_2025.pdf"
@@ -1073,7 +567,7 @@
       "stream": "household",
       "material": "aluminium",
       "rate": 0.0145,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf"
@@ -1095,7 +589,7 @@
       "stream": "household",
       "material": "beverage-cartons",
       "rate": 0.29,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf"
@@ -1117,7 +611,7 @@
       "stream": "household",
       "material": "glass",
       "rate": 0.0177,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf"
@@ -1139,7 +633,7 @@
       "stream": "household",
       "material": "paper",
       "rate": 0.0402,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf"
@@ -1161,7 +655,7 @@
       "stream": "household",
       "material": "plastic-PET-bottles-transparent",
       "rate": 0.1957,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf"
@@ -1183,7 +677,7 @@
       "stream": "household",
       "material": "steel",
       "rate": 0.0271,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf"
@@ -1194,7 +688,7 @@
       "stream": "household",
       "material": "aluminum",
       "rate": 202.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -1205,7 +699,7 @@
       "stream": "commercial",
       "material": "aluminum",
       "rate": 27.94,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -1216,7 +710,7 @@
       "stream": "household",
       "material": "glass",
       "rate": 147.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -1227,7 +721,7 @@
       "stream": "household",
       "material": "paper",
       "rate": 203.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -1238,7 +732,7 @@
       "stream": "commercial",
       "material": "paper",
       "rate": 70.31,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -1249,7 +743,7 @@
       "stream": "household",
       "material": "plastic",
       "rate": 205.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -1260,7 +754,7 @@
       "stream": "commercial",
       "material": "plastic",
       "rate": 70.31,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -1271,7 +765,7 @@
       "stream": "household",
       "material": "steel",
       "rate": 207.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -1282,7 +776,7 @@
       "stream": "commercial",
       "material": "steel",
       "rate": 63.33,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -1293,7 +787,7 @@
       "stream": "commercial",
       "material": "wood",
       "rate": 67.98,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "",
       "source": ""
@@ -1304,7 +798,7 @@
       "stream": "household",
       "material": "aluminum",
       "rate": 0.3,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/nl/tarieven"
@@ -1315,7 +809,7 @@
       "stream": "household",
       "material": "glass",
       "rate": 0.1,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/nl/tarieven"
@@ -1326,7 +820,7 @@
       "stream": "household",
       "material": "paper",
       "rate": 0.017,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/nl/tarieven"
@@ -1337,7 +831,7 @@
       "stream": "household",
       "material": "plastic_flexible",
       "rate": 1.32,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/nl/tarieven"
@@ -1348,7 +842,7 @@
       "stream": "household",
       "material": "plastic_rigid",
       "rate": 1.22,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/nl/tarieven"
@@ -1359,7 +853,7 @@
       "stream": "household",
       "material": "steel",
       "rate": 0.36,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/nl/tarieven"
@@ -1370,7 +864,7 @@
       "stream": "household",
       "material": "wood",
       "rate": 0.015,
-      "unit": "kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/nl/tarieven"
@@ -1381,7 +875,7 @@
       "stream": "household",
       "material": "aluminum",
       "rate": 800.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "RON",
       "effective_from": "",
       "source": ""
@@ -1392,7 +886,7 @@
       "stream": "commercial",
       "material": "aluminum",
       "rate": 800.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "RON",
       "effective_from": "",
       "source": ""
@@ -1403,7 +897,7 @@
       "stream": "household",
       "material": "glass",
       "rate": 600.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "RON",
       "effective_from": "",
       "source": ""
@@ -1414,7 +908,7 @@
       "stream": "commercial",
       "material": "glass",
       "rate": 590.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "RON",
       "effective_from": "",
       "source": ""
@@ -1425,7 +919,7 @@
       "stream": "household",
       "material": "paper",
       "rate": 430.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "RON",
       "effective_from": "",
       "source": ""
@@ -1436,7 +930,7 @@
       "stream": "commercial",
       "material": "paper",
       "rate": 360.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "RON",
       "effective_from": "",
       "source": ""
@@ -1447,7 +941,7 @@
       "stream": "household",
       "material": "plastic",
       "rate": 800.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "RON",
       "effective_from": "",
       "source": ""
@@ -1458,7 +952,7 @@
       "stream": "commercial",
       "material": "plastic",
       "rate": 790.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "RON",
       "effective_from": "",
       "source": ""
@@ -1469,7 +963,7 @@
       "stream": "household",
       "material": "steel",
       "rate": 500.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "RON",
       "effective_from": "",
       "source": ""
@@ -1480,7 +974,7 @@
       "stream": "commercial",
       "material": "steel",
       "rate": 480.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "RON",
       "effective_from": "",
       "source": ""
@@ -1491,7 +985,7 @@
       "stream": "household",
       "material": "wood",
       "rate": 340.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "RON",
       "effective_from": "",
       "source": ""
@@ -1502,197 +996,10 @@
       "stream": "commercial",
       "material": "wood",
       "rate": 340.0,
-      "unit": "per_tonne",
+      "unit": "per_t",
       "currency": "RON",
       "effective_from": "",
       "source": ""
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "glass",
-      "rate": 0.096,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "paper_&_cardboard",
-      "rate": 0.1503,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "steel",
-      "rate": 0.1117,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "aluminium",
-      "rate": 0.0481,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "beverage_cartons",
-      "rate": 0.818,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic_(pet)",
-      "rate": 0.2718,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic_(pet)",
-      "rate": 0.7252,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic_(pet)",
-      "rate": 1.0527,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic_(pet)",
-      "rate": 1.3893,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic_(pet)",
-      "rate": 1.1244,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic_(pet)",
-      "rate": 1.7609,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic_(pp)",
-      "rate": 0.8049,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic_(pe)",
-      "rate": 0.515,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic_(ps/xps)",
-      "rate": 0.9195,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic_(eps)",
-      "rate": 0.5855,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic_(film)",
-      "rate": 1.2844,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
-    },
-    {
-      "country": "BE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic_(film)",
-      "rate": 1.9546,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.fostplus.be/en/members/learn-all-about-your-declaration-at-fost-plus#details"
     },
     {
       "country": "NL",
@@ -1700,7 +1007,7 @@
       "stream": "household",
       "material": "glass",
       "rate": 0.1,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/en/rates"
@@ -1711,7 +1018,7 @@
       "stream": "household",
       "material": "paper_&_cardboard",
       "rate": 0.017,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/en/rates"
@@ -1722,7 +1029,7 @@
       "stream": "household",
       "material": "plastic_(rigid)",
       "rate": 1.22,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/en/rates"
@@ -1733,7 +1040,7 @@
       "stream": "household",
       "material": "plastic_(flexible/not_specified)",
       "rate": 1.32,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/en/rates"
@@ -1744,7 +1051,7 @@
       "stream": "household",
       "material": "aluminium",
       "rate": 0.3,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/en/rates"
@@ -1755,7 +1062,7 @@
       "stream": "household",
       "material": "other_metals",
       "rate": 0.36,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/en/rates"
@@ -1766,7 +1073,7 @@
       "stream": "household",
       "material": "wood",
       "rate": 0.015,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/en/rates"
@@ -1777,7 +1084,7 @@
       "stream": "household",
       "material": "beverage_cartons",
       "rate": 0.88,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.verpact.nl/en/rates"
@@ -1788,7 +1095,7 @@
       "stream": "household",
       "material": "glass",
       "rate": 0.07654,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -1799,7 +1106,7 @@
       "stream": "household",
       "material": "paper_&_cardboard",
       "rate": 0.26015,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -1810,7 +1117,7 @@
       "stream": "household",
       "material": "plastic",
       "rate": 0.44698,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -1821,7 +1128,7 @@
       "stream": "household",
       "material": "beverage_cartons",
       "rate": 0.51043,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -1832,7 +1139,7 @@
       "stream": "household",
       "material": "steel",
       "rate": 0.38663,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -1843,7 +1150,7 @@
       "stream": "household",
       "material": "aluminium",
       "rate": 0.22718,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -1854,7 +1161,7 @@
       "stream": "household",
       "material": "wood",
       "rate": 0.06324,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -1865,120 +1172,10 @@
       "stream": "household",
       "material": "other_materials",
       "rate": 0.42312,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
-    },
-    {
-      "country": "CZ",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "pet_(beverage)",
-      "rate": 15704.0,
-      "unit": "czk/t",
-      "currency": "CZK",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ekokom.cz/wp-content/uploads/2024/11/Price_list_valid_from_1_1_2025.pdf"
-    },
-    {
-      "country": "CZ",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "pet_(beverage)",
-      "rate": 11850.0,
-      "unit": "czk/t",
-      "currency": "CZK",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ekokom.cz/wp-content/uploads/2024/11/Price_list_valid_from_1_1_2025.pdf"
-    },
-    {
-      "country": "CZ",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "glass",
-      "rate": 773.0,
-      "unit": "czk/t",
-      "currency": "CZK",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ekokom.cz/wp-content/uploads/2024/11/Price_list_valid_from_1_1_2025.pdf"
-    },
-    {
-      "country": "CZ",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "glass",
-      "rate": 148.0,
-      "unit": "czk/t",
-      "currency": "CZK",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ekokom.cz/wp-content/uploads/2024/11/Price_list_valid_from_1_1_2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "paper_&_cardboard",
-      "rate": 0.19,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "glass",
-      "rate": 0.102,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "ferrous_metal",
-      "rate": 0.45,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "aluminium",
-      "rate": 0.48,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic",
-      "rate": 0.99,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "beverage_cartons",
-      "rate": 0.97,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
     },
     {
       "country": "FR",
@@ -1986,7 +1183,7 @@
       "stream": "household",
       "material": "glass",
       "rate": 0.0164,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.adelphe.fr/sites/default/files/Documents/2024-11/le-tarif-2025-emballages-menagers-et-papiers-graphiques.pdf"
@@ -1997,7 +1194,7 @@
       "stream": "household",
       "material": "paper_&_cardboard",
       "rate": 0.2143,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.adelphe.fr/sites/default/files/Documents/2024-11/le-tarif-2025-emballages-menagers-et-papiers-graphiques.pdf"
@@ -2008,7 +1205,7 @@
       "stream": "household",
       "material": "aluminium",
       "rate": 0.1865,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.adelphe.fr/sites/default/files/Documents/2024-11/le-tarif-2025-emballages-menagers-et-papiers-graphiques.pdf"
@@ -2019,7 +1216,7 @@
       "stream": "household",
       "material": "steel",
       "rate": 0.0535,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.adelphe.fr/sites/default/files/Documents/2024-11/le-tarif-2025-emballages-menagers-et-papiers-graphiques.pdf"
@@ -2030,7 +1227,7 @@
       "stream": "household",
       "material": "plastic_(bottles_&_flasks_pet_clear)",
       "rate": 0.5352,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.adelphe.fr/sites/default/files/Documents/2024-11/le-tarif-2025-emballages-menagers-et-papiers-graphiques.pdf"
@@ -2041,7 +1238,7 @@
       "stream": "household",
       "material": "beverage_cartons",
       "rate": 0.38,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.adelphe.fr/sites/default/files/Documents/2024-11/le-tarif-2025-emballages-menagers-et-papiers-graphiques.pdf"
@@ -2063,7 +1260,7 @@
       "stream": "household",
       "material": "glass",
       "rate": 0.03515,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.ecovidrio.es/empresas/tarifas"
@@ -2074,7 +1271,7 @@
       "stream": "household",
       "material": "paper_fibre",
       "rate": 0.073,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2085,7 +1282,7 @@
       "stream": "household",
       "material": "plastic",
       "rate": 0.159,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2096,7 +1293,7 @@
       "stream": "household",
       "material": "metal_(tinplate)",
       "rate": 0.029,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2107,7 +1304,7 @@
       "stream": "household",
       "material": "glass",
       "rate": 0.076,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2118,7 +1315,7 @@
       "stream": "household",
       "material": "wood",
       "rate": 0.0021,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2129,7 +1326,7 @@
       "stream": "household",
       "material": "paper_fibre",
       "rate": 0.101,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2140,7 +1337,7 @@
       "stream": "household",
       "material": "plastic",
       "rate": 0.179,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2151,7 +1348,7 @@
       "stream": "household",
       "material": "metal",
       "rate": 0.03,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2162,7 +1359,7 @@
       "stream": "household",
       "material": "paper_fibre",
       "rate": 0.068,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2173,7 +1370,7 @@
       "stream": "household",
       "material": "metal_(tinplate)",
       "rate": 0.081,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2184,7 +1381,7 @@
       "stream": "household",
       "material": "glass",
       "rate": 0.093,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2195,7 +1392,7 @@
       "stream": "household",
       "material": "wood",
       "rate": 0.0029,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2206,7 +1403,7 @@
       "stream": "household",
       "material": "paper_fibre",
       "rate": 0.052,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2217,7 +1414,7 @@
       "stream": "household",
       "material": "plastic",
       "rate": 0.166,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2228,7 +1425,7 @@
       "stream": "household",
       "material": "metal",
       "rate": 0.078,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2239,87 +1436,10 @@
       "stream": "household",
       "material": "wood",
       "rate": 0.0019,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
-    },
-    {
-      "country": "SE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "paper_&_cardboard",
-      "rate": 7.0,
-      "unit": "sek/kg",
-      "currency": "SEK",
-      "effective_from": "2025-01-01",
-      "source": "https://admin.npa.se/wp-content/uploads/2024/08/Forpackningsavgifter-2025-version-20240826-01-SV.pdf"
-    },
-    {
-      "country": "SE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic",
-      "rate": 11.9,
-      "unit": "sek/kg",
-      "currency": "SEK",
-      "effective_from": "2025-01-01",
-      "source": "https://admin.npa.se/wp-content/uploads/2024/08/Forpackningsavgifter-2025-version-20240826-01-SV.pdf"
-    },
-    {
-      "country": "SE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic",
-      "rate": 15.1,
-      "unit": "sek/kg",
-      "currency": "SEK",
-      "effective_from": "2025-01-01",
-      "source": "https://admin.npa.se/wp-content/uploads/2024/08/Forpackningsavgifter-2025-version-20240826-01-SV.pdf"
-    },
-    {
-      "country": "SE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "plastic",
-      "rate": 17.1,
-      "unit": "sek/kg",
-      "currency": "SEK",
-      "effective_from": "2025-01-01",
-      "source": "https://admin.npa.se/wp-content/uploads/2024/08/Forpackningsavgifter-2025-version-20240826-01-SV.pdf"
-    },
-    {
-      "country": "SE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "aluminium",
-      "rate": 10.9,
-      "unit": "sek/kg",
-      "currency": "SEK",
-      "effective_from": "2025-01-01",
-      "source": "https://admin.npa.se/wp-content/uploads/2024/08/Forpackningsavgifter-2025-version-20240826-01-SV.pdf"
-    },
-    {
-      "country": "SE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "steel",
-      "rate": 20.7,
-      "unit": "sek/kg",
-      "currency": "SEK",
-      "effective_from": "2025-01-01",
-      "source": "https://admin.npa.se/wp-content/uploads/2024/08/Forpackningsavgifter-2025-version-20240826-01-SV.pdf"
-    },
-    {
-      "country": "SE",
-      "scheme": "HH",
-      "stream": "household",
-      "material": "glass",
-      "rate": 2.08,
-      "unit": "sek/kg",
-      "currency": "SEK",
-      "effective_from": "2025-01-01",
-      "source": "https://admin.npa.se/wp-content/uploads/2024/08/Forpackningsavgifter-2025-version-20240826-01-SV.pdf"
     },
     {
       "country": "DK",
@@ -2399,45 +1519,12 @@
       "source": "https://www.vana.dk/en/membership/prices/vanas-base-prices/"
     },
     {
-      "country": "BE",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "recyclable_packaging_excl._plastic",
-      "rate": 20.0,
-      "unit": "€/t",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.valipac.be/wp-content/uploads/2025/01/en-funding-contributions-2025.pdf"
-    },
-    {
-      "country": "BE",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "recyclable_plastic_packaging",
-      "rate": 63.0,
-      "unit": "€/t",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.valipac.be/wp-content/uploads/2025/01/en-funding-contributions-2025.pdf"
-    },
-    {
-      "country": "BE",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "non-recyclable_packaging",
-      "rate": 126.0,
-      "unit": "€/t",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.valipac.be/wp-content/uploads/2025/01/en-funding-contributions-2025.pdf"
-    },
-    {
       "country": "PT",
       "scheme": "B2B",
       "stream": "commercial",
       "material": "glass",
       "rate": 0.00501,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -2448,7 +1535,7 @@
       "stream": "commercial",
       "material": "paper_&_cardboard",
       "rate": 0.00536,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -2459,7 +1546,7 @@
       "stream": "commercial",
       "material": "plastic",
       "rate": 0.00384,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -2470,7 +1557,7 @@
       "stream": "commercial",
       "material": "beverage_cartons",
       "rate": 0.00498,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -2481,7 +1568,7 @@
       "stream": "commercial",
       "material": "steel",
       "rate": 0.00501,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -2492,7 +1579,7 @@
       "stream": "commercial",
       "material": "aluminium",
       "rate": 0.00384,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -2503,7 +1590,7 @@
       "stream": "commercial",
       "material": "wood",
       "rate": 0.00238,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
@@ -2514,76 +1601,10 @@
       "stream": "commercial",
       "material": "other_materials",
       "rate": 0.00491,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-07",
       "source": "https://novoverde.pt/wp-content/uploads/2025/01/Prestacoes-Financeiras_FEES-2025_bonificacoes_site.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "paper_&_cardboard",
-      "rate": 0.07,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "ferrous_metal",
-      "rate": 0.07,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "aluminium",
-      "rate": 0.09,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "plastic_(foils)",
-      "rate": 0.18,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "plastic_(moulded_containers)",
-      "rate": 0.1,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
-    },
-    {
-      "country": "AT",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "eps",
-      "rate": 0.35,
-      "unit": "€/kg",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://www.ara.at/uploads/Dokumente/Tarifbl%C3%A4tter/ARA-tariff-rates-2025.pdf"
     },
     {
       "country": "IE",
@@ -2591,7 +1612,7 @@
       "stream": "commercial",
       "material": "paper_&_cardboard_(recycled)",
       "rate": 32.54,
-      "unit": "€/t",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://repak.ie/images/uploads/downloads/Repak_Regular_Fees_2025.pdf"
@@ -2602,7 +1623,7 @@
       "stream": "commercial",
       "material": "glass_(recycled)",
       "rate": 11.41,
-      "unit": "€/t",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://repak.ie/images/uploads/downloads/Repak_Regular_Fees_2025.pdf"
@@ -2613,7 +1634,7 @@
       "stream": "commercial",
       "material": "plastic_(rigid_recycled)",
       "rate": 146.03,
-      "unit": "€/t",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://repak.ie/images/uploads/downloads/Repak_Regular_Fees_2025.pdf"
@@ -2624,7 +1645,7 @@
       "stream": "commercial",
       "material": "plastic_(non‑recycled)",
       "rate": 450.07,
-      "unit": "€/t",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://repak.ie/images/uploads/downloads/Repak_Regular_Fees_2025.pdf"
@@ -2635,7 +1656,7 @@
       "stream": "commercial",
       "material": "composite_(recycled)",
       "rate": 146.03,
-      "unit": "€/t",
+      "unit": "per_t",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://repak.ie/images/uploads/downloads/Repak_Regular_Fees_2025.pdf"
@@ -2646,7 +1667,7 @@
       "stream": "commercial",
       "material": "paper/cardboard_(pv16)",
       "rate": 0.0145,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf"
@@ -2657,7 +1678,7 @@
       "stream": "commercial",
       "material": "plastic_(pv17)",
       "rate": 0.0395,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf"
@@ -2668,7 +1689,7 @@
       "stream": "commercial",
       "material": "wood_(pv18)",
       "rate": 0.0145,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf"
@@ -2679,7 +1700,7 @@
       "stream": "commercial",
       "material": "metal_(pv19)",
       "rate": 0.0395,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://www.valorlux.lu/media/6708c496ee87a_green-dot-tariffs-2025-detailed-.pdf"
@@ -2701,7 +1722,7 @@
       "stream": "commercial",
       "material": "paper_fibre",
       "rate": 0.0028,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2712,7 +1733,7 @@
       "stream": "commercial",
       "material": "plastic",
       "rate": 0.053,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2723,7 +1744,7 @@
       "stream": "commercial",
       "material": "metal_(tinplate)",
       "rate": 0.015,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2734,7 +1755,7 @@
       "stream": "commercial",
       "material": "glass",
       "rate": 0.044,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2745,7 +1766,7 @@
       "stream": "commercial",
       "material": "wood",
       "rate": 0.0021,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2756,7 +1777,7 @@
       "stream": "commercial",
       "material": "paper_fibre",
       "rate": 0.0039,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2767,7 +1788,7 @@
       "stream": "commercial",
       "material": "plastic",
       "rate": 0.065,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2778,7 +1799,7 @@
       "stream": "commercial",
       "material": "metal",
       "rate": 0.016,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2789,7 +1810,7 @@
       "stream": "commercial",
       "material": "glass",
       "rate": 0.045,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2800,7 +1821,7 @@
       "stream": "commercial",
       "material": "wood",
       "rate": 0.0018,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2025/08/2025-Price-List-SPT-ENG-1.pdf"
@@ -2811,7 +1832,7 @@
       "stream": "commercial",
       "material": "paper_fibre",
       "rate": 0.012,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2822,7 +1843,7 @@
       "stream": "commercial",
       "material": "plastic",
       "rate": 0.054,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2833,7 +1854,7 @@
       "stream": "commercial",
       "material": "metal_(tinplate)",
       "rate": 0.024,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2844,7 +1865,7 @@
       "stream": "commercial",
       "material": "glass",
       "rate": 0.088,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2855,7 +1876,7 @@
       "stream": "commercial",
       "material": "wood",
       "rate": 0.0026,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2866,7 +1887,7 @@
       "stream": "commercial",
       "material": "paper_fibre",
       "rate": 0.007,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2877,7 +1898,7 @@
       "stream": "commercial",
       "material": "plastic",
       "rate": 0.06,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2888,7 +1909,7 @@
       "stream": "commercial",
       "material": "metal",
       "rate": 0.02,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
@@ -2899,76 +1920,10 @@
       "stream": "commercial",
       "material": "wood",
       "rate": 0.0017,
-      "unit": "€/kg",
+      "unit": "per_kg",
       "currency": "EUR",
       "effective_from": "2025-01-01",
       "source": "https://rinkiin.fi/app/uploads/2024/10/2025-Price-list-SUMI-ENG-3.pdf"
-    },
-    {
-      "country": "SE",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "paper_&_cardboard",
-      "rate": 0.1,
-      "unit": "sek/kg",
-      "currency": "SEK",
-      "effective_from": "2025-01-01",
-      "source": "https://admin.npa.se/wp-content/uploads/2024/08/Forpackningsavgifter-2025-version-20240826-01-SV.pdf"
-    },
-    {
-      "country": "SE",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "plastic",
-      "rate": 0.2,
-      "unit": "sek/kg",
-      "currency": "SEK",
-      "effective_from": "2025-01-01",
-      "source": "https://admin.npa.se/wp-content/uploads/2024/08/Forpackningsavgifter-2025-version-20240826-01-SV.pdf"
-    },
-    {
-      "country": "SE",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "aluminium",
-      "rate": 0.8,
-      "unit": "sek/kg",
-      "currency": "SEK",
-      "effective_from": "2025-01-01",
-      "source": "https://admin.npa.se/wp-content/uploads/2024/08/Forpackningsavgifter-2025-version-20240826-01-SV.pdf"
-    },
-    {
-      "country": "SE",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "steel",
-      "rate": 0.8,
-      "unit": "sek/kg",
-      "currency": "SEK",
-      "effective_from": "2025-01-01",
-      "source": "https://admin.npa.se/wp-content/uploads/2024/08/Forpackningsavgifter-2025-version-20240826-01-SV.pdf"
-    },
-    {
-      "country": "SE",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "glass",
-      "rate": 2.08,
-      "unit": "sek/kg",
-      "currency": "SEK",
-      "effective_from": "2025-01-01",
-      "source": "https://admin.npa.se/wp-content/uploads/2024/08/Forpackningsavgifter-2025-version-20240826-01-SV.pdf"
-    },
-    {
-      "country": "SE",
-      "scheme": "B2B",
-      "stream": "commercial",
-      "material": "wood_(single-use)",
-      "rate": 2.5,
-      "unit": "sek/kg",
-      "currency": "SEK",
-      "effective_from": "2025-01-01",
-      "source": "https://admin.npa.se/wp-content/uploads/2024/08/Forpackningsavgifter-2025-version-20240826-01-SV.pdf"
     },
     {
       "country": "DK",
@@ -3675,28 +2630,6 @@
       "source": "https://www.eoan.gr/en | Regulator page for systems; consult PRO for current tariffs."
     },
     {
-      "country": "HR",
-      "scheme": "Deposit system",
-      "stream": "household",
-      "material": "Beverage containers (deposit)",
-      "rate": 0.1,
-      "unit": "per_unit",
-      "currency": "EUR",
-      "effective_from": "2025-01-01",
-      "source": "https://mzozt.gov.hr/vijesti/od-1-sijecnja-2025-stupaju-na-snagu-novi-propisi-o-naplati-vrecica-i-povratnim-naknadama/10008"
-    },
-    {
-      "country": "HR",
-      "scheme": "FZOEU (state-managed)",
-      "stream": "both",
-      "material": "Packaging management fee",
-      "rate": null,
-      "unit": "per_kg",
-      "currency": "EUR",
-      "effective_from": "",
-      "source": "https://www.fzoeu.hr/en/fees-and-charges-9324-9323 | Rates prescribed by regulation; verify material-specific €/kg table."
-    },
-    {
       "country": "LT",
       "scheme": "Žaliasis taškas",
       "stream": "both",
@@ -3728,6 +2661,1194 @@
       "currency": "PLN",
       "effective_from": "",
       "source": "https://www.pro-e.org/country/1010/poland | PRO Europe notes 2025 price list not yet posted; contact Rekopol."
+    },
+    {
+      "country": "AT",
+      "scheme": "ARA",
+      "stream": "household",
+      "material": "paper",
+      "rate": 0.19,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "ARA",
+      "stream": "household",
+      "material": "glass",
+      "rate": 0.102,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "ARA",
+      "stream": "household",
+      "material": "ferrous",
+      "rate": 0.45,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "ARA",
+      "stream": "household",
+      "material": "aluminium",
+      "rate": 0.48,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "ARA",
+      "stream": "household",
+      "material": "plastic",
+      "rate": 0.99,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "ARA",
+      "stream": "household",
+      "material": "beverage-cartons",
+      "rate": 0.97,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "ARA",
+      "stream": "household",
+      "material": "other-composites",
+      "rate": 1.08,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Interzero",
+      "stream": "household",
+      "material": "paper",
+      "rate": 0.18,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Interzero",
+      "stream": "household",
+      "material": "glass",
+      "rate": 0.097,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Interzero",
+      "stream": "household",
+      "material": "ferrous",
+      "rate": 0.29,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Interzero",
+      "stream": "household",
+      "material": "aluminium",
+      "rate": 0.32,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Interzero",
+      "stream": "household",
+      "material": "plastic",
+      "rate": 0.85,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Interzero",
+      "stream": "household",
+      "material": "beverage-cartons",
+      "rate": 0.815,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Interzero",
+      "stream": "household",
+      "material": "other-composites",
+      "rate": 0.92,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "ERP Austria",
+      "stream": "household",
+      "material": "paper",
+      "rate": 0.179,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "ERP Austria",
+      "stream": "household",
+      "material": "glass",
+      "rate": 0.099,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "ERP Austria",
+      "stream": "household",
+      "material": "ferrous",
+      "rate": 0.295,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "ERP Austria",
+      "stream": "household",
+      "material": "aluminium",
+      "rate": 0.33,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "ERP Austria",
+      "stream": "household",
+      "material": "plastic",
+      "rate": 0.795,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "ERP Austria",
+      "stream": "household",
+      "material": "beverage-cartons",
+      "rate": 0.83,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "ERP Austria",
+      "stream": "household",
+      "material": "other-composites",
+      "rate": 0.895,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Reclay Systems",
+      "stream": "household",
+      "material": "paper",
+      "rate": 0.19,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Reclay Systems",
+      "stream": "household",
+      "material": "glass",
+      "rate": 0.101,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Reclay Systems",
+      "stream": "household",
+      "material": "ferrous",
+      "rate": 0.709,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Reclay Systems",
+      "stream": "household",
+      "material": "aluminium",
+      "rate": 0.712,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Reclay Systems",
+      "stream": "household",
+      "material": "plastic",
+      "rate": 0.93,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Reclay Systems",
+      "stream": "household",
+      "material": "beverage-cartons",
+      "rate": 0.93,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Reclay Systems",
+      "stream": "household",
+      "material": "other-composites",
+      "rate": 1.04,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Bonus Holsystem",
+      "stream": "household",
+      "material": "paper",
+      "rate": 0.19,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Bonus Holsystem",
+      "stream": "household",
+      "material": "glass",
+      "rate": 0.102,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Bonus Holsystem",
+      "stream": "household",
+      "material": "ferrous",
+      "rate": 0.45,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Bonus Holsystem",
+      "stream": "household",
+      "material": "aluminium",
+      "rate": 0.48,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Bonus Holsystem",
+      "stream": "household",
+      "material": "plastic",
+      "rate": 0.995,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Bonus Holsystem",
+      "stream": "household",
+      "material": "beverage-cartons",
+      "rate": 0.96,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "AT",
+      "scheme": "Bonus Holsystem",
+      "stream": "household",
+      "material": "other-composites",
+      "rate": 1.08,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Official 2025 PRO tariffs"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECOBULPACK",
+      "stream": "household",
+      "material": "plastic",
+      "rate": 0.165,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECOBULPACK Bulgaria — Tariff 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECOBULPACK",
+      "stream": "household",
+      "material": "plastic-pet-beverage-bottles-upto-3l",
+      "rate": 0.181,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECOBULPACK Bulgaria — Tariff 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECOBULPACK",
+      "stream": "household",
+      "material": "other-composites",
+      "rate": 0.21,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECOBULPACK Bulgaria — Tariff 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECOBULPACK",
+      "stream": "household",
+      "material": "paper",
+      "rate": 0.154,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECOBULPACK Bulgaria — Tariff 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECOBULPACK",
+      "stream": "household",
+      "material": "glass",
+      "rate": 0.188,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECOBULPACK Bulgaria — Tariff 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECOBULPACK",
+      "stream": "household",
+      "material": "steel",
+      "rate": 0.085,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECOBULPACK Bulgaria — Tariff 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECOBULPACK",
+      "stream": "household",
+      "material": "aluminium",
+      "rate": 0.2,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECOBULPACK Bulgaria — Tariff 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECOBULPACK",
+      "stream": "household",
+      "material": "wood",
+      "rate": 0.083,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECOBULPACK Bulgaria — Tariff 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECOBULPACK",
+      "stream": "household",
+      "material": "others",
+      "rate": 0.2,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECOBULPACK Bulgaria — Tariff 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECO Partners",
+      "stream": "household",
+      "material": "plastic",
+      "rate": 0.159,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECO Partners Bulgaria — Tariffs 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECO Partners",
+      "stream": "household",
+      "material": "plastic-pet-beverage-bottles-upto-3l",
+      "rate": 0.179,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECO Partners Bulgaria — Tariffs 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECO Partners",
+      "stream": "household",
+      "material": "paper",
+      "rate": 0.15,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECO Partners Bulgaria — Tariffs 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECO Partners",
+      "stream": "household",
+      "material": "steel",
+      "rate": 0.082,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECO Partners Bulgaria — Tariffs 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECO Partners",
+      "stream": "household",
+      "material": "aluminium",
+      "rate": 0.198,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECO Partners Bulgaria — Tariffs 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECO Partners",
+      "stream": "household",
+      "material": "wood",
+      "rate": 0.082,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECO Partners Bulgaria — Tariffs 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECO Partners",
+      "stream": "household",
+      "material": "glass",
+      "rate": 0.185,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECO Partners Bulgaria — Tariffs 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECO Partners",
+      "stream": "household",
+      "material": "other-composites",
+      "rate": 0.212,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECO Partners Bulgaria — Tariffs 2025 (BGN/kg)"
+    },
+    {
+      "country": "BG",
+      "scheme": "ECO Partners",
+      "stream": "household",
+      "material": "others",
+      "rate": 0.222,
+      "unit": "per_kg",
+      "currency": "BGN",
+      "effective_from": "2025-01-01",
+      "source": "ECO Partners Bulgaria — Tariffs 2025 (BGN/kg)"
+    },
+    {
+      "country": "HR",
+      "scheme": "Deposit system",
+      "stream": "household",
+      "material": "deposit-beverage-container",
+      "rate": 0.1,
+      "unit": "unit",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "HR DRS official notice 2025"
+    },
+    {
+      "country": "CY",
+      "scheme": "Green Dot Cyprus",
+      "stream": "household",
+      "material": "glass",
+      "rate": 27.61,
+      "unit": "per_t",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/"
+    },
+    {
+      "country": "CY",
+      "scheme": "Green Dot Cyprus",
+      "stream": "household",
+      "material": "paper",
+      "rate": 44.78,
+      "unit": "per_t",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/"
+    },
+    {
+      "country": "CY",
+      "scheme": "Green Dot Cyprus",
+      "stream": "household",
+      "material": "steel",
+      "rate": 90.62,
+      "unit": "per_t",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/"
+    },
+    {
+      "country": "CY",
+      "scheme": "Green Dot Cyprus",
+      "stream": "household",
+      "material": "aluminum",
+      "rate": 20.31,
+      "unit": "per_t",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/"
+    },
+    {
+      "country": "CY",
+      "scheme": "Green Dot Cyprus",
+      "stream": "household",
+      "material": "plastic",
+      "rate": 100.6,
+      "unit": "per_t",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/"
+    },
+    {
+      "country": "CY",
+      "scheme": "Green Dot Cyprus",
+      "stream": "household",
+      "material": "plastic",
+      "rate": 100.6,
+      "unit": "per_t",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/"
+    },
+    {
+      "country": "CY",
+      "scheme": "Green Dot Cyprus",
+      "stream": "commercial",
+      "material": "paper",
+      "rate": 41.14,
+      "unit": "per_t",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/"
+    },
+    {
+      "country": "CY",
+      "scheme": "Green Dot Cyprus",
+      "stream": "commercial",
+      "material": "plastic",
+      "rate": 36.05,
+      "unit": "per_t",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/"
+    },
+    {
+      "country": "CY",
+      "scheme": "Green Dot Cyprus",
+      "stream": "commercial",
+      "material": "wood",
+      "rate": 11.8,
+      "unit": "per_t",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "glass-clear",
+      "rate": 1968,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "glass-colour",
+      "rate": 1968,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "paper",
+      "rate": 5947,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "paperboard",
+      "rate": 5947,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "corrugated-board",
+      "rate": 5947,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "moulded-fibre",
+      "rate": 5947,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "paper-composite",
+      "rate": 5947,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "wood-and-chipboard",
+      "rate": 4585,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "composite-with-non-wood-parts",
+      "rate": 4585,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "textile",
+      "rate": 1861,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "others",
+      "rate": 25212,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "aluminium",
+      "rate": 10277,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "steel",
+      "rate": 4017,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "beverage-carton",
+      "rate": 7879,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "CZ",
+      "scheme": "EKO-KOM",
+      "stream": "household",
+      "material": "plastic-pet-clear-nonbeverage-soft",
+      "rate": 15704,
+      "unit": "per_t",
+      "currency": "CZK",
+      "effective_from": "2025-10-01",
+      "source": "EKO-KOM — Price list valid from 1 Oct 2025 (CZK/t)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "glass",
+      "rate": 0.096,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "paper",
+      "rate": 0.1503,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "steel",
+      "rate": 0.1117,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "aluminium",
+      "rate": 0.0481,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "beverage-cartons",
+      "rate": 0.818,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "plastic-pet-transparent-bottles",
+      "rate": 0.2718,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "plastic-pet-transparent-nonbottle",
+      "rate": 1.1244,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "plastic-pet-opaque",
+      "rate": 1.3893,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "plastic-pp-bottles",
+      "rate": 0.8049,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "plastic-ps-xps",
+      "rate": 0.9195,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "plastic-eps",
+      "rate": 0.5855,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "plastic-pe-films",
+      "rate": 1.2844,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "plastic-pp-films",
+      "rate": 1.9546,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "plastic-other-films",
+      "rate": 3.9092,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "composite-paper-based",
+      "rate": 3.9092,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Fost Plus",
+      "stream": "household",
+      "material": "other-composites",
+      "rate": 3.9092,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Fost Plus — Rates 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Valipac",
+      "stream": "commercial",
+      "material": "recyclable-non-plastic",
+      "rate": 0.02,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Valipac — Funding contributions 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Valipac",
+      "stream": "commercial",
+      "material": "recyclable-plastic",
+      "rate": 0.063,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Valipac — Funding contributions 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Valipac",
+      "stream": "commercial",
+      "material": "non-recyclable",
+      "rate": 0.126,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Valipac — Funding contributions 2025 (official PDF)"
+    },
+    {
+      "country": "BE",
+      "scheme": "Valipac",
+      "stream": "commercial",
+      "material": "reusable-packaging",
+      "rate": 0.0,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-01-01",
+      "source": "Valipac — Funding contributions 2025 (official PDF)"
+    },
+    {
+      "country": "ES",
+      "scheme": "Ecoembes",
+      "stream": "household",
+      "material": "PET (rigid)",
+      "rate": 0.772,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-10-03",
+      "source": "https://ecoembesempresas.com/precios ; https://www.ecovidrio.es/envasadores/punto-verde ; https://procircular.es/wp-content/uploads/2024/09/20240919_Tarifas-Domestico-2025.pdf"
+    },
+    {
+      "country": "ES",
+      "scheme": "Ecoembes",
+      "stream": "household",
+      "material": "HDPE (rigid)",
+      "rate": 0.313,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-10-03",
+      "source": "https://ecoembesempresas.com/precios ; https://www.ecovidrio.es/envasadores/punto-verde ; https://procircular.es/wp-content/uploads/2024/09/20240919_Tarifas-Domestico-2025.pdf"
+    },
+    {
+      "country": "ES",
+      "scheme": "Ecoembes",
+      "stream": "household",
+      "material": "Other rigid plastics",
+      "rate": 0.763,
+      "unit": "per_kg",
+      "currency": "EUR",
+      "effective_from": "2025-10-03",
+      "source": "https://ecoembesempresas.com/precios ; https://www.ecovidrio.es/envasadores/punto-verde ; https://procircular.es/wp-content/uploads/2024/09/20240919_Tarifas-Domestico-2025.pdf"
+    },
+    {
+      "country": "SE",
+      "scheme": "TMR",
+      "stream": "household",
+      "material": "Plastics",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "SEK",
+      "effective_from": "2025-10-03",
+      "source": "https://tmr.se/wp-content/uploads/2025/01/PRICINGAPPENDIX_information_2025.pdf"
+    },
+    {
+      "country": "SE",
+      "scheme": "TMR",
+      "stream": "household",
+      "material": "Paper & board",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "SEK",
+      "effective_from": "2025-10-03",
+      "source": "https://tmr.se/wp-content/uploads/2025/01/PRICINGAPPENDIX_information_2025.pdf"
+    },
+    {
+      "country": "SE",
+      "scheme": "TMR",
+      "stream": "household",
+      "material": "Glass",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "SEK",
+      "effective_from": "2025-10-03",
+      "source": "https://tmr.se/wp-content/uploads/2025/01/PRICINGAPPENDIX_information_2025.pdf"
+    },
+    {
+      "country": "SE",
+      "scheme": "TMR",
+      "stream": "household",
+      "material": "Aluminium",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "SEK",
+      "effective_from": "2025-10-03",
+      "source": "https://tmr.se/wp-content/uploads/2025/01/PRICINGAPPENDIX_information_2025.pdf"
+    },
+    {
+      "country": "SE",
+      "scheme": "TMR",
+      "stream": "household",
+      "material": "Steel",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "SEK",
+      "effective_from": "2025-10-03",
+      "source": "https://tmr.se/wp-content/uploads/2025/01/PRICINGAPPENDIX_information_2025.pdf"
+    },
+    {
+      "country": "SE",
+      "scheme": "TMR",
+      "stream": "household",
+      "material": "Beverage cartons",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "SEK",
+      "effective_from": "2025-10-03",
+      "source": "https://tmr.se/wp-content/uploads/2025/01/PRICINGAPPENDIX_information_2025.pdf"
+    },
+    {
+      "country": "SE",
+      "scheme": "TMR",
+      "stream": "household",
+      "material": "Wood",
+      "rate": null,
+      "unit": "per_kg",
+      "currency": "SEK",
+      "effective_from": "2025-10-03",
+      "source": "https://tmr.se/wp-content/uploads/2025/01/PRICINGAPPENDIX_information_2025.pdf"
     }
   ]
 }

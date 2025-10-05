@@ -1,0 +1,164 @@
+{
+  "AT": {
+    "agency": "BMK / EDM Portal",
+    "regulator_url": "https://www.bmk.gv.at/themen/klima_umwelt/abfall/kreislaufwirtschaft/edm.html",
+    "register_url": "https://edm.gv.at/edm_portal/cms.do?get=%2Fportal%2Finformationen%2Fanwendungenthemen%2Fverpackung.main",
+    "tariff_or_pro_url": "https://www.ara.at/"
+  },
+  "BE": {
+    "agency": "Interregional Packaging Commission (IRPC/IVCIE)",
+    "regulator_url": "https://www.ivcie.be/en/",
+    "register_url": "https://www.ivcie.be/en/declaration-of-packaging/",
+    "tariff_or_pro_url": "https://www.fostplus.be/fr/membres/les-tarifs-point-vert"
+  },
+  "BG": {
+    "agency": "Ministry of Environment and Water (MoEW)",
+    "regulator_url": "https://www.moew.government.bg/en/",
+    "register_url": "https://www.moew.government.bg/en/administrative-services/",
+    "tariff_or_pro_url": "https://www.ecopack.bg/en"
+  },
+  "CY": {
+    "agency": "Department of Environment (Ministry of Agriculture, Rural Development and Environment)",
+    "regulator_url": "https://www.moa.gov.cy/moa/environment/environmentnew.nsf/page21_en/page21_en?OpenDocument",
+    "register_url": "https://www.moa.gov.cy/moa/environment/environmentnew.nsf/page20_en/page20_en?OpenDocument",
+    "tariff_or_pro_url": "https://greendot.com.cy/en/packaging-definition-and-fees/packaging-fees/"
+  },
+  "CZ": {
+    "agency": "Ministry of the Environment (MŽP)",
+    "regulator_url": "https://www.mzp.cz/",
+    "register_url": "https://www.cizp.gov.cz/en/scope/waste-management",
+    "tariff_or_pro_url": "https://www.ekokom.cz/en/"
+  },
+  "DE": {
+    "agency": "Central Packaging Register (ZSVR)",
+    "regulator_url": "https://www.verpackungsregister.org/en/",
+    "register_url": "https://www.verpackungsregister.org/en/registration/find-out-about-registrations",
+    "tariff_or_pro_url": "https://www.gruener-punkt.de/en"
+  },
+  "DK": {
+    "agency": "Danish EPA (Miljøstyrelsen) + Producer Responsibility Denmark",
+    "regulator_url": "https://mst.dk/",
+    "register_url": "https://producentansvar.dk/en/producer-responsibility/packaging",
+    "tariff_or_pro_url": "https://producentansvar.dk/en/producer-responsibility/packaging"
+  },
+  "EE": {
+    "agency": "Ministry of Climate / Environment",
+    "regulator_url": "https://en.ministeerium.ee/en/waste-management/extended-producer-responsibility",
+    "register_url": "https://envir.ee/",
+    "tariff_or_pro_url": "https://www.eestipandipakend.ee/en"
+  },
+  "ES": {
+    "agency": "MITECO – Registro de Productores de Producto (RPP)",
+    "regulator_url": "https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/temas/prevencion-y-gestion-residuos/prevencion-y-gestion-residuos/registro-productores-producto-seccion-envases.html",
+    "register_url": "https://rpp.miteco.gob.es/",
+    "tariff_or_pro_url": "https://www.ecoembes.com/"
+  },
+  "FI": {
+    "agency": "Pirkanmaa ELY Centre – Producer Responsibility Register",
+    "regulator_url": "https://www.ely-keskus.fi/en/web/pirkanmaa-en/producer-responsibility",
+    "register_url": "https://rinkiin.fi/en/companies/producer-responsibility/",
+    "tariff_or_pro_url": "https://rinkiin.fi/en/companies/fees/"
+  },
+  "FR": {
+    "agency": "ADEME – Filières REP",
+    "regulator_url": "https://filieres-rep.ademe.fr/eco-organismes",
+    "register_url": "https://filieres-rep.ademe.fr/",
+    "tariff_or_pro_url": "https://v2.citeo.com/telechargement-des-tarifs-emballages-et-papiers/"
+  },
+  "GR": {
+    "agency": "Hellenic Recycling Agency (EOAN)",
+    "regulator_url": "https://www.gov.gr/en/organismos/ellinikos-organismos-anakykloses-EOAN",
+    "register_url": "https://registry.eoan.gr/",
+    "tariff_or_pro_url": "https://www.herrco.gr/en/"
+  },
+  "HR": {
+    "agency": "Environmental Protection and Energy Efficiency Fund (FZOEU) – EPR Register",
+    "regulator_url": "https://www.fzoeu.hr/en/",
+    "register_url": "https://epr.fzoeu.hr/",
+    "tariff_or_pro_url": "https://www.fzoeu.hr/en/"
+  },
+  "HU": {
+    "agency": "MOHU – National Concession for Waste Management",
+    "regulator_url": "https://mohu.hu/hu/vallalatoknak/arak-dijak",
+    "register_url": "https://mohu.hu/",
+    "tariff_or_pro_url": "https://mohu.hu/hu/vallalatoknak/arak-dijak"
+  },
+  "IE": {
+    "agency": "Department of Environment / EPA (Packaging)",
+    "regulator_url": "https://www.gov.ie/en/department-of-climate-energy-and-the-environment/publications/extended-producer-responsibility-epr/",
+    "register_url": "https://www.epa.ie/our-services/compliance--enforcement/waste/single-use-plastics/",
+    "tariff_or_pro_url": "https://repak.ie/images/uploads/downloads/Repak_Regular_Fees_2025.pdf"
+  },
+  "IT": {
+    "agency": "MASE / CONAI",
+    "regulator_url": "https://www.mase.gov.it/portale/responsabilit%C3%A0-estesa-del-produttore",
+    "register_url": "https://www.conai.org/",
+    "tariff_or_pro_url": "https://www.conai.org/en/businesses/environmental-contribution/"
+  },
+  "LT": {
+    "agency": "Environmental Protection Agency (AAA)",
+    "regulator_url": "https://aaa.lrv.lt/en/activities/waste-management/producer-responsibility/",
+    "register_url": "https://gamta.lt/",
+    "tariff_or_pro_url": "https://zaliasistaskas.lt/"
+  },
+  "LU": {
+    "agency": "Administration de l’Environnement / Guichet.lu",
+    "regulator_url": "https://guichet.public.lu/en/entreprises/urbanisme-environnement/dechets-subst-dangereuses/recyclage-valorisation-dechets/dechets-emballage.html",
+    "register_url": "https://environnement.public.lu/fr/emweltprozeduren/rep/rep-emballages.html",
+    "tariff_or_pro_url": "https://www.valorlux.lu/fr/mission/actualites/actualite/2024/10/tarifs-point-vert-2025-detaillee"
+  },
+  "LV": {
+    "agency": "State Environmental Service (VVD)",
+    "regulator_url": "https://www.vvd.gov.lv/en",
+    "register_url": "https://www.vvd.gov.lv/en/waste-management/producer-responsibility",
+    "tariff_or_pro_url": "https://www.zalais.lv/en/"
+  },
+  "MT": {
+    "agency": "Environment & Resources Authority (ERA)",
+    "regulator_url": "https://era.org.mt/topic/extended-producer-responsibility-2/",
+    "register_url": "https://era.org.mt/topic/extended-producer-responsibility/",
+    "tariff_or_pro_url": "https://greenpak.com.mt/"
+  },
+  "NL": {
+    "agency": "Business.gov.nl / ILT (Inspectorate)",
+    "regulator_url": "https://business.gov.nl/regulation/packaging/",
+    "register_url": "https://producenten-verantwoordelijkheid.nl/verpact/",
+    "tariff_or_pro_url": "https://www.verpact.nl/nl/tarieven"
+  },
+  "PL": {
+    "agency": "Ministry of Climate and Environment – BDO Register",
+    "regulator_url": "https://www.gov.pl/web/klimat/rejestr-bdo",
+    "register_url": "https://bdo.mos.gov.pl/",
+    "tariff_or_pro_url": "https://rekopol.pl/"
+  },
+  "PT": {
+    "agency": "Agência Portuguesa do Ambiente (APA)",
+    "regulator_url": "https://apambiente.pt/residuos/embalagens-e-residuos-de-embalagens",
+    "register_url": "https://siliamb.apambiente.pt/",
+    "tariff_or_pro_url": "https://www.pontoverde.pt/aderentes/2_1_valor_a_pagar.php"
+  },
+  "RO": {
+    "agency": "Administrația Fondului pentru Mediu (AFM)",
+    "regulator_url": "https://www.afm.ro/ambalaje.php",
+    "register_url": "https://www.afm.ro/ambalaje.php",
+    "tariff_or_pro_url": "https://www.afm.ro/ambalaje.php"
+  },
+  "SE": {
+    "agency": "Naturvårdsverket (Swedish EPA)",
+    "regulator_url": "https://www.naturvardsverket.se/en/guidance/retur-system/producer-responsibility/packaging/",
+    "register_url": "https://www.naturvardsverket.se/en/guidance/retur-system/producer-responsibility/packaging/",
+    "tariff_or_pro_url": "https://timmarmiljo.se/"
+  },
+  "SI": {
+    "agency": "ARSO – Slovenian Environment Agency",
+    "regulator_url": "https://www.arso.gov.si/odpadki/embalaza/",
+    "register_url": "https://www.gea.arso.gov.si/gea-ons-portal/",
+    "tariff_or_pro_url": "https://www.slopak.si/"
+  },
+  "SK": {
+    "agency": "Ministry of Environment of the Slovak Republic",
+    "regulator_url": "https://www.minzp.sk/en/",
+    "register_url": "https://www.minzp.sk/sekcie/oblasti/cirkularna-ekonomika/odpadove-hospodarstvo/obaly/",
+    "tariff_or_pro_url": "https://www.ozv.sk/"
+  }
+}
